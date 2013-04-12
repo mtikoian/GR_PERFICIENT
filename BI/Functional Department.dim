@@ -1,0 +1,210 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="adcf6cd8-51d4-4648-8efa-ede22739ff2b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Functional Department</ID>
+  <Name>Functional Department</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2189" scrolltop="-7990" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="3149" y="20452" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="FunctionalDepartment" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5186" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004214000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FunctionalDepartment" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2189</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7990</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="408" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="220">
+            <Shape Id="Functional Department Key" Expanded="true">
+              <Attributes>
+                <Attribute Id="Functional Department Key" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Sub Functional Department Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sub Functional Department Name" />
+              </Attributes>
+              <Position x="300" y="20" />
+            </Shape>
+            <Shape Id="Functional Department Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Functional Department Name" />
+              </Attributes>
+              <Position x="580" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3b936e6b-7a32-4ae9-87cb-2aded78db921">
+    <DataSourceViewID>Gr Reporting Ver2</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="432877b6-eb24-4a11-953e-ef9d5c1a938b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="183b017b-67fa-42c8-8f81-490dadb5ea5f">
+      <ID>Functional Department Key</ID>
+      <Name>Functional Department Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>595</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3baedf35-b77b-4143-9bd3-95703636cce8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c5b884e-793f-426d-abc0-a90337e7b5f9">
+            <TableID>dbo_FunctionalDepartment</TableID>
+            <ColumnID>FunctionalDepartmentKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6fc71360-8ce3-45e8-a183-2275d3265241">
+          <AttributeID>Sub Functional Department Name</AttributeID>
+          <Name>Sub Functional Department Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="5048ce09-8905-45fc-bdb4-5a576260fc27">
+      <ID>Functional Department Name</ID>
+      <Name>Functional Department</Name>
+      <EstimatedCount>22</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c05db9e-6e9d-4b95-bdb0-b0531190157e">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1deba35-1de3-49f6-97cd-a39a330199d7">
+            <TableID>dbo_FunctionalDepartment</TableID>
+            <ColumnID>FunctionalDepartmentCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a5d66451-0764-4b41-aa9c-f0f3d2e28f55">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c757f948-b31d-4d78-be41-fecf2a129071">
+          <TableID>dbo_FunctionalDepartment</TableID>
+          <ColumnID>FunctionalDepartmentName</ColumnID>
+        </Source>
+      </NameColumn>
+    </Attribute>
+    <Attribute dwd:design-time-name="46c32c9f-0231-4684-9302-a6ecd68b243d">
+      <ID>Sub Functional Department Name</ID>
+      <Name>Job Code</Name>
+      <EstimatedCount>595</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4a9417b3-f212-4cc3-afd7-13b16c69106f">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a8a83fb-ab2e-42c7-abc6-500fb35aefd9">
+            <TableID>dbo_FunctionalDepartment</TableID>
+            <ColumnID>FunctionalDepartmentCode</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4302436f-f1ee-4f09-9480-d61c4a7a92eb">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bdc5ae77-c087-46da-9eea-234bc6337664">
+            <TableID>dbo_FunctionalDepartment</TableID>
+            <ColumnID>SubFunctionalDepartmentCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8cad602b-971c-4da5-bde0-00002496a64a">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9789ed9a-47ce-4f89-ac20-de42ef41b553">
+          <TableID>dbo_FunctionalDepartment</TableID>
+          <ColumnID>SubFunctionalDepartmentName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="58120928-734c-4c8e-b185-09d4d4000ba3">
+          <AttributeID>Functional Department Name</AttributeID>
+          <Name>Functional Department Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="5f9d931d-d504-415b-9871-5abeb3cbc23c">
+      <ID>Hierarchy</ID>
+      <Name>FunctionalDepartmentHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="b279adf5-17a0-4863-819e-577e60109b6d">
+          <ID>Functional Department Name</ID>
+          <Name>FunctionalDepartment</Name>
+          <SourceAttributeID>Functional Department Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a80be8fc-0d81-4624-b33b-8a79d55c3037">
+          <ID>Sub Functional Department Name</ID>
+          <Name>JobCode</Name>
+          <SourceAttributeID>Sub Functional Department Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

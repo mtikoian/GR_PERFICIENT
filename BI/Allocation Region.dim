@@ -1,0 +1,210 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="80eb3ff0-1da2-4119-bf90-781fb9401745" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Allocation Region</ID>
+  <Name>Allocation Region</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2890" scrolltop="-7990" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="3149" y="20452" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="AllocationRegion" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3784" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000c80e000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_AllocationRegion" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2890</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7990</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="4" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="153">
+            <Shape Id="Allocation Region Key" Expanded="true">
+              <Attributes>
+                <Attribute Id="Allocation Region Key" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Sub Region Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sub Region Code" />
+              </Attributes>
+              <Position x="216" y="20" />
+            </Shape>
+            <Shape Id="Region Code" Expanded="false">
+              <Attributes>
+                <Attribute Id="Region Code" />
+              </Attributes>
+              <Position x="412" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8aef9d5e-aaa5-4f30-9a77-33365661bcae">
+    <DataSourceViewID>Gr Reporting Ver2</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="fb826878-e23b-4221-8382-91a98306498d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="bc578126-e1af-48f3-ad61-a473207eef9b">
+      <ID>Allocation Region Key</ID>
+      <Name>Allocation Region Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>31</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="30255a9e-a618-469c-9e25-58a9c7b959dd">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="01ed9dd1-8e85-4d75-a14a-7ead228dca39">
+            <TableID>dbo_AllocationRegion</TableID>
+            <ColumnID>AllocationRegionKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1a1dfcb4-963f-4b43-8bba-b22e0d6f67d0">
+          <AttributeID>Sub Region Code</AttributeID>
+          <Name>Sub Region Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="b8738065-a96a-412a-916b-945f699eb89f">
+      <ID>Sub Region Code</ID>
+      <Name>Allocation Sub Region</Name>
+      <EstimatedCount>31</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5f525f43-6bae-4e47-b353-aabf9ecb412f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c488075-fc6b-42b8-a938-d132dea266f5">
+            <TableID>dbo_AllocationRegion</TableID>
+            <ColumnID>RegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="b076f2c3-5796-4c6f-b208-9ee8f60da63f">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="26fa108d-3fb0-4cc0-beeb-8fc33e823427">
+            <TableID>dbo_AllocationRegion</TableID>
+            <ColumnID>SubRegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="572a701d-6388-459f-8018-236da4987d17">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1cfc42e8-4758-4bce-afdd-ea93d3bdc24f">
+          <TableID>dbo_AllocationRegion</TableID>
+          <ColumnID>SubRegionName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f62acd3a-1888-4eda-b04c-672a74510fd9">
+          <AttributeID>Region Code</AttributeID>
+          <Name>Region Code</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+    </Attribute>
+    <Attribute dwd:design-time-name="fb1cead5-ed23-45eb-adec-3261daf83cd1">
+      <ID>Region Code</ID>
+      <Name>Allocation Region</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d62d9413-2e18-421b-a6ce-37488a7b6cfa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="976aaf8d-c049-48e4-928c-e127cf801fd7">
+            <TableID>dbo_AllocationRegion</TableID>
+            <ColumnID>RegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="466cabf5-8fe3-40d7-9eda-b99d9fe657e6">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c1688f26-87ee-475f-9900-651dd014ff4f">
+          <TableID>dbo_AllocationRegion</TableID>
+          <ColumnID>RegionName</ColumnID>
+        </Source>
+      </NameColumn>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="222cba0b-2b07-42b8-bd40-44802ec9aad1">
+      <ID>Hierarchy</ID>
+      <Name>AllocaitonRegionHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="63b24a25-a87d-484c-b171-58e922cddb36">
+          <ID>Region Code</ID>
+          <Name>Region</Name>
+          <SourceAttributeID>Region Code</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="fa5077b2-06be-498f-b3c8-95d6a03b4b0f">
+          <ID>Sub Region Code</ID>
+          <Name>SubRegion</Name>
+          <SourceAttributeID>Sub Region Code</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

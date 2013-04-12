@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ToolsVersion="2.0">
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+IiQvaGVhZC9XZWIvUmVwb3J0aW5nU2VydmljZXMiLCBQRUJBQUFBQTwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD4uPC9Mb2NhbFBhdGg+DQogIDxQcm92aWRlcj5NU1NDQ0k6TWljcm9zb2Z0IFZpc3VhbCBTb3VyY2VTYWZlPC9Qcm92aWRlcj4NCjwvU291cmNlQ29udHJvbEluZm8+</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>GrReporting.rds</Name>
+      <FullPath>GrReporting.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>GrReportingComments.rds</Name>
+      <FullPath>GrReportingComments.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>GrReportingCube.rds</Name>
+      <FullPath>GrReportingCube.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MRI.rds</Name>
+      <FullPath>MRI.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSets />
+  <Reports>
+    <ProjectItem>
+      <Name>Budget Originator Entity Detail.rdl</Name>
+      <FullPath>Budget Originator Entity Detail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Budget Originator Report Detail.rdl</Name>
+      <FullPath>Budget Originator Report Detail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Budget Originator Report.rdl</Name>
+      <FullPath>Budget Originator Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Budget Owner Report.rdl</Name>
+      <FullPath>Budget Owner Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BudgetOriginatorJobCode.rdl</Name>
+      <FullPath>BudgetOriginatorJobCode.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BudgetOriginatorJobCodeDetail.rdl</Name>
+      <FullPath>BudgetOriginatorJobCodeDetail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Comment.rdl</Name>
+      <FullPath>Comment.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DrilldownCube.rdl</Name>
+      <FullPath>DrilldownCube.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DrilldownMRI.rdl</Name>
+      <FullPath>DrilldownMRI.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DrilldownWarehouse.rdl</Name>
+      <FullPath>DrilldownWarehouse.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Profitability Chart.rdl</Name>
+      <FullPath>Profitability Chart.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Profitability Report.rdl</Name>
+      <FullPath>Profitability Report.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Debug</OutputPath>
+        <TargetServerVersion>SSRS2008</TargetServerVersion>
+        <TargetFolder>GlobalReportingWeb</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\DebugLocal</OutputPath>
+        <TargetServerVersion>SSRS2008</TargetServerVersion>
+        <TargetServerURL>http://obtssql10/ReportServerDEV</TargetServerURL>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <StartItem>Sample.rdl</StartItem>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Release</OutputPath>
+        <TargetServerVersion>SSRS2008</TargetServerVersion>
+        <TargetFolder>GlobalReportingWeb</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

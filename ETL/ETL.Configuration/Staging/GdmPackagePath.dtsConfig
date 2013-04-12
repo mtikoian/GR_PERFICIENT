@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="Master" GeneratedFromPackageID="{32DC2E11-7D6F-47AD-B604-ADE5A8B22A41}" GeneratedDate="23/07/2009 08:16:50 AM"/>
+	</DTSConfigurationHeading>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[GLGlobalAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GLGlobalAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[ActivityType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\ActivityType.dtsx</ConfiguredValue>
+	</Configuration>
+	
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[AllocationRegionProjectRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\AllocationRegionProjectRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[GlobalRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GlobalRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[PropertyFund.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\PropertyFund.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[PropertyFundMapping.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\PropertyFundMapping.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[GLMajorCategory.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GLMajorCategory.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[GLMinorCategory.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GLMinorCategory.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[EntityType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\EntityType.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[ReportingEntityCorporateDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\ReportingEntityCorporateDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[ReportingEntityPropertyEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\ReportingEntityPropertyEntity.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[OriginatingRegionCorporateEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\OriginatingRegionCorporateEntity.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[OriginatingRegionPropertyDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\OriginatingRegionPropertyDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[AllocationRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\AllocationRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[AllocationSubRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\AllocationSubRegion.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BudgetExchangeRate.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\BudgetExchangeRate.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BudgetExchangeRateDetail.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\BudgetExchangeRateDetail.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BudgetReportGroupPeriod.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\BudgetReportGroupPeriod.dtsx</ConfiguredValue>
+	</Configuration>
+	
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BusinessLine.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\BusinessLine.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[ActivityTypeBusinessLine.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\ActivityTypeBusinessLine.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[ConsolidationRegionCorporateDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\ConsolidationRegionCorporateDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[ConsolidationRegionPropertyEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\ConsolidationRegionPropertyEntity.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[ConsolidationRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\ConsolidationRegion.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[ConsolidationSubRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\ConsolidationSubRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[GLAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GlAccount.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[GLCategorization.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GlCategorization.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[GLCategorizationType.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GlCategorizationType.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[GLFinancialCategory.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GlFinancialCategory.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[GLGlobalAccountCategorization.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GlGlobalAccountCategorization.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[GLMinorCategoryPayrollType.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GLMinorCategoryPayrollType.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[PropertyOverheadPropertyGlAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\PropertyOverheadPropertyGlAccount.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[PropertyPayrollPropertyGlAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\PropertyPayrollPropertyGlAccount.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[ReportingCategorization.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\ReportingCategorization.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[RestrictedFunctionalDepartmentCorporateEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\RestrictedFunctionalDepartmentCorporateEntity.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[RestrictedFunctionalDepartmentGlGlobalAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\RestrictedFunctionalDepartmentGlGlobalAccount.dtsx</ConfiguredValue>
+  </Configuration>
+
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[GLAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Gdm\GlAccount.dtsx</ConfiguredValue>
+  </Configuration>
+
+</DTSConfiguration>

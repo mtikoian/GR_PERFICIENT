@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProductVersion>10.50.1600.1</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+IiQvaGVhZC9FVEwvRVRMLlN0YWdpbmcuQnVkZ2V0aW5nQ29ycCIsIE9GQUFBQUFBPC9Qcm9qZWN0TmFtZT4NCiAgPEF1eFBhdGg+PC9BdXhQYXRoPg0KICA8TG9jYWxQYXRoPi48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPk1TU0NDSTpNaWNyb3NvZnQgVmlzdWFsIFNvdXJjZVNhZmU8L1Byb3ZpZGVyPg0KPC9Tb3VyY2VDb250cm9sSW5mbz4=</State>
+  <Database>
+    <Name>ETL Staging BudgetingCorp.database</Name>
+    <FullPath>ETL Staging BudgetingCorp.database</FullPath>
+  </Database>
+  <Cubes />
+  <Dimensions />
+  <DataSources>
+    <ProjectItem>
+      <Name>Gr Reporting Staging.ds</Name>
+      <FullPath>Gr Reporting Staging.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BC.ds</Name>
+      <FullPath>BC.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews />
+  <MiningModels />
+  <Roles />
+  <Miscellaneous />
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Gr Reporting Staging</Id>
+            <Name>Gr Reporting Staging</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=TSSQL-REPORTING-DWDEV\DEV;Integrated Security=SSPI;Initial Catalog=GrReportingStaging</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>BC</Id>
+            <Name>BC</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=TSSQL-REPORTING-DWDEV\DEV;Integrated Security=SSPI;Initial Catalog=BC</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Gr Reporting Staging</Id>
+            <Name>Gr Reporting Staging</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>BC</Id>
+            <Name>BC</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <DatabaseStorageLocations />
+      </Options>
+    </Configuration>
+  </Configurations>
+  <DTSPackages>
+    <DtsPackage FormatVersion="3">
+      <Name>Master.dtsx</Name>
+      <FullPath>Master.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>GlobalReportingCorporateBudget.dtsx</Name>
+      <FullPath>GlobalReportingCorporateBudget.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+  </DTSPackages>
+</Project>

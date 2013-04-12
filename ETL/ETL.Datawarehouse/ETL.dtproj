@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProductVersion>10.0.2531.0</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+IiQvaGVhZC9FVEwiLCBDQUFBQUFBQTwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD4uPC9Mb2NhbFBhdGg+DQogIDxQcm92aWRlcj5NU1NDQ0k6TWljcm9zb2Z0IFZpc3VhbCBTb3VyY2VTYWZlPC9Qcm92aWRlcj4NCjwvU291cmNlQ29udHJvbEluZm8+</State>
+  <Database>
+    <Name>ETL.database</Name>
+    <FullPath>ETL.database</FullPath>
+  </Database>
+  <Cubes />
+  <Dimensions />
+  <DataSources />
+  <DataSourceViews />
+  <MiningModels />
+  <Roles />
+  <Miscellaneous />
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings />
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings />
+        <DatabaseStorageLocations />
+      </Options>
+    </Configuration>
+  </Configurations>
+  <DTSPackages>
+    <DtsPackage FormatVersion="3">
+      <Name>Master.dtsx</Name>
+      <FullPath>Master.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimGlAccount.dtsx</Name>
+      <FullPath>DimGlAccount.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimOriginatingRegion.dtsx</Name>
+      <FullPath>DimOriginatingRegion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimPropertyFund.dtsx</Name>
+      <FullPath>DimPropertyFund.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimSource.dtsx</Name>
+      <FullPath>DimSource.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimReimbursable.dtsx</Name>
+      <FullPath>DimReimbursable.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimAllocationRegion.dtsx</Name>
+      <FullPath>DimAllocationRegion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimCalendar.dtsx</Name>
+      <FullPath>DimCalendar.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimFunctionalDepartment.dtsx</Name>
+      <FullPath>DimFunctionalDepartment.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimActivity.dtsx</Name>
+      <FullPath>DimActivity.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>DimTypeHierarchy.dtsx</Name>
+      <FullPath>DimTypeHierarchy.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>FactProfitability.dtsx</Name>
+      <FullPath>FactProfitability.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+  </DTSPackages>
+</Project>

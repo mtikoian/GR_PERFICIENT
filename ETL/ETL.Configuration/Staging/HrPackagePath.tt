@@ -1,0 +1,27 @@
+﻿<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#
+  string packagePath = Path.GetDirectoryName(this.Host.TemplateFile).Replace(@"\ETL\ETL.Configuration\Staging","");
+#>
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="Master" GeneratedFromPackageID="{32DC2E11-7D6F-47AD-B604-ADE5A8B22A41}" GeneratedDate="23/07/2009 08:16:50 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[FunctionalDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Hr\FunctionalDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[Location.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Hr\Location.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Region.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Hr\Region.dtsx</ConfiguredValue>
+	</Configuration>
+
+</DTSConfiguration>

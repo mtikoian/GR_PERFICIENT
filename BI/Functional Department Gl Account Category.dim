@@ -1,0 +1,442 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="12e5bcb6-060c-4a49-acce-f7ee10d8c079" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Reporting</ID>
+  <Name>Functional Department Gl Account Category</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2189" scrolltop="-7382" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7223" y="19420" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="FunctionalDepartmentGlobalGlAccountCategory" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5186" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004214000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FunctionalDepartmentGlobalGlAccountCategory" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2189</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7382</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="700" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="220">
+            <Shape Id="Functional Department Global Gl Account Category Composite Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Functional Department Global Gl Account Category Composite Key" />
+                <Attribute Id="Functional Department Code" />
+                <Attribute Id="Sub Functional Department Code" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Sub Functional Department Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sub Functional Department Name" />
+              </Attributes>
+              <Position x="300" y="20" />
+            </Shape>
+            <Shape Id="Functional Department Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Functional Department Name" />
+              </Attributes>
+              <Position x="580" y="20" />
+            </Shape>
+            <Shape Id="Minor Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Minor Name" />
+              </Attributes>
+              <Position x="860" y="20" />
+            </Shape>
+            <Shape Id="Major Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Major Name" />
+              </Attributes>
+              <Position x="1140" y="20" />
+            </Shape>
+            <Shape Id="Expense Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Expense Type" />
+              </Attributes>
+              <Position x="1420" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="045bd8bd-315a-4ce2-bb3b-abe1db2df4c0">
+    <DataSourceViewID>Gr Reporting Ver2</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="9304c74d-ffc2-44b7-8bc5-9b7750226c13">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="47c108be-6038-4fe6-9619-29a6e517d81d">
+      <ID>Functional Department Global Gl Account Category Composite Key</ID>
+      <Name>Functional Department Global Gl Account Category Composite Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>1570</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c9c48c53-40c1-4389-8e3b-6943666badc5">
+          <DataType>WChar</DataType>
+          <DataSize>21</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="724bfc46-de70-48fc-bfd9-939530da39c7">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>FunctionalDepartmentGlobalGlAccountCategoryCompositeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="21a1853f-299a-4717-9b00-6761f377a750">
+          <AttributeID>Functional Department Code</AttributeID>
+          <Name>Functional Department Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2d151e37-77f3-441d-bb24-ee78c1a6e6d3">
+          <AttributeID>Sub Functional Department Code</AttributeID>
+          <Name>Sub Functional Department Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="df3303e4-83a4-40b7-959d-b9692cf005bf">
+          <AttributeID>Sub Functional Department Name</AttributeID>
+          <Name>Sub Functional Department Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="53cb5ea6-f4ae-4649-a2cb-85f95cbd5147">
+      <ID>Major Name</ID>
+      <Name>Major Name</Name>
+      <EstimatedCount>22</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8aea5641-eb63-4586-9a27-90f13b2d2e7e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="081872c4-adb6-4cd9-9084-bba2215cf76c">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>ExpenseType</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2c78c5ca-df59-47c1-8678-539a9ba74ba0">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="731d28c8-0190-4535-9fee-c5fd77d3599c">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>MajorName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3a8b5b73-915a-4a32-95f8-748dc93043c0">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2d72039c-2b77-4707-b9b6-8a5041b289a1">
+          <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+          <ColumnID>MajorName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="cebe191d-f109-4f21-a0ac-976a07cc9ba8">
+          <AttributeID>Expense Type</AttributeID>
+          <Name>Expense Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="de54fb7b-05ac-4176-affb-2702d4cb95b2">
+      <ID>Minor Name</ID>
+      <Name>Minor Name</Name>
+      <EstimatedCount>103</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7079424a-6f5b-4b37-b078-9e4bfa3dda35">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8416bb03-dcbd-4270-ab77-816b6c072ead">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>ExpenseType</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="0c0d00ff-64f7-4ae7-922e-cc84551f11aa">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9778f0f5-995b-4a79-927a-73089a7aecfb">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>MajorName</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="df28b204-1478-410c-b712-d95d9130fe70">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73bf77ad-df9c-49e0-b1f5-71609f8c8733">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>MinorName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="46f7a2c8-0784-4d97-b7a2-0130e69d82f2">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7bc5525c-883e-43d8-b301-fb71e5d9dab3">
+          <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+          <ColumnID>MinorName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c32aee1e-0eb7-47fc-9d32-0dcb167bbeeb">
+          <AttributeID>Major Name</AttributeID>
+          <Name>Major Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4084ce9a-7cf3-4003-b1df-7a0bda68584d">
+      <ID>Functional Department Name</ID>
+      <Name>Functional Department Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c20a9b07-8392-49b1-b1f5-174235d33fe1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fbf5c722-0bca-4ff5-8bea-efa55b3be5e6">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>ExpenseType</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7815aa3b-aa5f-416c-843b-b6abffa21001">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5205e52-8de3-4b78-ab2a-f64143e7279b">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>MajorName</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="75e3ea6e-f413-43c8-b55f-67c5443c5325">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59de9334-502e-4096-8ba6-83f01432a22a">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>MinorName</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e7893134-1acd-4965-9add-6cf90cb32a1e">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b327a97f-f42e-48c3-b628-4ad4c24589e0">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>FunctionalDepartmentCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="6ecfff93-5fb3-4951-b0c0-e9b892fb3b19">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b23e5ed5-47ca-4120-b6fd-805a1805ba23">
+          <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+          <ColumnID>FunctionalDepartmentName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="add2158e-0bb2-4319-ab88-ca5606dfd8e8">
+          <AttributeID>Minor Name</AttributeID>
+          <Name>Minor Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac7b2f65-6279-4833-9e60-f09e02f84e46">
+      <ID>Functional Department Code</ID>
+      <Name>Functional Department Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="73494c2b-c68f-491d-b3a6-1582b2a83d16">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37126e2c-0052-4c36-9da3-e3bf40808716">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>FunctionalDepartmentCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="489f3684-13da-448e-aa2a-7f9e6cde6b4e">
+      <ID>Sub Functional Department Code</ID>
+      <Name>Sub Functional Department Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ec10fa9f-dfc0-4df1-a057-e9d34b277b21">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cee62c3-7858-4443-8feb-8f6b65cd2d43">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>SubFunctionalDepartmentCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6dc18aba-dd82-4916-8800-2671fbfe0c8e">
+      <ID>Sub Functional Department Name</ID>
+      <Name>Sub Functional Department Name</Name>
+      <EstimatedCount>1570</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="71d01dff-e7d9-4125-b7fe-d9da53bb7b7f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0a5b533-38aa-4ddc-aaa8-2edce24990b0">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>ExpenseType</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="80fc128b-1a8c-4304-a886-4501a4568d1e">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2eba98c6-8673-4c61-ae8b-08450e4137be">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>MajorName</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ee629cc2-ac7d-4e68-a93f-c2e14ec0b04c">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="55fe01d1-93ac-4f70-af19-5f29f8e3b081">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>MinorName</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="df4fed0a-e298-4857-a925-5e272763fa32">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21f474cb-27a2-4edc-8cae-00badd040d89">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>FunctionalDepartmentCode</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="65c40162-1ea7-4391-9cbd-9ba24f401934">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c639c2c3-ed2b-4537-a51c-80fbad4d4a9d">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>SubFunctionalDepartmentCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="6a63a560-1700-4164-87ef-a385d6fdbebf">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5288cd64-38d9-4b7f-b5e4-947707fdb921">
+          <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+          <ColumnID>SubFunctionalDepartmentName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="13d091a9-1b46-4dc5-8c0e-507ba0c1faa0">
+          <AttributeID>Functional Department Name</AttributeID>
+          <Name>Functional Department Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4e8bd1e7-0213-4018-86b3-df130f777acb">
+      <ID>Expense Type</ID>
+      <Name>Expense Type</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e03cba4-dd8d-4e4d-ac3a-cd2eb07b652c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6fd53c5f-1e71-4aa7-8c7b-dfb82308b6c2">
+            <TableID>dbo_FunctionalDepartmentGlobalGlAccountCategory</TableID>
+            <ColumnID>ExpenseType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="4631cd71-a8fa-4d2e-a831-12e2f18ecee2">
+      <ID>Hierarchy</ID>
+      <Name>ExpenseHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="88b66391-4926-444f-8fdb-2934eb620a47">
+          <ID>Expense Type</ID>
+          <Name>Expense Type</Name>
+          <SourceAttributeID>Expense Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9a4241ef-69af-4cb6-8541-b406c8744055">
+          <ID>Major Name</ID>
+          <Name>Major Name</Name>
+          <SourceAttributeID>Major Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cbb39469-3d81-4a23-b46c-41caa9ed9855">
+          <ID>Minor Name</ID>
+          <Name>Minor Name</Name>
+          <SourceAttributeID>Minor Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="eefe1785-667c-4486-9213-a8763c52be06">
+          <ID>Sub Functional Department Name</ID>
+          <Name>Job Code</Name>
+          <SourceAttributeID>Sub Functional Department Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

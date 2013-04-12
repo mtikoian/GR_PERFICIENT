@@ -1,0 +1,320 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c810ee5f-bd1a-4e6c-b2de-0ae24b97eb8c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Profitability Budget</ID>
+  <Name>Profitability Budget</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="2229" scrolltop="2500" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="0" y="0" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="ProfitabilityBudget" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004311000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ProfitabilityBudget" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>2229</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>2500</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="43769f4f-b904-462a-9fb0-71794ecb2b71">
+    <DataSourceViewID>Gr Reporting</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="cc076ffe-2f0b-4e81-9e48-42a78eb8ce53">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3c3dcb6d-61af-4f7e-b18c-e4fb84417e12">
+      <ID>Profitability Budget Key</ID>
+      <Name>Profitability Budget Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>905943</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ca0108f5-cb71-4b67-87c7-64d198be8316">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43654a01-9405-4703-9101-132cdb4201ea">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>ProfitabilityBudgetKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="84ba3b5c-bdcd-4171-ad96-e1a8f0bede90">
+          <AttributeID>Activity Type Key</AttributeID>
+          <Name>Activity Type Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="984fe3d3-5eae-485c-b32b-1936b0065190">
+          <AttributeID>Local Currency Key</AttributeID>
+          <Name>Local Currency Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b5489a9e-1d14-456e-9c87-b7f641700403">
+          <AttributeID>Reforecast Key</AttributeID>
+          <Name>Reforecast Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ccbecda4-9719-4481-ae07-f72b04db7adb">
+          <AttributeID>Allocation Region Key</AttributeID>
+          <Name>Allocation Region Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a643f0ba-2a7b-4179-bff1-5bea7c8c9df1">
+          <AttributeID>Gl Account Key</AttributeID>
+          <Name>Gl Account Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f9991fbc-5a75-485a-a264-8affffc30f6d">
+          <AttributeID>Originating Region Key</AttributeID>
+          <Name>Originating Region Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e3011dfb-34d2-432c-bdc8-a233bc54aec8">
+          <AttributeID>Reimbursable Key</AttributeID>
+          <Name>Reimbursable Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="88b6a0cb-8cf8-4ca2-9981-00b32c5d69c7">
+          <AttributeID>Functional Department Key</AttributeID>
+          <Name>Functional Department Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="43320942-2379-460a-808c-92a2f20871c4">
+          <AttributeID>Calendar Key</AttributeID>
+          <Name>Calendar Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="24a9d686-612a-4292-aee7-8bb73af3211d">
+          <AttributeID>Source Key</AttributeID>
+          <Name>Source Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ad2d1161-c5f9-4ee9-86dd-f00a1d084c60">
+          <AttributeID>Property Fund Key</AttributeID>
+          <Name>Property Fund Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="13827022-a66c-49f9-a1d1-2311a7b4a87a">
+      <ID>Activity Type Key</ID>
+      <Name>Activity Type Key</Name>
+      <EstimatedCount>13</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7ffe00aa-6087-49c7-a244-02619e5f61b0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b9ededb-26e1-44e0-ba87-516c657c8552">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>ActivityTypeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="2a3399c3-d655-4e33-937c-9aa519e34c94">
+      <ID>Local Currency Key</ID>
+      <Name>Local Currency Key</Name>
+      <EstimatedCount>6</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="47ab913c-8a67-48a6-8467-b55a449b89a5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c91ff9e-bcca-4747-9fc8-026ec7fbd78d">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>LocalCurrencyKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="e75d2755-61dc-459f-9737-6b61b2cffc31">
+      <ID>Reforecast Key</ID>
+      <Name>Reforecast Key</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="98ad48a1-99be-4971-9c16-8bd39b55dde4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64505fec-897e-46a6-8c4a-f9cff5f9cc4a">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>ReforecastKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="30ca87fc-4416-49a3-963f-feeee2853afe">
+      <ID>Allocation Region Key</ID>
+      <Name>Allocation Region Key</Name>
+      <EstimatedCount>11</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3be54c6-245d-4716-a189-00db4e617c03">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7bc95b48-caa5-47ac-a956-ed7d01182126">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>AllocationRegionKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe7b638b-1e62-4133-9eee-49d65c09e0fa">
+      <ID>Gl Account Key</ID>
+      <Name>Gl Account Key</Name>
+      <EstimatedCount>388</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ecb6129f-d6c1-4036-8664-f512c6a411f9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b6d386c-b3ac-4325-b766-b696d0e997fb">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>GlAccountKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="38d04ee1-780d-4994-bec2-cd9c84bd0af4">
+      <ID>Originating Region Key</ID>
+      <Name>Originating Region Key</Name>
+      <EstimatedCount>8</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="968aafee-0bc0-44b9-95ab-bbad8b3051c2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2d9b5a84-6fb0-42cc-a488-9dfde5638c59">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>OriginatingRegionKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="2dfa0e46-dce6-4109-a12d-32605c457b2f">
+      <ID>Reimbursable Key</ID>
+      <Name>Reimbursable Key</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1bcb18c1-ee79-4f95-8e09-031a8818831d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa8f0b80-eb41-45d3-a9a9-0a5bf7d3a70c">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>ReimbursableKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="75e9ea23-6a93-4418-978a-fcdafae33601">
+      <ID>Functional Department Key</ID>
+      <Name>Functional Department Key</Name>
+      <EstimatedCount>100</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba1e7c5c-25be-48c5-bf0b-af4db3868fa7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5855b5aa-ebf0-4ce3-a593-c3127c161134">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>FunctionalDepartmentKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="40b451b4-6a51-4d43-a68a-85a9b72d0c12">
+      <ID>Calendar Key</ID>
+      <Name>Calendar Key</Name>
+      <EstimatedCount>36</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="437f93b1-2b98-4d48-b929-cee95740e99e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f32d886-7184-45b3-ad10-87fa730b102e">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>CalendarKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="0fac4979-37f2-45bd-9d28-c80f2f0c2df4">
+      <ID>Source Key</ID>
+      <Name>Source Key</Name>
+      <EstimatedCount>2</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ebd71e97-6b87-47df-a84e-223da1261f16">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="767ed75c-43be-4789-ba86-741ad3971db8">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>SourceKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+    <Attribute dwd:design-time-name="d9c41bb7-eeef-4782-834a-588e8afb9fab">
+      <ID>Property Fund Key</ID>
+      <Name>Property Fund Key</Name>
+      <EstimatedCount>185</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b0f4ef8-e2c5-47bb-94fa-43b8f5fc38c2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="946a9100-fdfa-492b-bb72-0cc6f9c2a7ec">
+            <TableID>dbo_ProfitabilityBudget</TableID>
+            <ColumnID>PropertyFundKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+    </Attribute>
+  </Attributes>
+</Dimension>

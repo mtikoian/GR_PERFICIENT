@@ -1,0 +1,559 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2f830d62-bb50-40ce-927a-8be679881c6a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Profitability</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Profitability Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5ee6b9c8-afea-4829-8c9b-19b881aec891">
+          <ID>Profitability Fact</ID>
+          <Name>Profitability Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7d87e257-718e-4e16-a14c-c22892302ef4">
+            <DataSourceViewID>Gr Reporting Ver2</DataSourceViewID>
+            <TableID>dbo_ProfitabilityNetActualFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>8489940</EstimatedRows>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-06-07T10:01:30Z</CreatedTimestamp>
+          <LastSchemaUpdate>2010-06-07T10:01:30Z</LastSchemaUpdate>
+          <EstimatedRows>8489940</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Gl Account</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Gl Account Key</AttributeID>
+                  <EstimatedCount>3188</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gl Account Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gl Account Name</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Source</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Source Key</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Source Name</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Functional Department</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Functional Department Key</AttributeID>
+                  <EstimatedCount>595</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Functional Department Name</AttributeID>
+                  <EstimatedCount>22</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Functional Department Name</AttributeID>
+                  <EstimatedCount>595</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Reimbursable</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Reimbursable Key</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Reimbursable Code</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Activity Type</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Activity Type Key</AttributeID>
+                  <EstimatedCount>14</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Activity Type Code</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Property Fund</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Property Fund Key</AttributeID>
+                  <EstimatedCount>790</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Property Fund Name</AttributeID>
+                  <EstimatedCount>468</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Property Fund Type</AttributeID>
+                  <EstimatedCount>9</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Allocation Region</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Allocation Region Key</AttributeID>
+                  <EstimatedCount>31</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Region Code</AttributeID>
+                  <EstimatedCount>31</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Region Code</AttributeID>
+                  <EstimatedCount>7</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Originating Region</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Originating Region Key</AttributeID>
+                  <EstimatedCount>31</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Region Code</AttributeID>
+                  <EstimatedCount>36</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Region Code</AttributeID>
+                  <EstimatedCount>7</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Calendar</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Calendar Key</AttributeID>
+                  <EstimatedCount>5844</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Date</AttributeID>
+                  <EstimatedCount>5844</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>16</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Month Name</AttributeID>
+                  <EstimatedCount>192</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Period</AttributeID>
+                  <EstimatedCount>192</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Currency</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Currency Key</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Code</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Profitability Type</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Profitability Type Key</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Gl Account</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Source</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Functional Department</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Functional Department Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Reimbursable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Activity Type</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Property Fund</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Property Fund Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Allocation Region</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Originating Region</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Calendar</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Profitability Type</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Gl Account</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Source</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Functional Department</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Functional Department Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Reimbursable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Activity Type</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Property Fund</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Property Fund Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Allocation Region</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Originating Region</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Calendar</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Profitability Type</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Gl Account</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Source</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Functional Department</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Functional Department Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Reimbursable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Activity Type</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Property Fund</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Property Fund Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Allocation Region</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Originating Region</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Calendar</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Profitability Type</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Gl Account</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Source</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Functional Department</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Functional Department Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Reimbursable</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Activity Type</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Property Fund</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Property Fund Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Allocation Region</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Originating Region</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Calendar</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Profitability Type</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Currency Rate</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e3896dd7-71d7-47bf-883f-97e2b65412b4">
+          <ID>Fact Currency Rate</ID>
+          <Name>Fact Currency Rate</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a4993d54-d82f-4c8c-98db-8af44350d041">
+            <DataSourceViewID>Gr Reporting Ver2</DataSourceViewID>
+            <TableID>dbo_Fact_x0020_Currency_x0020_Rate</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>2555</EstimatedRows>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-06-07T10:00:24Z</CreatedTimestamp>
+          <LastSchemaUpdate>2010-06-07T10:00:24Z</LastSchemaUpdate>
+          <EstimatedRows>2555</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Currency</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Currency Key</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Code</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Calendar</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Calendar Key</AttributeID>
+                  <EstimatedCount>5844</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Date</AttributeID>
+                  <EstimatedCount>5844</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>16</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Month Name</AttributeID>
+                  <EstimatedCount>192</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Period</AttributeID>
+                  <EstimatedCount>192</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Reporting Currency</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Currency Key</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Code</AttributeID>
+                  <EstimatedCount>15</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Calendar</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Reporting Currency</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Calendar</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Reporting Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Currency Key</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Calendar</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Reporting Currency</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Currency</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Calendar</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Reporting Currency</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

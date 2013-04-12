@@ -1,0 +1,31 @@
+<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\ngoossens"
+								  GeneratedFromPackageName="ProfitabilityCube"
+								  GeneratedFromPackageID="{9FDBAD06-8A9E-496B-BCA7-D287A1F3C598}"
+								  GeneratedDate="2009/11/12 03:56:05 PM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[Gr Reporting Staging].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>Data Source=TSSQL-REPORTING-DWDEV\DEV;Initial Catalog=GrReportingStaging;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[GrReporting].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>Data Source=OBTSSQL07\DEV;Initial Catalog=GrReporting;Provider=MSOLAP.4;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[GrReporting].Properties[ServerName]"
+				   ValueType="String">
+		<ConfiguredValue>OBTSSQL07\DEV</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>
+	

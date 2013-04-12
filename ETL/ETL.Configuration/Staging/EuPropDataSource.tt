@@ -1,0 +1,18 @@
+<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="GHis" GeneratedFromPackageID="{D58CE061-9359-4E30-A622-C834F669D880}" GeneratedDate="24/07/2009 09:30:09 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[GR EU PROP].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=TSSQL-MRIDEV\MRI$DEV;Initial Catalog=EU_PROP;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Gr Reporting Staging].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=TSSQL-REPORTING-DWDEV\DEV;Initial Catalog=GrReportingStaging;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

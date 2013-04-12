@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26F43481-977A-43C4-9C50-F853B02C54DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETL.Configuration</RootNamespace>
+    <AssemblyName>ETL.Configuration</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Staging\TapasGlobalBudgetingPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TapasGlobalBudgetingPackagePath.dtsConfig</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Staging\EuCorpDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EuCorpDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\EuCorpPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EuCorpPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\EuPropDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EuPropDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\EuPropPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EuPropPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\UsCorpDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UsCorpDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\UsCorpPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UsCorpPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\UsPropDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UsPropDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\UsPropPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UsPropPackagePath.dtsConfig</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataWarehouse\DataWareHouseDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DataWareHouseDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="DataWarehouse\DataWareHousePackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DataWareHousePackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="DataWarehouse\Scripts\ExecutePackages.bat">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExecutePackages.tt</DependentUpon>
+    </None>
+    <None Include="DataWarehouse\Scripts\ExecutePackages.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ExecutePackages.bat</LastGenOutput>
+    </None>
+    <None Include="Staging\BudgetingCorpDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BudgetingCorpDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\BudgetingCorpPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BudgetingCorpPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\BudgetingPropDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BudgetingPropDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\BudgetingPropPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BudgetingPropPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\BrPropPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BrPropPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\EuCorpDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EuCorpDataSource.tt</DependentUpon>
+    </None>
+    <None Include="Staging\EuCorpPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EuCorpPackagePath.tt</DependentUpon>
+    </None>
+    <None Include="Staging\EuPropDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EuPropDataSource.tt</DependentUpon>
+    </None>
+    <None Include="Staging\EuPropPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EuPropPackagePath.tt</DependentUpon>
+    </None>
+    <None Include="Staging\GdmDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GdmDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\GdmPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GdmPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\HrDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>HrDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\HrPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>HrPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\Scripts\ExecutePackages.bat">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExecutePackages.tt</DependentUpon>
+    </None>
+    <None Include="Staging\Scripts\ExecutePackages.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ExecutePackages.bat</LastGenOutput>
+    </None>
+    <None Include="Staging\TapasGlobalBudgetingDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TapasGlobalBudgetingDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\TapasGlobalDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TapasGlobalDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\TapasGlobalPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TapasGlobalPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\UsCorpDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsCorpDataSource.tt</DependentUpon>
+    </None>
+    <None Include="Staging\UsCorpPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsCorpPackagePath.tt</DependentUpon>
+    </None>
+    <None Include="Staging\UsPropDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsPropDataSource.tt</DependentUpon>
+    </None>
+    <None Include="Staging\UsPropPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsPropPackagePath.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BusinessIntelligence\BusinessIntelligenceDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BusinessIntelligenceDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="BusinessIntelligence\BusinessIntelligencePackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BusinessIntelligencePackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="DataWarehouse\DataWareHouseDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataWareHouseDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="DataWarehouse\DataWareHousePackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataWareHousePackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\BudgetingCorpDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BudgetingCorpDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\BudgetingCorpPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BudgetingCorpPackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\BudgetingPropDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BudgetingPropDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\BudgetingPropPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BudgetingPropPackagePath.tt</DependentUpon>
+    </Content>
+    <None Include="BusinessIntelligence\BusinessIntelligenceDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BusinessIntelligenceDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="BusinessIntelligence\BusinessIntelligencePackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BusinessIntelligencePackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\BrPropDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BrPropDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\BrPropPackagePath.dtsConfig">
+      <DependentUpon>BrPropPackagePath.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\BrPropDataSource.dtsConfig">
+      <DependentUpon>BrPropDataSource.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\BrCorpDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BrCorpDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\BrCorpPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BrCorpPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\BrCorpPackagePath.dtsConfig">
+      <DependentUpon>BrCorpPackagePath.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\BrCorpDataSource.dtsConfig">
+      <DependentUpon>BrCorpDataSource.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\CnCorpDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CnCorpDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\CnCorpDataSource.dtsConfig">
+      <DependentUpon>CnCorpDataSource.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\CnCorpPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CnCorpPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\CnPropDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CnPropDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\CnPropPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CnPropPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\CnPropPackagePath.dtsConfig">
+      <DependentUpon>CnPropPackagePath.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\CnCorpPackagePath.dtsConfig">
+      <DependentUpon>CnCorpPackagePath.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\CnPropDataSource.dtsConfig">
+      <DependentUpon>CnPropDataSource.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\GACS.DataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GACS.DataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\GACS.PackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GACS.PackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\GBSDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GBSDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\GBSPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GBSPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\GdmSnapshotDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GdmSnapshotDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\GdmSnapshotPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GdmSnapshotPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\InCorpDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>InCorpDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\InCorpPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>InCorpPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\InPropDataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>InPropDataSource.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\InPropPackagePath.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>InPropPackagePath.dtsConfig</LastGenOutput>
+    </None>
+    <None Include="Staging\InPropPackagePath.dtsConfig">
+      <DependentUpon>InPropPackagePath.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\InCorpDataSource.dtsConfig">
+      <DependentUpon>InCorpDataSource.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\InCorpPackagePath.dtsConfig">
+      <DependentUpon>InCorpPackagePath.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Staging\InPropDataSource.dtsConfig">
+      <DependentUpon>InPropDataSource.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <Content Include="Staging\GACS.DataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GACS.DataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\GACS.PackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GACS.PackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\GBSDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GBSDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\GBSPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GBSPackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\GdmDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GdmDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\GdmPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GdmPackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\GdmSnapshotDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GdmSnapshotDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\GdmSnapshotPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GdmSnapshotPackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\GrmPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GdmPackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\HrDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HrDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\HrPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HrPackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\TapasGlobalBudgetingDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TapasGlobalBudgetingDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\TapasGlobalBudgetingPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TapasGlobalBudgetingPackagePath.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\TapasGlobalDataSource.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TapasGlobalDataSource.tt</DependentUpon>
+    </Content>
+    <Content Include="Staging\TapasGlobalPackagePath.dtsConfig">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TapasGlobalPackagePath.tt</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <UsingTask TaskName="ETL.Configuration.MSBuild.ExecuteT4Template" AssemblyFile="$(MSBuildProjectDirectory)\..\..\Dependencies\ETL.Configuration.MSBuild.dll" />
+  <PropertyGroup>
+    <ResGenDependsOn>
+			ExecuteT4Template;
+	</ResGenDependsOn>
+  </PropertyGroup>
+  <Target Name="ExecuteT4Template">
+    <ItemGroup>
+      <TextTransforms Include="@(None)" Condition="'%(Extension)'=='.tt'" />
+    </ItemGroup>
+    <ExecuteT4Template SourceFiles="@(TextTransforms)" DestinationDirectory="$(OutDir)" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)Staging" C:\SSIS\Config\Staging /I /Y
+xcopy "$(TargetDir)Staging\Scripts" C:\SSIS\Config\Staging\Scripts /I /Y
+xcopy "$(TargetDir)DataWarehouse" C:\SSIS\Config\DataWarehouse /I /Y
+xcopy "$(TargetDir)DataWarehouse\Scripts" C:\SSIS\Config\DataWarehouse\Scripts /I /Y
+xcopy "$(TargetDir)BusinessIntelligence" C:\SSIS\Config\BusinessIntelligence /I /Y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

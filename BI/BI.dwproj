@@ -1,0 +1,142 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>10.50.1702.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+IiQvaGVhZC9CSSIsIERBQUFBQUFBPC9Qcm9qZWN0TmFtZT4NCiAgPEF1eFBhdGg+PC9BdXhQYXRoPg0KICA8TG9jYWxQYXRoPi48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPk1TU0NDSTpNaWNyb3NvZnQgVmlzdWFsIFNvdXJjZVNhZmU8L1Byb3ZpZGVyPg0KPC9Tb3VyY2VDb250cm9sSW5mbz4=</State>
+  <Database>
+    <Name>BIver2.database</Name>
+    <FullPath>BIver2.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Profitability-GrinderActuals.cube</Name>
+      <FullPath>Profitability-GrinderActuals.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Profitability-GrinderActuals.partitions</Name>
+          <FullPath>Profitability-GrinderActuals.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Functional Department.dim</Name>
+      <FullPath>Functional Department.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Allocation Region.dim</Name>
+      <FullPath>Allocation Region.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Activity Type.dim</Name>
+      <FullPath>Activity Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Calendar.dim</Name>
+      <FullPath>Calendar.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Gl Account.dim</Name>
+      <FullPath>Gl Account.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Originating Region.dim</Name>
+      <FullPath>Originating Region.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Source.dim</Name>
+      <FullPath>Source.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reimbursable.dim</Name>
+      <FullPath>Reimbursable.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Property Fund.dim</Name>
+      <FullPath>Property Fund.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Currency.dim</Name>
+      <FullPath>Currency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporting Currency.dim</Name>
+      <FullPath>Reporting Currency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Profitability Type.dim</Name>
+      <FullPath>Profitability Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>GlAccount Category.dim</Name>
+      <FullPath>GlAccount Category.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Functional Department Gl Account Category.dim</Name>
+      <FullPath>Functional Department Gl Account Category.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Allocation Region Property Fund.dim</Name>
+      <FullPath>Allocation Region Property Fund.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Gr Reporting.ds</Name>
+      <FullPath>Gr Reporting.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Gr Reporting.dsv</Name>
+      <FullPath>Gr Reporting.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Gr Reporting Ver2</Id>
+            <Name>Gr Reporting Ver2</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=OBTSSQL10\DEV;Integrated Security=SSPI;Initial Catalog=Apr2010Rpt_GrReporting</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Gr Reporting Ver2</Id>
+            <Name>Gr Reporting Ver2</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <ReportActionServers>
+          <ConfigurationSetting>
+            <Id>ProfitabilityUnified</Id>
+            <Name>ProfitabilityUnified</Name>
+            <Value xsi:type="ConfigurationSettingsCollection">
+              <ConfigurationSetting>
+                <Id>Report Action</Id>
+                <Name>Report Action</Name>
+                <Value xsi:type="xsd:string">localhost</Value>
+              </ConfigurationSetting>
+            </Value>
+          </ConfigurationSetting>
+        </ReportActionServers>
+        <ReportActionPaths>
+          <ConfigurationSetting>
+            <Id>ProfitabilityUnified</Id>
+            <Name>ProfitabilityUnified</Name>
+            <Value xsi:type="ConfigurationSettingsCollection">
+              <ConfigurationSetting>
+                <Id>Report Action</Id>
+                <Name>Report Action</Name>
+                <Value xsi:type="xsd:string">/mdc/gacs</Value>
+              </ConfigurationSetting>
+            </Value>
+          </ConfigurationSetting>
+        </ReportActionPaths>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

@@ -1,0 +1,50 @@
+<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".bat" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#
+	string packagePath = Path.GetDirectoryName(this.Host.TemplateFile).Replace(@"\ETL\ETL.Configuration\DataWarehouse\Scripts","");
+
+	List<string> files = GetFilesRecursive(packagePath, "Master.dtsx");
+
+	foreach (string fileName in files)
+	{
+		if (fileName.ToLower().Contains("datawarehouse") && !fileName.ToLower().Contains(@"\bin\"))
+		{
+#>
+REM "C:\Program Files\Microsoft SQL Server\100\DTS\Binn\DTEXEC.exe" /FILE "<#this.Write(fileName);#>" /CHECKPOINTING OFF /REPORTING EW
+
+<#		}
+	}
+#><#+
+    List<string> GetFilesRecursive(string startPath, string filter)
+    {
+        List<string> result = new List<string>();
+        Stack<string> stack = new Stack<string>();
+
+        stack.Push(startPath);
+
+        while (stack.Count > 0)
+        {
+            string dir = stack.Pop();
+
+            try
+            {
+                result.AddRange(Directory.GetFiles(dir, filter));
+
+                foreach (string dn in Directory.GetDirectories(dir))
+                {
+                    stack.Push(dn);
+                }
+            }
+            catch
+            {
+                // IO Failure
+            }
+        }
+        return result;
+    }
+#>

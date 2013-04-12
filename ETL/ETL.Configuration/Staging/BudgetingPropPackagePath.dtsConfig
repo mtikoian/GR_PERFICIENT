@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete"
+								  GeneratedFromPackageName="Master"
+								  GeneratedFromPackageID="{18BF8A0C-E680-4CDE-9CE8-8009A4E5616A}"
+								  GeneratedDate="2009/07/29 09:04:28 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[Budget.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\Development\TSP\GR\ETL\ETL.Staging.BudgetingProp\Budget.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetAccountCategory.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\Development\TSP\GR\ETL\ETL.Staging.BudgetingProp\BudgetAccountCategory.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetGLAccount.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\Development\TSP\GR\ETL\ETL.Staging.BudgetingProp\BudgetGLAccount.dtsx</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

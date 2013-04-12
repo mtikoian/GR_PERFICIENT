@@ -1,0 +1,36 @@
+All date related to a budget gets treated as batch because of hard deletes in the source system and hence no 
+data related to a budget ever gets deleted and the following packages must be run from the master package. 
+
+Tapas Budgeting
+
+Budget.dtsx
+BudgetEmployee.dtsx
+BudgetProject.dtsx
+BudgetEmployeePayrollAllocation.dtsx
+BudgetEmployeePayrollAllocationDetail.dtsx
+BudgetEmployeeFunctionalDepartment.dtsx
+BudgetOverheadAllocation.dtsx
+BudgetOverheadAllocationDetail.dtsx
+BudgetTaxType.dtsx
+
+Corporate Budgeting
+
+GlobalReportingCorporateBudget.dtsx
+
+It also means that active functions for budget related data need to take the imported batch into account.
+
+Tapas Budgeting
+
+TapasGlobalBudgeting.BudgetActive.sql
+TapasGlobalBudgeting.BudgetEmployeeActive.sql
+TapasGlobalBudgeting.BudgetEmployeeFunctionalDepartmentActive.sql
+TapasGlobalBudgeting.BudgetEmployeePayrollAllocationActive.sql
+TapasGlobalBudgeting.BudgetEmployeePayrollAllocationDetailActive.sql
+TapasGlobalBudgeting.BudgetOverheadAllocationActive.sql
+TapasGlobalBudgeting.BudgetOverheadAllocationDetailActive.sql
+TapasGlobalBudgeting.BudgetProjectActive.sql
+TapasGlobalBudgeting.BudgetTaxTypeActive.sql
+
+Corporate Budgeting
+
+BudgetingCorp.GlobalReportingCorporateBudgetActive.sql

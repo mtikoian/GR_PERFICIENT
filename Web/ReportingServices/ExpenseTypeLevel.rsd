@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <Description />
+  <DataSet Name="ExpenseTypeLevel">
+    <Query>
+      <DataSourceReference>GrReportingOLE</DataSourceReference>
+      <CommandText>SELECT 
+	NON EMPTY 
+	{
+	FILTER(
+			CROSSJOIN(
+				{ 
+					{ [Allocation Region].[AllocaitonRegionHierarchy].[All] }, 
+					AddCalculatedMembers([Allocation Region].[AllocaitonRegionHierarchy].[Region].MEMBERS)
+				}, 
+				{ [Property Fund].[PropertyFundHierarchy].[All] }
+			), 
+			NOT ISEMPTY(([Measures].[MTD Gross Actual]))
+			 OR 
+			NOT ISEMPTY(([Measures].[MTD Gross Reforecast]))
+			 OR 
+			NOT ISEMPTY(([Measures].[MTD Gross Variance]))
+			 OR 
+			NOT ISEMPTY(([Measures].[YTD Gross Actual]))
+			 OR 
+			NOT ISEMPTY(([Measures].[YTD Gross Reforecast]))
+			 OR 
+			NOT ISEMPTY(([Measures].[YTD Gross Variance]))
+			 OR 
+			NOT ISEMPTY(([Measures].[Annual Gross Reforecast]))
+			 OR 
+			NOT ISEMPTY(([Measures].[Annual Gross Budget]))
+			 OR 
+			NOT ISEMPTY(([Measures].[Actual]))
+		)
+	}
+	DIMENSION PROPERTIES MEMBER_NAME, PARENT_UNIQUE_NAME ON COLUMNS, 
+	NON EMPTY 
+	{
+	FILTER(
+			CROSSJOIN(
+				{ 
+					{ [Gl Account Category Global].[Expense Type].[All] }, 
+					AddCalculatedMembers([Gl Account Category Global].[Expense Type].[Expense Type].MEMBERS)
+				}, 
+				FILTER(
+					CROSSJOIN(
+						{ [Gl Account Category Global].[GlAccountCategoryHierarchy].[All] }, 
+						{ [Functional Department].[FunctionalDepartmentHierarchy].[All] }
+					), 
+					NOT ISEMPTY(([Measures].[MTD Gross Actual]))
+					 OR 
+					NOT ISEMPTY(([Measures].[MTD Gross Reforecast]))
+					 OR 
+					NOT ISEMPTY(([Measures].[MTD Gross Variance]))
+					 OR 
+					NOT ISEMPTY(([Measures].[YTD Gross Actual]))
+					 OR 
+					NOT ISEMPTY(([Measures].[YTD Gross Reforecast]))
+					 OR 
+					NOT ISEMPTY(([Measures].[YTD Gross Variance]))
+					 OR 
+					NOT ISEMPTY(([Measures].[Annual Gross Reforecast]))
+					 OR 
+					NOT ISEMPTY(([Measures].[Annual Gross Budget]))
+					 OR 
+					NOT ISEMPTY(([Measures].[Actual]))
+				)
+			), 
+			NOT ISEMPTY(([Measures].[MTD Gross Actual]))
+			 OR 
+			NOT ISEMPTY(([Measures].[MTD Gross Reforecast]))
+			 OR 
+			NOT ISEMPTY(([Measures].[MTD Gross Variance]))
+			 OR 
+			NOT ISEMPTY(([Measures].[YTD Gross Actual]))
+			 OR 
+			NOT ISEMPTY(([Measures].[YTD Gross Reforecast]))
+			 OR 
+			NOT ISEMPTY(([Measures].[YTD Gross Variance]))
+			 OR 
+			NOT ISEMPTY(([Measures].[Annual Gross Reforecast]))
+			 OR 
+			NOT ISEMPTY(([Measures].[Annual Gross Budget]))
+			 OR 
+			NOT ISEMPTY(([Measures].[Actual]))
+		)
+	}
+	DIMENSION PROPERTIES MEMBER_NAME, PARENT_UNIQUE_NAME ON ROWS, 
+	{ 
+		[Measures].[MTD Gross Actual], 
+		[Measures].[MTD Gross Reforecast], 
+		[Measures].[MTD Gross Variance], 
+		[Measures].[YTD Gross Actual], 
+		[Measures].[YTD Gross Reforecast], 
+		[Measures].[YTD Gross Variance], 
+		[Measures].[Annual Gross Reforecast], 
+		[Measures].[Annual Gross Budget]
+	}
+	ON PAGES
+	FROM [ProfitabilityUnified]
+	WHERE 
+	(
+		[Calendar].[PeriodHierarchy].[Period].&amp;[2010]&amp;[3]
+	)
+CELL PROPERTIES VALUE, FORMATTED_VALUE, FORE_COLOR, BACK_COLOR</CommandText>
+      <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+    </Query>
+    <Fields>
+      <Field Name="Gl_Account_Category_Global_Expense_Type_Expense_Type_MEMBER_NAME">
+        <DataField>[Gl Account Category Global].[Expense Type].[Expense Type].[MEMBER_NAME]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Measures_MeasuresLevel">
+        <DataField>[Measures].[MeasuresLevel].[MEMBER_CAPTION]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Gl_Account_Category_Global_Expense_Type_Expense_Type_PARENT_UNIQUE_NAME">
+        <DataField>[Gl Account Category Global].[Expense Type].[Expense Type].[PARENT_UNIQUE_NAME]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Allocation_Region_AllocaitonRegionHierarchy_All_Property_Fund_PropertyFundHierarchy_All">
+        <DataField>[Allocation Region].[AllocaitonRegionHierarchy].[All].[Property Fund].[PropertyFundHierarchy].[All]</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="Allocation_Region_AllocaitonRegionHierarchy_Region__BRA2_Property_Fund_PropertyFundHierarchy_All">
+        <DataField>[Allocation Region].[AllocaitonRegionHierarchy].[Region].&amp;[BRA2].[Property Fund].[PropertyFundHierarchy].[All]</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="Allocation_Region_AllocaitonRegionHierarchy_Region__CHI2_Property_Fund_PropertyFundHierarchy_All">
+        <DataField>[Allocation Region].[AllocaitonRegionHierarchy].[Region].&amp;[CHI2].[Property Fund].[PropertyFundHierarchy].[All]</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="Allocation_Region_AllocaitonRegionHierarchy_Region__EUR2_Property_Fund_PropertyFundHierarchy_All">
+        <DataField>[Allocation Region].[AllocaitonRegionHierarchy].[Region].&amp;[EUR2].[Property Fund].[PropertyFundHierarchy].[All]</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="Allocation_Region_AllocaitonRegionHierarchy_Region__IND2_Property_Fund_PropertyFundHierarchy_All">
+        <DataField>[Allocation Region].[AllocaitonRegionHierarchy].[Region].&amp;[IND2].[Property Fund].[PropertyFundHierarchy].[All]</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="Allocation_Region_AllocaitonRegionHierarchy_Region__UNKNOWN_Property_Fund_PropertyFundHierarchy_All">
+        <DataField>[Allocation Region].[AllocaitonRegionHierarchy].[Region].&amp;[UNKNOWN].[Property Fund].[PropertyFundHierarchy].[All]</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+      <Field Name="Allocation_Region_AllocaitonRegionHierarchy_Region__USA2_Property_Fund_PropertyFundHierarchy_All">
+        <DataField>[Allocation Region].[AllocaitonRegionHierarchy].[Region].&amp;[USA2].[Property Fund].[PropertyFundHierarchy].[All]</DataField>
+        <rd:TypeName>System.Object</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

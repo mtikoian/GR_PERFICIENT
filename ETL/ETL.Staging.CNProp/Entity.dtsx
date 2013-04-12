@@ -1,0 +1,1166 @@
+<?xml version="1.0"?><DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts" DTS:ExecutableType="SSIS.Package.2">
+<DTS:Property DTS:Name="PackageFormatVersion">3</DTS:Property>
+<DTS:Property DTS:Name="VersionComments"></DTS:Property>
+<DTS:Property DTS:Name="CreatorName">OPENBOX\gcloete</DTS:Property>
+<DTS:Property DTS:Name="CreatorComputerName">OB02</DTS:Property>
+<DTS:Property DTS:Name="CreationDate" DTS:DataType="7">7/21/2009 3:07:19 PM</DTS:Property>
+<DTS:Property DTS:Name="PackageType">5</DTS:Property>
+<DTS:Property DTS:Name="ProtectionLevel">1</DTS:Property>
+<DTS:Property DTS:Name="MaxConcurrentExecutables">-1</DTS:Property>
+<DTS:Property DTS:Name="PackagePriorityClass">0</DTS:Property>
+<DTS:Property DTS:Name="VersionMajor">1</DTS:Property>
+<DTS:Property DTS:Name="VersionMinor">0</DTS:Property>
+<DTS:Property DTS:Name="VersionBuild">81</DTS:Property>
+<DTS:Property DTS:Name="VersionGUID">{F7295E23-EE62-4578-B794-D283BE25A13B}</DTS:Property>
+<DTS:Property DTS:Name="EnableConfig">-1</DTS:Property>
+<DTS:Property DTS:Name="CheckpointFileName"></DTS:Property>
+<DTS:Property DTS:Name="SaveCheckpoints">0</DTS:Property>
+<DTS:Property DTS:Name="CheckpointUsage">0</DTS:Property>
+<DTS:Property DTS:Name="SuppressConfigurationWarnings">0</DTS:Property>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">GR CN PROP</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{B502EFEC-60DB-4AFF-AE86-AA498F282E5B}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="Retain">0</DTS:Property>
+<DTS:Property DTS:Name="ConnectionString">Data Source=TSSQL-MRIDEV\MRI$DEV;Initial Catalog=CN_PROP;Provider=SQLNCLI10.1;Integrated Security=SSPI;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:ConnectionManager>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">Gr Reporting Staging</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{2C3EDD59-737C-4532-9C11-016ABB6650E1}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">OLEDB</DTS:Property><DTS:ObjectData><DTS:ConnectionManager>
+<DTS:Property DTS:Name="Retain">0</DTS:Property>
+<DTS:Property DTS:Name="ConnectionString">Data Source=TSSQL-REPORTING-DWDEV\DEV;Initial Catalog=GrReportingStaging;Provider=SQLNCLI10.1;Integrated Security=SSPI;</DTS:Property></DTS:ConnectionManager></DTS:ObjectData></DTS:ConnectionManager>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">1</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">C:\SSIS\Config\Staging\CnPropDataSource.dtsConfig</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable"></DTS:Property>
+<DTS:Property DTS:Name="ObjectName">DataSource</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{492B429A-B0A7-48E3-8779-F7DECAA088D4}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">7</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">"Gr Reporting Staging";"[dbo].[SSISConfigurations]";"ActualImportEndDate";</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable"></DTS:Property>
+<DTS:Property DTS:Name="ObjectName">ActualImportEndDate</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{86307618-FC7B-4FAC-B728-A88170221C6B}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">7</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">"Gr Reporting Staging";"[dbo].[SSISConfigurations]";"ActualImportStartDate";</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable"></DTS:Property>
+<DTS:Property DTS:Name="ObjectName">ActualImportStartDate</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{8FA38850-8B94-435C-BEDB-EB9056D9AAC4}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Configuration>
+<DTS:Property DTS:Name="ConfigurationType">0</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationString">BatchId</DTS:Property>
+<DTS:Property DTS:Name="ConfigurationVariable">\Package.Variables[User::BatchId].Properties[Value]</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">BatchId</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{EC9FDD02-BCE9-4BB8-A873-044F9E206B2D}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Configuration>
+<DTS:Property DTS:Name="LastModifiedProductVersion">10.50.1600.1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">7177</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">6789</DTS:Property><DTS:VariableValue DTS:DataType="7">12/31/2010</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">ActualImportEndDate</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{E6C60FDE-BDF1-434C-8328-1A7B5A3FED8C}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">6789</DTS:Property><DTS:VariableValue DTS:DataType="7">1/1/1900</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">ActualImportStartDate</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{472BDEBB-C224-468D-8236-E29CFEE44371}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:Variable>
+<DTS:Property DTS:Name="Expression"></DTS:Property>
+<DTS:Property DTS:Name="EvaluateAsExpression">0</DTS:Property>
+<DTS:Property DTS:Name="Namespace">User</DTS:Property>
+<DTS:Property DTS:Name="ReadOnly">0</DTS:Property>
+<DTS:Property DTS:Name="RaiseChangedEvent">0</DTS:Property>
+<DTS:Property DTS:Name="IncludeInDebugDump">6789</DTS:Property><DTS:VariableValue DTS:DataType="3">0</DTS:VariableValue>
+<DTS:Property DTS:Name="ObjectName">BatchId</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C9FA344C-C6B6-44EC-AB59-3E3EB21A0F72}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:Variable>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Executable DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" DTS:ThreadHint="0">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Current Data Cleanup</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{4F134CB5-4525-48FA-AA5A-7ED18917257C}</DTS:Property>
+<DTS:Property DTS:Name="Description">Clean Data for Current ImportDateRange</DTS:Property>
+<DTS:Property DTS:Name="CreationName">Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><SQLTask:SqlTaskData SQLTask:Connection="{2C3EDD59-737C-4532-9C11-016ABB6650E1}" SQLTask:TimeOut="0" SQLTask:IsStoredProc="False" SQLTask:BypassPrepare="True" SQLTask:SqlStmtSourceType="DirectInput" SQLTask:SqlStatementSource="Delete From CNProp.ENTITY Where LASTDATE BETWEEN ISNULL(?,LASTDATE) AND ISNULL(?,LASTDATE)" SQLTask:CodePage="1252" SQLTask:ResultType="ResultSetType_None" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask"><SQLTask:ParameterBinding SQLTask:ParameterName="@ImportStartDate" SQLTask:DtsVariableName="User::ActualImportStartDate" SQLTask:ParameterDirection="Input" SQLTask:DataType="7" SQLTask:ParameterSize="-1"/><SQLTask:ParameterBinding SQLTask:ParameterName="@ImportEndDate" SQLTask:DtsVariableName="User::ActualImportEndDate" SQLTask:ParameterDirection="Input" SQLTask:DataType="7" SQLTask:ParameterSize="-1"/></SQLTask:SqlTaskData></DTS:ObjectData></DTS:Executable>
+<DTS:Executable DTS:ExecutableType="SSIS.Pipeline.2">
+<DTS:Property DTS:Name="ExecutionLocation">0</DTS:Property>
+<DTS:Property DTS:Name="ExecutionAddress"></DTS:Property>
+<DTS:Property DTS:Name="TaskContact">Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server v10; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</DTS:Property>
+<DTS:Property DTS:Name="ForceExecValue">0</DTS:Property>
+<DTS:Property DTS:Name="ExecValue" DTS:DataType="3">0</DTS:Property>
+<DTS:Property DTS:Name="ForceExecutionResult">-1</DTS:Property>
+<DTS:Property DTS:Name="Disabled">0</DTS:Property>
+<DTS:Property DTS:Name="FailPackageOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="FailParentOnFailure">0</DTS:Property>
+<DTS:Property DTS:Name="MaxErrorCount">1</DTS:Property>
+<DTS:Property DTS:Name="ISOLevel">1048576</DTS:Property>
+<DTS:Property DTS:Name="LocaleID">-1</DTS:Property>
+<DTS:Property DTS:Name="TransactionOption">1</DTS:Property>
+<DTS:Property DTS:Name="DelayValidation">0</DTS:Property>
+<DTS:LoggingOptions>
+<DTS:Property DTS:Name="LoggingMode">0</DTS:Property>
+<DTS:Property DTS:Name="FilterKind">1</DTS:Property>
+<DTS:Property DTS:Name="EventFilter" DTS:DataType="8"></DTS:Property></DTS:LoggingOptions>
+<DTS:Property DTS:Name="ObjectName">Data Flow Task</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{F023FBC2-670B-42B9-B5CE-3060EE20CD87}</DTS:Property>
+<DTS:Property DTS:Name="Description">Data Flow Task</DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Pipeline.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property><DTS:ObjectData><pipeline id="0" name="pipelineXml" description="pipelineXml" defaultBufferMaxRows="10000" engineThreads="10" defaultBufferSize="10485760" BLOBTempStoragePath="" bufferTempStoragePath="" runInOptimizedMode="true">
+<components>
+<component id="671" name="Get Source Entity Data" componentClassID="{BCEFE59B-6819-47F7-A125-63753B33ABB7}" description="OLE DB Source" localeId="-1" usesDispositions="true" validateExternalMetadata="True" version="7" pipelineVersion="0" contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7">
+<properties>
+<property id="672" name="CommandTimeout" dataType="System.Int32" state="default" isArray="false" description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">0</property>
+<property id="673" name="OpenRowset" dataType="System.String" state="default" isArray="false" description="Specifies the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="674" name="OpenRowsetVariable" dataType="System.String" state="default" isArray="false" description="Specifies the variable that contains the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="675" name="SqlCommand" dataType="System.String" state="default" isArray="false" description="The SQL command to be executed." typeConverter="" UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" containsID="false" expressionType="None">Select * From (
+SELECT [ENTITYID]
+      ,[NAME]
+      ,[ADDR1]
+      ,[ADDR2]
+      ,[ADDR3]
+      ,[STATE]
+      ,[CITY]
+      ,[ZIPCODE]
+      ,[PHONE]
+      ,[FEET]
+      ,[UNITS]
+      ,ISNULL([LASTDATE], '1900-01-01') LASTDATE
+      ,[USERID]
+      ,[LEDGCODE]
+      ,[CLOSEDAY]
+      ,[YEAREND]
+      ,[CURPED]
+      ,[MAXOPEN]
+      ,[BASIS]
+      ,[PROJID]
+      ,[INTRACCT]
+      ,[GLPURGE]
+      ,[APACCTNO]
+      ,[OPENBAL]
+      ,[INVCSTAT]
+      ,[SUMDET]
+      ,[SUMCASH]
+      ,[CASHTYPE]
+      ,[APPURGE]
+      ,[M_1099DATE]
+      ,[VATREG]
+      ,[ATAXACCT]
+      ,[ATAXCASH]
+      ,[VENDPPED]
+      ,[PAYENTRY]
+      ,[TAXEXEMP]
+      ,[SHIPADR1]
+      ,[SHIPADR2]
+      ,[SHIPADR3]
+      ,[SHIPCITY]
+      ,[SHIPST]
+      ,[SHIPZIP]
+      ,[BILLADR1]
+      ,[BILLADR2]
+      ,[BILLADR3]
+      ,[BILLCITY]
+      ,[BILLST]
+      ,[BILLZIP]
+      ,[ACCTNUM]
+      ,[APPLIMIT]
+      ,[STATEID]
+      ,[PROPTYPE]
+      ,[PROPSUBTYPE]
+      ,[ACQUIRED]
+      ,[DISPOSED]
+      ,[INVESTFLAG]
+      ,[CLASSID]
+      ,[INVTYPE]
+      ,[LIFECODE]
+      ,[LOCAID]
+      ,[GROSSVALUE]
+      ,[NETVALUE]
+      ,[INCRET]
+      ,[CAPRET]
+      ,[TOTRET]
+      ,[JEDESCID]
+      ,[OPTED]
+      ,[CURRCODE]
+      ,[APREALEXCHG]
+      ,[APUNREEXCHG]
+      ,[CROSSCURYN]
+      ,[CMREALACCT]
+      ,[CMUNREACCT]
+      ,[CMDEPGLACCT]
+      ,[RMTACCTNO]
+      ,[RMTCASHTYPE]
+      ,[RMTOTHRFEE]
+      ,[TOGFEES]
+      ,[MINBAL]
+      ,[HELDFUNDS]
+      ,[BADTAXACCT]
+      ,[BADTAXCSHTYPE]
+      ,[FIDTAXACCT]
+      ,[FIDTAXCSHTYPE]
+      ,[TOGACCTNUM]
+      ,[TOGCASHTYPE]
+      ,[TOGVENDID]
+      ,[OTRACCTNUM]
+      ,[OTRCASHTYPE]
+      ,[OTRVENDID]
+      ,[ENTTYPE]
+      ,[PERIODCNT]
+      ,[RECLAIMPCT]
+      ,[ALTTAXID]
+      ,[TAXSUSPENSE]
+      ,[CMNBANKING]
+      ,[ARREALACCT]
+      ,[ARUNREACCT]
+      ,[RETAINACCT]
+      ,[BILLFEES]
+      ,[FUNDBALACCT]
+      ,[TAXRPTFREQ]
+      ,[OWNERID]
+      ,[COUNTRY]
+      ,[APTAXSUSPENSEACCOUNTNUMBER]
+      ,[STLINEBASIS]
+      ,[MATRIXID]
+      ,[ENTMATRIXOPTION]
+      ,[NCREIFACQUIREDFIRSTDAYQTR]
+      ,[NCREIFDISPOSEDLASTDAYQTR]
+      ,[CHECKLOCATIONID]
+--      ,[POSCSHTYP]
+--      ,[MAXAPOPEN]
+--      ,[APREALLOSS]
+--      ,[APUNREALLOSS]
+--      ,[ARREALLOSS]
+--      ,[ARUNREALLOSS]
+--      ,[CMREALLOSS]
+--      ,[CMUNREALLOSS]
+--      ,[CMDEPLOSS]
+--     ,[VENDORWITHHOLDINGACCT]
+  FROM [dbo].[ENTITY]
+) t1
+WHERE LASTDATE BETWEEN ISNULL(?, LASTDATE) AND ISNULL(?,LASTDATE)</property>
+<property id="676" name="SqlCommandVariable" dataType="System.String" state="default" isArray="false" description="The variable that contains the SQL command to be executed." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="677" name="DefaultCodePage" dataType="System.Int32" state="default" isArray="false" description="Specifies the column code page to use when code page information is unavailable from the data source." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">1252</property>
+<property id="678" name="AlwaysUseDefaultCodePage" dataType="System.Boolean" state="default" isArray="false" description="Forces the use of the DefaultCodePage property value when describing character data." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="679" name="AccessMode" dataType="System.Int32" state="default" isArray="false" description="Specifies the mode used to access the database." typeConverter="AccessMode" UITypeEditor="" containsID="false" expressionType="None">2</property>
+<property id="685" name="ParameterMapping" dataType="System.String" state="default" isArray="false" description="The mappings between the parameters in the SQL command and variables." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">"Parameter0",{472BDEBB-C224-468D-8236-E29CFEE44371};"Parameter1",{E6C60FDE-BDF1-434C-8328-1A7B5A3FED8C};</property></properties>
+<connections>
+<connection id="680" name="OleDbConnection" description="The OLE DB runtime connection used to access the database." connectionManagerID="{B502EFEC-60DB-4AFF-AE86-AA498F282E5B}"/></connections>
+<outputs>
+<output id="681" name="OLE DB Source Output" description="" exclusionGroup="0" synchronousInputId="0" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="false" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="704" name="ENTITYID" description="" lineageId="704" precision="0" scale="0" length="7" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="703" mappedColumnId="0"/>
+<outputColumn id="707" name="NAME" description="" lineageId="707" precision="0" scale="0" length="30" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="706" mappedColumnId="0"/>
+<outputColumn id="710" name="ADDR1" description="" lineageId="710" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="709" mappedColumnId="0"/>
+<outputColumn id="713" name="ADDR2" description="" lineageId="713" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="712" mappedColumnId="0"/>
+<outputColumn id="716" name="ADDR3" description="" lineageId="716" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="715" mappedColumnId="0"/>
+<outputColumn id="719" name="STATE" description="" lineageId="719" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="718" mappedColumnId="0"/>
+<outputColumn id="722" name="CITY" description="" lineageId="722" precision="0" scale="0" length="17" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="721" mappedColumnId="0"/>
+<outputColumn id="725" name="ZIPCODE" description="" lineageId="725" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="724" mappedColumnId="0"/>
+<outputColumn id="728" name="PHONE" description="" lineageId="728" precision="0" scale="0" length="15" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="727" mappedColumnId="0"/>
+<outputColumn id="731" name="FEET" description="" lineageId="731" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="730" mappedColumnId="0"/>
+<outputColumn id="734" name="UNITS" description="" lineageId="734" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="733" mappedColumnId="0"/>
+<outputColumn id="737" name="LASTDATE" description="" lineageId="737" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="736" mappedColumnId="0"/>
+<outputColumn id="740" name="USERID" description="" lineageId="740" precision="0" scale="0" length="20" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="739" mappedColumnId="0"/>
+<outputColumn id="743" name="LEDGCODE" description="" lineageId="743" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="742" mappedColumnId="0"/>
+<outputColumn id="746" name="CLOSEDAY" description="" lineageId="746" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="745" mappedColumnId="0"/>
+<outputColumn id="749" name="YEAREND" description="" lineageId="749" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="748" mappedColumnId="0"/>
+<outputColumn id="752" name="CURPED" description="" lineageId="752" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="751" mappedColumnId="0"/>
+<outputColumn id="755" name="MAXOPEN" description="" lineageId="755" precision="0" scale="0" length="0" dataType="i2" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="754" mappedColumnId="0"/>
+<outputColumn id="758" name="BASIS" description="" lineageId="758" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="757" mappedColumnId="0"/>
+<outputColumn id="761" name="PROJID" description="" lineageId="761" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="760" mappedColumnId="0"/>
+<outputColumn id="764" name="INTRACCT" description="" lineageId="764" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="763" mappedColumnId="0"/>
+<outputColumn id="767" name="GLPURGE" description="" lineageId="767" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="766" mappedColumnId="0"/>
+<outputColumn id="770" name="APACCTNO" description="" lineageId="770" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="769" mappedColumnId="0"/>
+<outputColumn id="773" name="OPENBAL" description="" lineageId="773" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="772" mappedColumnId="0"/>
+<outputColumn id="776" name="INVCSTAT" description="" lineageId="776" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="775" mappedColumnId="0"/>
+<outputColumn id="779" name="SUMDET" description="" lineageId="779" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="778" mappedColumnId="0"/>
+<outputColumn id="782" name="SUMCASH" description="" lineageId="782" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="781" mappedColumnId="0"/>
+<outputColumn id="785" name="CASHTYPE" description="" lineageId="785" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="784" mappedColumnId="0"/>
+<outputColumn id="788" name="APPURGE" description="" lineageId="788" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="787" mappedColumnId="0"/>
+<outputColumn id="791" name="M_1099DATE" description="" lineageId="791" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="790" mappedColumnId="0"/>
+<outputColumn id="794" name="VATREG" description="" lineageId="794" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="793" mappedColumnId="0"/>
+<outputColumn id="797" name="ATAXACCT" description="" lineageId="797" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="796" mappedColumnId="0"/>
+<outputColumn id="800" name="ATAXCASH" description="" lineageId="800" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="799" mappedColumnId="0"/>
+<outputColumn id="803" name="VENDPPED" description="" lineageId="803" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="802" mappedColumnId="0"/>
+<outputColumn id="806" name="PAYENTRY" description="" lineageId="806" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="805" mappedColumnId="0"/>
+<outputColumn id="809" name="TAXEXEMP" description="" lineageId="809" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="808" mappedColumnId="0"/>
+<outputColumn id="812" name="SHIPADR1" description="" lineageId="812" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="811" mappedColumnId="0"/>
+<outputColumn id="815" name="SHIPADR2" description="" lineageId="815" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="814" mappedColumnId="0"/>
+<outputColumn id="818" name="SHIPADR3" description="" lineageId="818" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="817" mappedColumnId="0"/>
+<outputColumn id="821" name="SHIPCITY" description="" lineageId="821" precision="0" scale="0" length="17" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="820" mappedColumnId="0"/>
+<outputColumn id="824" name="SHIPST" description="" lineageId="824" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="823" mappedColumnId="0"/>
+<outputColumn id="827" name="SHIPZIP" description="" lineageId="827" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="826" mappedColumnId="0"/>
+<outputColumn id="830" name="BILLADR1" description="" lineageId="830" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="829" mappedColumnId="0"/>
+<outputColumn id="833" name="BILLADR2" description="" lineageId="833" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="832" mappedColumnId="0"/>
+<outputColumn id="836" name="BILLADR3" description="" lineageId="836" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="835" mappedColumnId="0"/>
+<outputColumn id="839" name="BILLCITY" description="" lineageId="839" precision="0" scale="0" length="17" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="838" mappedColumnId="0"/>
+<outputColumn id="842" name="BILLST" description="" lineageId="842" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="841" mappedColumnId="0"/>
+<outputColumn id="845" name="BILLZIP" description="" lineageId="845" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="844" mappedColumnId="0"/>
+<outputColumn id="848" name="ACCTNUM" description="" lineageId="848" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="847" mappedColumnId="0"/>
+<outputColumn id="851" name="APPLIMIT" description="" lineageId="851" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="850" mappedColumnId="0"/>
+<outputColumn id="854" name="STATEID" description="" lineageId="854" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="853" mappedColumnId="0"/>
+<outputColumn id="857" name="PROPTYPE" description="" lineageId="857" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="856" mappedColumnId="0"/>
+<outputColumn id="860" name="PROPSUBTYPE" description="" lineageId="860" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="859" mappedColumnId="0"/>
+<outputColumn id="863" name="ACQUIRED" description="" lineageId="863" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="862" mappedColumnId="0"/>
+<outputColumn id="866" name="DISPOSED" description="" lineageId="866" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="865" mappedColumnId="0"/>
+<outputColumn id="869" name="INVESTFLAG" description="" lineageId="869" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="868" mappedColumnId="0"/>
+<outputColumn id="872" name="CLASSID" description="" lineageId="872" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="871" mappedColumnId="0"/>
+<outputColumn id="875" name="INVTYPE" description="" lineageId="875" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="874" mappedColumnId="0"/>
+<outputColumn id="878" name="LIFECODE" description="" lineageId="878" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="877" mappedColumnId="0"/>
+<outputColumn id="881" name="LOCAID" description="" lineageId="881" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="880" mappedColumnId="0"/>
+<outputColumn id="884" name="GROSSVALUE" description="" lineageId="884" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="883" mappedColumnId="0"/>
+<outputColumn id="887" name="NETVALUE" description="" lineageId="887" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="886" mappedColumnId="0"/>
+<outputColumn id="890" name="INCRET" description="" lineageId="890" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="889" mappedColumnId="0"/>
+<outputColumn id="893" name="CAPRET" description="" lineageId="893" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="892" mappedColumnId="0"/>
+<outputColumn id="896" name="TOTRET" description="" lineageId="896" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="895" mappedColumnId="0"/>
+<outputColumn id="899" name="JEDESCID" description="" lineageId="899" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="898" mappedColumnId="0"/>
+<outputColumn id="902" name="OPTED" description="" lineageId="902" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="901" mappedColumnId="0"/>
+<outputColumn id="905" name="CURRCODE" description="" lineageId="905" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="904" mappedColumnId="0"/>
+<outputColumn id="908" name="APREALEXCHG" description="" lineageId="908" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="907" mappedColumnId="0"/>
+<outputColumn id="911" name="APUNREEXCHG" description="" lineageId="911" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="910" mappedColumnId="0"/>
+<outputColumn id="914" name="CROSSCURYN" description="" lineageId="914" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="913" mappedColumnId="0"/>
+<outputColumn id="917" name="CMREALACCT" description="" lineageId="917" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="916" mappedColumnId="0"/>
+<outputColumn id="920" name="CMUNREACCT" description="" lineageId="920" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="919" mappedColumnId="0"/>
+<outputColumn id="923" name="CMDEPGLACCT" description="" lineageId="923" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="922" mappedColumnId="0"/>
+<outputColumn id="926" name="RMTACCTNO" description="" lineageId="926" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="925" mappedColumnId="0"/>
+<outputColumn id="929" name="RMTCASHTYPE" description="" lineageId="929" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="928" mappedColumnId="0"/>
+<outputColumn id="932" name="RMTOTHRFEE" description="" lineageId="932" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="931" mappedColumnId="0"/>
+<outputColumn id="935" name="TOGFEES" description="" lineageId="935" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="934" mappedColumnId="0"/>
+<outputColumn id="938" name="MINBAL" description="" lineageId="938" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="937" mappedColumnId="0"/>
+<outputColumn id="941" name="HELDFUNDS" description="" lineageId="941" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="940" mappedColumnId="0"/>
+<outputColumn id="944" name="BADTAXACCT" description="" lineageId="944" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="943" mappedColumnId="0"/>
+<outputColumn id="947" name="BADTAXCSHTYPE" description="" lineageId="947" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="946" mappedColumnId="0"/>
+<outputColumn id="950" name="FIDTAXACCT" description="" lineageId="950" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="949" mappedColumnId="0"/>
+<outputColumn id="953" name="FIDTAXCSHTYPE" description="" lineageId="953" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="952" mappedColumnId="0"/>
+<outputColumn id="956" name="TOGACCTNUM" description="" lineageId="956" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="955" mappedColumnId="0"/>
+<outputColumn id="959" name="TOGCASHTYPE" description="" lineageId="959" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="958" mappedColumnId="0"/>
+<outputColumn id="962" name="TOGVENDID" description="" lineageId="962" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="961" mappedColumnId="0"/>
+<outputColumn id="965" name="OTRACCTNUM" description="" lineageId="965" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="964" mappedColumnId="0"/>
+<outputColumn id="968" name="OTRCASHTYPE" description="" lineageId="968" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="967" mappedColumnId="0"/>
+<outputColumn id="971" name="OTRVENDID" description="" lineageId="971" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="970" mappedColumnId="0"/>
+<outputColumn id="974" name="ENTTYPE" description="" lineageId="974" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="973" mappedColumnId="0"/>
+<outputColumn id="977" name="PERIODCNT" description="" lineageId="977" precision="0" scale="0" length="0" dataType="i2" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="976" mappedColumnId="0"/>
+<outputColumn id="980" name="RECLAIMPCT" description="" lineageId="980" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="979" mappedColumnId="0"/>
+<outputColumn id="983" name="ALTTAXID" description="" lineageId="983" precision="0" scale="0" length="15" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="982" mappedColumnId="0"/>
+<outputColumn id="986" name="TAXSUSPENSE" description="" lineageId="986" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="985" mappedColumnId="0"/>
+<outputColumn id="989" name="CMNBANKING" description="" lineageId="989" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="988" mappedColumnId="0"/>
+<outputColumn id="992" name="ARREALACCT" description="" lineageId="992" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="991" mappedColumnId="0"/>
+<outputColumn id="995" name="ARUNREACCT" description="" lineageId="995" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="994" mappedColumnId="0"/>
+<outputColumn id="998" name="RETAINACCT" description="" lineageId="998" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="997" mappedColumnId="0"/>
+<outputColumn id="1001" name="BILLFEES" description="" lineageId="1001" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1000" mappedColumnId="0"/>
+<outputColumn id="1004" name="FUNDBALACCT" description="" lineageId="1004" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1003" mappedColumnId="0"/>
+<outputColumn id="1007" name="TAXRPTFREQ" description="" lineageId="1007" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1006" mappedColumnId="0"/>
+<outputColumn id="1010" name="OWNERID" description="" lineageId="1010" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1009" mappedColumnId="0"/>
+<outputColumn id="1013" name="COUNTRY" description="" lineageId="1013" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1012" mappedColumnId="0"/>
+<outputColumn id="1016" name="APTAXSUSPENSEACCOUNTNUMBER" description="" lineageId="1016" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1015" mappedColumnId="0"/>
+<outputColumn id="1019" name="STLINEBASIS" description="" lineageId="1019" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1018" mappedColumnId="0"/>
+<outputColumn id="1022" name="MATRIXID" description="" lineageId="1022" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1021" mappedColumnId="0"/>
+<outputColumn id="1025" name="ENTMATRIXOPTION" description="" lineageId="1025" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1024" mappedColumnId="0"/>
+<outputColumn id="1028" name="NCREIFACQUIREDFIRSTDAYQTR" description="" lineageId="1028" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1027" mappedColumnId="0"/>
+<outputColumn id="1031" name="NCREIFDISPOSEDLASTDAYQTR" description="" lineageId="1031" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1030" mappedColumnId="0"/>
+<outputColumn id="1034" name="CHECKLOCATIONID" description="" lineageId="1034" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Conversion" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="1033" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="True">
+<externalMetadataColumn id="703" name="ENTITYID" description="" precision="0" scale="0" length="7" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="706" name="NAME" description="" precision="0" scale="0" length="30" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="709" name="ADDR1" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="712" name="ADDR2" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="715" name="ADDR3" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="718" name="STATE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="721" name="CITY" description="" precision="0" scale="0" length="17" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="724" name="ZIPCODE" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="727" name="PHONE" description="" precision="0" scale="0" length="15" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="730" name="FEET" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="733" name="UNITS" description="" precision="0" scale="0" length="0" dataType="i4" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="736" name="LASTDATE" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="739" name="USERID" description="" precision="0" scale="0" length="20" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="742" name="LEDGCODE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="745" name="CLOSEDAY" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="748" name="YEAREND" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="751" name="CURPED" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="754" name="MAXOPEN" description="" precision="0" scale="0" length="0" dataType="i2" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="757" name="BASIS" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="760" name="PROJID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="763" name="INTRACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="766" name="GLPURGE" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="769" name="APACCTNO" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="772" name="OPENBAL" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="775" name="INVCSTAT" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="778" name="SUMDET" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="781" name="SUMCASH" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="784" name="CASHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="787" name="APPURGE" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="790" name="M_1099DATE" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="793" name="VATREG" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="796" name="ATAXACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="799" name="ATAXCASH" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="802" name="VENDPPED" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="805" name="PAYENTRY" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="808" name="TAXEXEMP" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="811" name="SHIPADR1" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="814" name="SHIPADR2" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="817" name="SHIPADR3" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="820" name="SHIPCITY" description="" precision="0" scale="0" length="17" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="823" name="SHIPST" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="826" name="SHIPZIP" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="829" name="BILLADR1" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="832" name="BILLADR2" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="835" name="BILLADR3" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="838" name="BILLCITY" description="" precision="0" scale="0" length="17" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="841" name="BILLST" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="844" name="BILLZIP" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="847" name="ACCTNUM" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="850" name="APPLIMIT" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="853" name="STATEID" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="856" name="PROPTYPE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="859" name="PROPSUBTYPE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="862" name="ACQUIRED" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="865" name="DISPOSED" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="868" name="INVESTFLAG" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="871" name="CLASSID" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="874" name="INVTYPE" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="877" name="LIFECODE" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="880" name="LOCAID" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="883" name="GROSSVALUE" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="886" name="NETVALUE" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="889" name="INCRET" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="892" name="CAPRET" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="895" name="TOTRET" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="898" name="JEDESCID" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="901" name="OPTED" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="904" name="CURRCODE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="907" name="APREALEXCHG" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="910" name="APUNREEXCHG" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="913" name="CROSSCURYN" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="916" name="CMREALACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="919" name="CMUNREACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="922" name="CMDEPGLACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="925" name="RMTACCTNO" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="928" name="RMTCASHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="931" name="RMTOTHRFEE" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="934" name="TOGFEES" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="937" name="MINBAL" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="940" name="HELDFUNDS" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="943" name="BADTAXACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="946" name="BADTAXCSHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="949" name="FIDTAXACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="952" name="FIDTAXCSHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="955" name="TOGACCTNUM" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="958" name="TOGCASHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="961" name="TOGVENDID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="964" name="OTRACCTNUM" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="967" name="OTRCASHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="970" name="OTRVENDID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="973" name="ENTTYPE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="976" name="PERIODCNT" description="" precision="0" scale="0" length="0" dataType="i2" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="979" name="RECLAIMPCT" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="982" name="ALTTAXID" description="" precision="0" scale="0" length="15" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="985" name="TAXSUSPENSE" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="988" name="CMNBANKING" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="991" name="ARREALACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="994" name="ARUNREACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="997" name="RETAINACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1000" name="BILLFEES" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1003" name="FUNDBALACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1006" name="TAXRPTFREQ" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1009" name="OWNERID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1012" name="COUNTRY" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1015" name="APTAXSUSPENSEACCOUNTNUMBER" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1018" name="STLINEBASIS" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1021" name="MATRIXID" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1024" name="ENTMATRIXOPTION" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1027" name="NCREIFACQUIREDFIRSTDAYQTR" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1030" name="NCREIFDISPOSEDLASTDAYQTR" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1033" name="CHECKLOCATIONID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/></externalMetadataColumns></output>
+<output id="682" name="OLE DB Source Error Output" description="" exclusionGroup="0" synchronousInputId="0" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="true" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="705" name="ENTITYID" description="" lineageId="705" precision="0" scale="0" length="7" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="708" name="NAME" description="" lineageId="708" precision="0" scale="0" length="30" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="711" name="ADDR1" description="" lineageId="711" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="714" name="ADDR2" description="" lineageId="714" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="717" name="ADDR3" description="" lineageId="717" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="720" name="STATE" description="" lineageId="720" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="723" name="CITY" description="" lineageId="723" precision="0" scale="0" length="17" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="726" name="ZIPCODE" description="" lineageId="726" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="729" name="PHONE" description="" lineageId="729" precision="0" scale="0" length="15" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="732" name="FEET" description="" lineageId="732" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="735" name="UNITS" description="" lineageId="735" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="738" name="LASTDATE" description="" lineageId="738" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="741" name="USERID" description="" lineageId="741" precision="0" scale="0" length="20" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="744" name="LEDGCODE" description="" lineageId="744" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="747" name="CLOSEDAY" description="" lineageId="747" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="750" name="YEAREND" description="" lineageId="750" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="753" name="CURPED" description="" lineageId="753" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="756" name="MAXOPEN" description="" lineageId="756" precision="0" scale="0" length="0" dataType="i2" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="759" name="BASIS" description="" lineageId="759" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="762" name="PROJID" description="" lineageId="762" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="765" name="INTRACCT" description="" lineageId="765" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="768" name="GLPURGE" description="" lineageId="768" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="771" name="APACCTNO" description="" lineageId="771" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="774" name="OPENBAL" description="" lineageId="774" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="777" name="INVCSTAT" description="" lineageId="777" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="780" name="SUMDET" description="" lineageId="780" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="783" name="SUMCASH" description="" lineageId="783" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="786" name="CASHTYPE" description="" lineageId="786" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="789" name="APPURGE" description="" lineageId="789" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="792" name="M_1099DATE" description="" lineageId="792" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="795" name="VATREG" description="" lineageId="795" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="798" name="ATAXACCT" description="" lineageId="798" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="801" name="ATAXCASH" description="" lineageId="801" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="804" name="VENDPPED" description="" lineageId="804" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="807" name="PAYENTRY" description="" lineageId="807" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="810" name="TAXEXEMP" description="" lineageId="810" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="813" name="SHIPADR1" description="" lineageId="813" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="816" name="SHIPADR2" description="" lineageId="816" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="819" name="SHIPADR3" description="" lineageId="819" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="822" name="SHIPCITY" description="" lineageId="822" precision="0" scale="0" length="17" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="825" name="SHIPST" description="" lineageId="825" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="828" name="SHIPZIP" description="" lineageId="828" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="831" name="BILLADR1" description="" lineageId="831" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="834" name="BILLADR2" description="" lineageId="834" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="837" name="BILLADR3" description="" lineageId="837" precision="0" scale="0" length="35" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="840" name="BILLCITY" description="" lineageId="840" precision="0" scale="0" length="17" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="843" name="BILLST" description="" lineageId="843" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="846" name="BILLZIP" description="" lineageId="846" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="849" name="ACCTNUM" description="" lineageId="849" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="852" name="APPLIMIT" description="" lineageId="852" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="855" name="STATEID" description="" lineageId="855" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="858" name="PROPTYPE" description="" lineageId="858" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="861" name="PROPSUBTYPE" description="" lineageId="861" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="864" name="ACQUIRED" description="" lineageId="864" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="867" name="DISPOSED" description="" lineageId="867" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="870" name="INVESTFLAG" description="" lineageId="870" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="873" name="CLASSID" description="" lineageId="873" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="876" name="INVTYPE" description="" lineageId="876" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="879" name="LIFECODE" description="" lineageId="879" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="882" name="LOCAID" description="" lineageId="882" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="885" name="GROSSVALUE" description="" lineageId="885" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="888" name="NETVALUE" description="" lineageId="888" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="891" name="INCRET" description="" lineageId="891" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="894" name="CAPRET" description="" lineageId="894" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="897" name="TOTRET" description="" lineageId="897" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="900" name="JEDESCID" description="" lineageId="900" precision="0" scale="0" length="9" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="903" name="OPTED" description="" lineageId="903" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="906" name="CURRCODE" description="" lineageId="906" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="909" name="APREALEXCHG" description="" lineageId="909" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="912" name="APUNREEXCHG" description="" lineageId="912" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="915" name="CROSSCURYN" description="" lineageId="915" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="918" name="CMREALACCT" description="" lineageId="918" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="921" name="CMUNREACCT" description="" lineageId="921" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="924" name="CMDEPGLACCT" description="" lineageId="924" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="927" name="RMTACCTNO" description="" lineageId="927" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="930" name="RMTCASHTYPE" description="" lineageId="930" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="933" name="RMTOTHRFEE" description="" lineageId="933" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="936" name="TOGFEES" description="" lineageId="936" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="939" name="MINBAL" description="" lineageId="939" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="942" name="HELDFUNDS" description="" lineageId="942" precision="0" scale="0" length="0" dataType="cy" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="945" name="BADTAXACCT" description="" lineageId="945" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="948" name="BADTAXCSHTYPE" description="" lineageId="948" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="951" name="FIDTAXACCT" description="" lineageId="951" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="954" name="FIDTAXCSHTYPE" description="" lineageId="954" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="957" name="TOGACCTNUM" description="" lineageId="957" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="960" name="TOGCASHTYPE" description="" lineageId="960" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="963" name="TOGVENDID" description="" lineageId="963" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="966" name="OTRACCTNUM" description="" lineageId="966" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="969" name="OTRCASHTYPE" description="" lineageId="969" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="972" name="OTRVENDID" description="" lineageId="972" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="975" name="ENTTYPE" description="" lineageId="975" precision="0" scale="0" length="3" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="978" name="PERIODCNT" description="" lineageId="978" precision="0" scale="0" length="0" dataType="i2" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="981" name="RECLAIMPCT" description="" lineageId="981" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="984" name="ALTTAXID" description="" lineageId="984" precision="0" scale="0" length="15" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="987" name="TAXSUSPENSE" description="" lineageId="987" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="990" name="CMNBANKING" description="" lineageId="990" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="993" name="ARREALACCT" description="" lineageId="993" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="996" name="ARUNREACCT" description="" lineageId="996" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="999" name="RETAINACCT" description="" lineageId="999" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1002" name="BILLFEES" description="" lineageId="1002" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1005" name="FUNDBALACCT" description="" lineageId="1005" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1008" name="TAXRPTFREQ" description="" lineageId="1008" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1011" name="OWNERID" description="" lineageId="1011" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1014" name="COUNTRY" description="" lineageId="1014" precision="0" scale="0" length="2" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1017" name="APTAXSUSPENSEACCOUNTNUMBER" description="" lineageId="1017" precision="0" scale="0" length="12" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1020" name="STLINEBASIS" description="" lineageId="1020" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1023" name="MATRIXID" description="" lineageId="1023" precision="0" scale="0" length="0" dataType="r8" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1026" name="ENTMATRIXOPTION" description="" lineageId="1026" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1029" name="NCREIFACQUIREDFIRSTDAYQTR" description="" lineageId="1029" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1032" name="NCREIFDISPOSEDLASTDAYQTR" description="" lineageId="1032" precision="0" scale="0" length="1" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1035" name="CHECKLOCATIONID" description="" lineageId="1035" precision="0" scale="0" length="6" dataType="wstr" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="683" name="ErrorCode" description="" lineageId="683" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="1" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="684" name="ErrorColumn" description="" lineageId="684" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="2" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="False"/></output>
+</outputs>
+</component>
+<component id="686" name="Load Staging with new Entity Data" componentClassID="{5A0B62E8-D91D-49F5-94A5-7BE58DE508F0}" description="OLE DB Destination" localeId="-1" usesDispositions="true" validateExternalMetadata="True" version="4" pipelineVersion="0" contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4">
+<properties>
+<property id="687" name="CommandTimeout" dataType="System.Int32" state="default" isArray="false" description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">0</property>
+<property id="688" name="OpenRowset" dataType="System.String" state="default" isArray="false" description="Specifies the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">[CNProp].[ENTITY]</property>
+<property id="689" name="OpenRowsetVariable" dataType="System.String" state="default" isArray="false" description="Specifies the variable that contains the name of the database object used to open a rowset." typeConverter="" UITypeEditor="" containsID="false" expressionType="None"></property>
+<property id="690" name="SqlCommand" dataType="System.String" state="default" isArray="false" description="The SQL command to be executed." typeConverter="" UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" containsID="false" expressionType="None"></property>
+<property id="691" name="DefaultCodePage" dataType="System.Int32" state="default" isArray="false" description="Specifies the column code page to use when code page information is unavailable from the data source." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">1252</property>
+<property id="692" name="AlwaysUseDefaultCodePage" dataType="System.Boolean" state="default" isArray="false" description="Forces the use of the DefaultCodePage property value when describing character data." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="693" name="AccessMode" dataType="System.Int32" state="default" isArray="false" description="Specifies the mode used to access the database." typeConverter="AccessMode" UITypeEditor="" containsID="false" expressionType="None">3</property>
+<property id="695" name="FastLoadKeepIdentity" dataType="System.Boolean" state="default" isArray="false" description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="696" name="FastLoadKeepNulls" dataType="System.Boolean" state="default" isArray="false" description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">false</property>
+<property id="697" name="FastLoadOptions" dataType="System.String" state="default" isArray="false" description="Specifies options to be used with fast load.  Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">TABLOCK,CHECK_CONSTRAINTS</property>
+<property id="698" name="FastLoadMaxInsertCommitSize" dataType="System.Int32" state="default" isArray="false" description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on." typeConverter="" UITypeEditor="" containsID="false" expressionType="None">2147483647</property></properties>
+<connections>
+<connection id="694" name="OleDbConnection" description="The OLE DB runtime connection used to access the database." connectionManagerID="{2C3EDD59-737C-4532-9C11-016ABB6650E1}"/></connections>
+<inputs>
+<input id="699" name="OLE DB Destination Input" description="" hasSideEffects="true" dangling="false" errorOrTruncationOperation="Insert" errorRowDisposition="FailComponent" truncationRowDisposition="NotUsed"><inputColumns>
+<inputColumn id="1159" name="" description="" lineageId="704" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1038" mappedColumnId="0"/>
+<inputColumn id="1160" name="" description="" lineageId="707" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1039" mappedColumnId="0"/>
+<inputColumn id="1161" name="" description="" lineageId="710" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1040" mappedColumnId="0"/>
+<inputColumn id="1162" name="" description="" lineageId="713" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1041" mappedColumnId="0"/>
+<inputColumn id="1163" name="" description="" lineageId="716" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1042" mappedColumnId="0"/>
+<inputColumn id="1164" name="" description="" lineageId="719" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1043" mappedColumnId="0"/>
+<inputColumn id="1165" name="" description="" lineageId="722" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1044" mappedColumnId="0"/>
+<inputColumn id="1166" name="" description="" lineageId="725" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1045" mappedColumnId="0"/>
+<inputColumn id="1167" name="" description="" lineageId="728" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1046" mappedColumnId="0"/>
+<inputColumn id="1168" name="" description="" lineageId="731" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1047" mappedColumnId="0"/>
+<inputColumn id="1169" name="" description="" lineageId="734" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1048" mappedColumnId="0"/>
+<inputColumn id="1170" name="" description="" lineageId="737" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1049" mappedColumnId="0"/>
+<inputColumn id="1171" name="" description="" lineageId="740" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1050" mappedColumnId="0"/>
+<inputColumn id="1172" name="" description="" lineageId="743" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1051" mappedColumnId="0"/>
+<inputColumn id="1173" name="" description="" lineageId="746" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1052" mappedColumnId="0"/>
+<inputColumn id="1174" name="" description="" lineageId="749" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1053" mappedColumnId="0"/>
+<inputColumn id="1175" name="" description="" lineageId="752" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1054" mappedColumnId="0"/>
+<inputColumn id="1176" name="" description="" lineageId="755" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1055" mappedColumnId="0"/>
+<inputColumn id="1177" name="" description="" lineageId="758" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1056" mappedColumnId="0"/>
+<inputColumn id="1178" name="" description="" lineageId="761" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1057" mappedColumnId="0"/>
+<inputColumn id="1179" name="" description="" lineageId="764" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1058" mappedColumnId="0"/>
+<inputColumn id="1180" name="" description="" lineageId="767" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1059" mappedColumnId="0"/>
+<inputColumn id="1181" name="" description="" lineageId="770" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1060" mappedColumnId="0"/>
+<inputColumn id="1182" name="" description="" lineageId="773" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1061" mappedColumnId="0"/>
+<inputColumn id="1183" name="" description="" lineageId="776" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1062" mappedColumnId="0"/>
+<inputColumn id="1184" name="" description="" lineageId="779" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1063" mappedColumnId="0"/>
+<inputColumn id="1185" name="" description="" lineageId="782" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1064" mappedColumnId="0"/>
+<inputColumn id="1186" name="" description="" lineageId="785" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1065" mappedColumnId="0"/>
+<inputColumn id="1187" name="" description="" lineageId="788" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1066" mappedColumnId="0"/>
+<inputColumn id="1188" name="" description="" lineageId="791" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1067" mappedColumnId="0"/>
+<inputColumn id="1189" name="" description="" lineageId="794" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1068" mappedColumnId="0"/>
+<inputColumn id="1190" name="" description="" lineageId="797" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1069" mappedColumnId="0"/>
+<inputColumn id="1191" name="" description="" lineageId="800" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1070" mappedColumnId="0"/>
+<inputColumn id="1192" name="" description="" lineageId="803" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1071" mappedColumnId="0"/>
+<inputColumn id="1193" name="" description="" lineageId="806" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1072" mappedColumnId="0"/>
+<inputColumn id="1194" name="" description="" lineageId="809" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1073" mappedColumnId="0"/>
+<inputColumn id="1195" name="" description="" lineageId="812" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1074" mappedColumnId="0"/>
+<inputColumn id="1196" name="" description="" lineageId="815" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1075" mappedColumnId="0"/>
+<inputColumn id="1197" name="" description="" lineageId="818" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1076" mappedColumnId="0"/>
+<inputColumn id="1198" name="" description="" lineageId="821" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1077" mappedColumnId="0"/>
+<inputColumn id="1199" name="" description="" lineageId="824" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1078" mappedColumnId="0"/>
+<inputColumn id="1200" name="" description="" lineageId="827" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1079" mappedColumnId="0"/>
+<inputColumn id="1201" name="" description="" lineageId="830" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1080" mappedColumnId="0"/>
+<inputColumn id="1202" name="" description="" lineageId="833" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1081" mappedColumnId="0"/>
+<inputColumn id="1203" name="" description="" lineageId="836" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1082" mappedColumnId="0"/>
+<inputColumn id="1204" name="" description="" lineageId="839" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1083" mappedColumnId="0"/>
+<inputColumn id="1205" name="" description="" lineageId="842" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1084" mappedColumnId="0"/>
+<inputColumn id="1206" name="" description="" lineageId="845" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1085" mappedColumnId="0"/>
+<inputColumn id="1207" name="" description="" lineageId="848" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1086" mappedColumnId="0"/>
+<inputColumn id="1208" name="" description="" lineageId="851" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1087" mappedColumnId="0"/>
+<inputColumn id="1209" name="" description="" lineageId="854" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1088" mappedColumnId="0"/>
+<inputColumn id="1210" name="" description="" lineageId="857" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1089" mappedColumnId="0"/>
+<inputColumn id="1211" name="" description="" lineageId="860" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1090" mappedColumnId="0"/>
+<inputColumn id="1212" name="" description="" lineageId="863" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1091" mappedColumnId="0"/>
+<inputColumn id="1213" name="" description="" lineageId="866" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1092" mappedColumnId="0"/>
+<inputColumn id="1214" name="" description="" lineageId="869" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1093" mappedColumnId="0"/>
+<inputColumn id="1215" name="" description="" lineageId="872" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1094" mappedColumnId="0"/>
+<inputColumn id="1216" name="" description="" lineageId="875" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1095" mappedColumnId="0"/>
+<inputColumn id="1217" name="" description="" lineageId="878" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1096" mappedColumnId="0"/>
+<inputColumn id="1218" name="" description="" lineageId="881" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1097" mappedColumnId="0"/>
+<inputColumn id="1219" name="" description="" lineageId="884" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1098" mappedColumnId="0"/>
+<inputColumn id="1220" name="" description="" lineageId="887" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1099" mappedColumnId="0"/>
+<inputColumn id="1221" name="" description="" lineageId="890" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1100" mappedColumnId="0"/>
+<inputColumn id="1222" name="" description="" lineageId="893" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1101" mappedColumnId="0"/>
+<inputColumn id="1223" name="" description="" lineageId="896" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1102" mappedColumnId="0"/>
+<inputColumn id="1224" name="" description="" lineageId="899" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1103" mappedColumnId="0"/>
+<inputColumn id="1225" name="" description="" lineageId="902" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1104" mappedColumnId="0"/>
+<inputColumn id="1226" name="" description="" lineageId="905" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1105" mappedColumnId="0"/>
+<inputColumn id="1227" name="" description="" lineageId="908" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1106" mappedColumnId="0"/>
+<inputColumn id="1228" name="" description="" lineageId="911" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1107" mappedColumnId="0"/>
+<inputColumn id="1229" name="" description="" lineageId="914" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1108" mappedColumnId="0"/>
+<inputColumn id="1230" name="" description="" lineageId="917" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1109" mappedColumnId="0"/>
+<inputColumn id="1231" name="" description="" lineageId="920" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1110" mappedColumnId="0"/>
+<inputColumn id="1232" name="" description="" lineageId="923" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1111" mappedColumnId="0"/>
+<inputColumn id="1233" name="" description="" lineageId="926" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1112" mappedColumnId="0"/>
+<inputColumn id="1234" name="" description="" lineageId="929" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1113" mappedColumnId="0"/>
+<inputColumn id="1235" name="" description="" lineageId="932" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1114" mappedColumnId="0"/>
+<inputColumn id="1236" name="" description="" lineageId="935" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1115" mappedColumnId="0"/>
+<inputColumn id="1237" name="" description="" lineageId="938" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1116" mappedColumnId="0"/>
+<inputColumn id="1238" name="" description="" lineageId="941" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1117" mappedColumnId="0"/>
+<inputColumn id="1239" name="" description="" lineageId="944" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1118" mappedColumnId="0"/>
+<inputColumn id="1240" name="" description="" lineageId="947" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1119" mappedColumnId="0"/>
+<inputColumn id="1241" name="" description="" lineageId="950" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1120" mappedColumnId="0"/>
+<inputColumn id="1242" name="" description="" lineageId="953" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1121" mappedColumnId="0"/>
+<inputColumn id="1243" name="" description="" lineageId="956" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1122" mappedColumnId="0"/>
+<inputColumn id="1244" name="" description="" lineageId="959" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1123" mappedColumnId="0"/>
+<inputColumn id="1245" name="" description="" lineageId="962" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1124" mappedColumnId="0"/>
+<inputColumn id="1246" name="" description="" lineageId="965" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1125" mappedColumnId="0"/>
+<inputColumn id="1247" name="" description="" lineageId="968" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1126" mappedColumnId="0"/>
+<inputColumn id="1248" name="" description="" lineageId="971" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1127" mappedColumnId="0"/>
+<inputColumn id="1249" name="" description="" lineageId="974" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1128" mappedColumnId="0"/>
+<inputColumn id="1250" name="" description="" lineageId="977" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1129" mappedColumnId="0"/>
+<inputColumn id="1251" name="" description="" lineageId="980" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1130" mappedColumnId="0"/>
+<inputColumn id="1252" name="" description="" lineageId="983" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1131" mappedColumnId="0"/>
+<inputColumn id="1253" name="" description="" lineageId="986" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1132" mappedColumnId="0"/>
+<inputColumn id="1254" name="" description="" lineageId="989" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1133" mappedColumnId="0"/>
+<inputColumn id="1255" name="" description="" lineageId="992" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1134" mappedColumnId="0"/>
+<inputColumn id="1256" name="" description="" lineageId="995" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1135" mappedColumnId="0"/>
+<inputColumn id="1257" name="" description="" lineageId="998" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1136" mappedColumnId="0"/>
+<inputColumn id="1258" name="" description="" lineageId="1001" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1137" mappedColumnId="0"/>
+<inputColumn id="1259" name="" description="" lineageId="1004" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1138" mappedColumnId="0"/>
+<inputColumn id="1260" name="" description="" lineageId="1007" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1139" mappedColumnId="0"/>
+<inputColumn id="1261" name="" description="" lineageId="1010" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1140" mappedColumnId="0"/>
+<inputColumn id="1262" name="" description="" lineageId="1013" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1141" mappedColumnId="0"/>
+<inputColumn id="1263" name="" description="" lineageId="1016" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1142" mappedColumnId="0"/>
+<inputColumn id="1264" name="" description="" lineageId="1019" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1143" mappedColumnId="0"/>
+<inputColumn id="1265" name="" description="" lineageId="1022" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1144" mappedColumnId="0"/>
+<inputColumn id="1266" name="" description="" lineageId="1025" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1145" mappedColumnId="0"/>
+<inputColumn id="1267" name="" description="" lineageId="1028" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1146" mappedColumnId="0"/>
+<inputColumn id="1268" name="" description="" lineageId="1031" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1147" mappedColumnId="0"/>
+<inputColumn id="1269" name="" description="" lineageId="1034" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1148" mappedColumnId="0"/>
+<inputColumn id="1394" name="" description="" lineageId="1389" usageType="readOnly" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="1392" mappedColumnId="0"/>
+</inputColumns><externalMetadataColumns isUsed="True">
+<externalMetadataColumn id="1037" name="ImportKey" description="" precision="0" scale="0" length="0" dataType="i4" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1038" name="ENTITYID" description="" precision="0" scale="0" length="7" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1039" name="NAME" description="" precision="0" scale="0" length="30" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1040" name="ADDR1" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1041" name="ADDR2" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1042" name="ADDR3" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1043" name="STATE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1044" name="CITY" description="" precision="0" scale="0" length="17" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1045" name="ZIPCODE" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1046" name="PHONE" description="" precision="0" scale="0" length="15" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1047" name="FEET" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1048" name="UNITS" description="" precision="0" scale="0" length="0" dataType="i4" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1049" name="LASTDATE" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1050" name="USERID" description="" precision="0" scale="0" length="20" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1051" name="LEDGCODE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1052" name="CLOSEDAY" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1053" name="YEAREND" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1054" name="CURPED" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1055" name="MAXOPEN" description="" precision="0" scale="0" length="0" dataType="i2" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1056" name="BASIS" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1057" name="PROJID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1058" name="INTRACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1059" name="GLPURGE" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1060" name="APACCTNO" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1061" name="OPENBAL" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1062" name="INVCSTAT" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1063" name="SUMDET" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1064" name="SUMCASH" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1065" name="CASHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1066" name="APPURGE" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1067" name="M_1099DATE" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1068" name="VATREG" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1069" name="ATAXACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1070" name="ATAXCASH" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1071" name="VENDPPED" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1072" name="PAYENTRY" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1073" name="TAXEXEMP" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1074" name="SHIPADR1" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1075" name="SHIPADR2" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1076" name="SHIPADR3" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1077" name="SHIPCITY" description="" precision="0" scale="0" length="17" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1078" name="SHIPST" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1079" name="SHIPZIP" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1080" name="BILLADR1" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1081" name="BILLADR2" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1082" name="BILLADR3" description="" precision="0" scale="0" length="35" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1083" name="BILLCITY" description="" precision="0" scale="0" length="17" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1084" name="BILLST" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1085" name="BILLZIP" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1086" name="ACCTNUM" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1087" name="APPLIMIT" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1088" name="STATEID" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1089" name="PROPTYPE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1090" name="PROPSUBTYPE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1091" name="ACQUIRED" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1092" name="DISPOSED" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1093" name="INVESTFLAG" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1094" name="CLASSID" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1095" name="INVTYPE" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1096" name="LIFECODE" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1097" name="LOCAID" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1098" name="GROSSVALUE" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1099" name="NETVALUE" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1100" name="INCRET" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1101" name="CAPRET" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1102" name="TOTRET" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1103" name="JEDESCID" description="" precision="0" scale="0" length="9" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1104" name="OPTED" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1105" name="CURRCODE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1106" name="APREALEXCHG" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1107" name="APUNREEXCHG" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1108" name="CROSSCURYN" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1109" name="CMREALACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1110" name="CMUNREACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1111" name="CMDEPGLACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1112" name="RMTACCTNO" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1113" name="RMTCASHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1114" name="RMTOTHRFEE" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1115" name="TOGFEES" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1116" name="MINBAL" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1117" name="HELDFUNDS" description="" precision="0" scale="0" length="0" dataType="cy" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1118" name="BADTAXACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1119" name="BADTAXCSHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1120" name="FIDTAXACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1121" name="FIDTAXCSHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1122" name="TOGACCTNUM" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1123" name="TOGCASHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1124" name="TOGVENDID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1125" name="OTRACCTNUM" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1126" name="OTRCASHTYPE" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1127" name="OTRVENDID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1128" name="ENTTYPE" description="" precision="0" scale="0" length="3" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1129" name="PERIODCNT" description="" precision="0" scale="0" length="0" dataType="i2" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1130" name="RECLAIMPCT" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1131" name="ALTTAXID" description="" precision="0" scale="0" length="15" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1132" name="TAXSUSPENSE" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1133" name="CMNBANKING" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1134" name="ARREALACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1135" name="ARUNREACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1136" name="RETAINACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1137" name="BILLFEES" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1138" name="FUNDBALACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1139" name="TAXRPTFREQ" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1140" name="OWNERID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1141" name="COUNTRY" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1142" name="APTAXSUSPENSEACCOUNTNUMBER" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1143" name="STLINEBASIS" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1144" name="MATRIXID" description="" precision="0" scale="0" length="0" dataType="r8" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1145" name="ENTMATRIXOPTION" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1146" name="NCREIFACQUIREDFIRSTDAYQTR" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1147" name="NCREIFDISPOSEDLASTDAYQTR" description="" precision="0" scale="0" length="1" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1148" name="CHECKLOCATIONID" description="" precision="0" scale="0" length="6" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1149" name="POSCSHTYP" description="" precision="0" scale="0" length="2" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1150" name="MAXAPOPEN" description="" precision="0" scale="0" length="0" dataType="i2" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1151" name="APREALLOSS" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1152" name="APUNREALLOSS" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1153" name="ARREALLOSS" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1154" name="ARUNREALLOSS" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1155" name="CMREALLOSS" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1156" name="CMUNREALLOSS" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1157" name="CMDEPLOSS" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1158" name="VENDORWITHHOLDINGACCT" description="" precision="0" scale="0" length="12" dataType="wstr" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1392" name="ImportBatchId" description="" precision="0" scale="0" length="0" dataType="i4" codePage="0" mappedColumnId="0"/>
+<externalMetadataColumn id="1393" name="ImportDate" description="" precision="0" scale="0" length="0" dataType="dbTimeStamp" codePage="0" mappedColumnId="0"/></externalMetadataColumns></input>
+</inputs>
+<outputs>
+<output id="700" name="OLE DB Destination Error Output" description="" exclusionGroup="1" synchronousInputId="699" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="true" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="701" name="ErrorCode" description="" lineageId="701" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="1" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="702" name="ErrorColumn" description="" lineageId="702" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="2" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="False"/></output>
+</outputs>
+</component>
+<component id="1270" name="Add BatchId" componentClassID="{2932025B-AB99-40F6-B5B8-783A73F80E24}" description="Updates column values using expressions" localeId="-1" usesDispositions="true" validateExternalMetadata="True" version="0" pipelineVersion="0" contactInfo="Derived Column;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0">
+<inputs>
+<input id="1271" name="Derived Column Input" description="Input to the Derived Column Transformation" hasSideEffects="false" dangling="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><externalMetadataColumns isUsed="False"/></input>
+</inputs>
+<outputs>
+<output id="1272" name="Derived Column Output" description="Default Output of the Derived Column Transformation" exclusionGroup="1" synchronousInputId="1271" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="false" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="1389" name="BatchId" description="" lineageId="1389" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="0" errorOrTruncationOperation="Computation" errorRowDisposition="FailComponent" truncationRowDisposition="FailComponent" externalMetadataColumnId="0" mappedColumnId="0"><properties>
+<property id="1390" name="Expression" dataType="System.String" state="default" isArray="false" description="Derived Column Expression" typeConverter="" UITypeEditor="" containsID="true" expressionType="None">@[User::BatchId]</property>
+<property id="1391" name="FriendlyExpression" dataType="System.String" state="default" isArray="false" description="Derived Column Friendly Expression" typeConverter="" UITypeEditor="" containsID="true" expressionType="Notify">@[User::BatchId]</property></properties></outputColumn></outputColumns><externalMetadataColumns isUsed="False"/></output>
+<output id="1273" name="Derived Column Error Output" description="Error Output of the Derived Column Transformation" exclusionGroup="1" synchronousInputId="1271" deleteOutputOnPathDetached="false" hasSideEffects="false" dangling="false" isErrorOut="true" isSorted="false" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed"><outputColumns>
+<outputColumn id="1274" name="ErrorCode" description="" lineageId="1274" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="1" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/>
+<outputColumn id="1275" name="ErrorColumn" description="" lineageId="1275" precision="0" scale="0" length="0" dataType="i4" codePage="0" sortKeyPosition="0" comparisonFlags="0" specialFlags="2" errorOrTruncationOperation="" errorRowDisposition="NotUsed" truncationRowDisposition="NotUsed" externalMetadataColumnId="0" mappedColumnId="0"/></outputColumns><externalMetadataColumns isUsed="False"/></output>
+</outputs>
+</component>
+</components>
+<paths>
+<path id="1276" name="OLE DB Source Output" description="" startId="681" endId="1271"/>
+<path id="1277" name="Derived Column Output" description="" startId="1272" endId="699"/>
+</paths></pipeline></DTS:ObjectData></DTS:Executable>
+<DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="Value">0</DTS:Property>
+<DTS:Property DTS:Name="EvalOp">2</DTS:Property>
+<DTS:Property DTS:Name="LogicalAnd">-1</DTS:Property>
+<DTS:Property DTS:Name="Expression"></DTS:Property><DTS:Executable IDREF="{4F134CB5-4525-48FA-AA5A-7ED18917257C}" DTS:IsFrom="-1"/><DTS:Executable IDREF="{F023FBC2-670B-42B9-B5CE-3060EE20CD87}" DTS:IsFrom="0"/>
+<DTS:Property DTS:Name="ObjectName">Constraint</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{D6387A66-7CAA-45DC-9629-57338F7A0AEB}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PrecedenceConstraint>
+<DTS:Property DTS:Name="ObjectName">Entity</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{99B3E3B0-AC88-4089-8EC4-2FA36F22708C}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName">SSIS.Package.2</DTS:Property>
+<DTS:Property DTS:Name="DisableEventHandlers">0</DTS:Property>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;ConnectionManager xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DataSourceID&gt;Gr Reporting Staging&lt;/dwd:DataSourceID&gt;&lt;/ConnectionManager&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{2C3EDD59-737C-4532-9C11-016ABB6650E1}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{5C5B7D58-8FB3-4A3C-84C7-D4C288B8FFB1}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingLeft&gt;1000&lt;/dwd:BoundingLeft&gt;&lt;dwd:BoundingTop&gt;694&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="0" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="18997" y="19844" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Data Flow Task" left="2477" top="5159" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{F023FBC2-670B-42B9-B5CE-3060EE20CD87}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Clean Data for Current ImportDateRange" left="1000" top="694" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="4313" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="00080000d91000008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{4F134CB5-4525-48FA-AA5A-7ED18917257C}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="2757" top="1459" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="1919" height="4200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{D6387A66-7CAA-45DC-9629-57338F7A0AEB}" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="2" destid="1" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="3156" y="1858" /&gt;
+      &lt;point x="3156" y="3508" /&gt;
+      &lt;point x="4276" y="3508" /&gt;
+      &lt;point x="4276" y="5159" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{99B3E3B0-AC88-4089-8EC4-2FA36F22708C}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{ABC71168-E888-4A33-894A-B42A48B6985E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;ConnectionManager xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DataSourceID&gt;GR CN PROP&lt;/dwd:DataSourceID&gt;&lt;/ConnectionManager&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{B502EFEC-60DB-4AFF-AE86-AA498F282E5B}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{7960F08C-3B0C-43BB-B0E9-4BAC552AE221}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PrecedenceConstraint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:EvalOp&gt;Constraint&lt;/dwd:EvalOp&gt;&lt;/PrecedenceConstraint&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{D6387A66-7CAA-45DC-9629-57338F7A0AEB}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{C44C587A-7D3A-4AFD-9481-6D997E90895E}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;TaskHost xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsDataFlowDiagram&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="0" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="19685" y="18468" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="0" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;&lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;&lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="OLE DB Source" left="2223" top="3016" logicalid="6" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;&lt;control&gt;&lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;&lt;ddsxmlobj&gt;&lt;property name="LogicalObject" value="{F023FBC2-670B-42B9-B5CE-3060EE20CD87}/components/671" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="OLE DB Destination" left="2700" top="8784" logicalid="7" controlid="2" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;&lt;control&gt;&lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;&lt;ddsxmlobj&gt;&lt;property name="LogicalObject" value="{F023FBC2-670B-42B9-B5CE-3060EE20CD87}/components/686" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Updates column values using expressions" left="2328" top="5768" logicalid="8" controlid="3" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;&lt;control&gt;&lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;&lt;ddsxmlobj&gt;&lt;property name="LogicalObject" value="{F023FBC2-670B-42B9-B5CE-3060EE20CD87}/components/1270" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="3623" top="3781" logicalid="9" controlid="4" masterid="0" hint1="0" hint2="0" width="904" height="2487" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;&lt;control&gt;&lt;ddsxmlobj&gt;&lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;&lt;ddsxmlobj&gt;&lt;property name="LogicalObject" value="{F023FBC2-670B-42B9-B5CE-3060EE20CD87}/paths/1276" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="1" destid="3" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;&lt;point x="4022" y="4180" /&gt;
+      &lt;point x="4022" y="4974" /&gt;
+      &lt;point x="4127" y="4974" /&gt;
+      &lt;point x="4127" y="5768" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="3728" top="6533" logicalid="10" controlid="5" masterid="0" hint1="0" hint2="0" width="1171" height="2751" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;&lt;control&gt;&lt;ddsxmlobj&gt;&lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;&lt;ddsxmlobj&gt;&lt;property name="LogicalObject" value="{F023FBC2-670B-42B9-B5CE-3060EE20CD87}/paths/1277" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="3" destid="2" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;&lt;point x="4127" y="6932" /&gt;
+      &lt;point x="4127" y="7858" /&gt;
+      &lt;point x="4499" y="7858" /&gt;
+      &lt;point x="4499" y="8784" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;/dwd:DtsDataFlowDiagram&gt;&lt;dwd:DtsComponentDesignerPropertiesList&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;686	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;394	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;686	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;394	TableInfoObjectType&lt;/dwd:key&gt;&lt;dwd:value xsi:type="xsd:string"&gt;Table&lt;/dwd:value&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;1	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:DtsComponentDesignTimeProperty&gt;&lt;dwd:key xsi:type="xsd:string"&gt;671	DataSourceViewID&lt;/dwd:key&gt;&lt;/dwd:DtsComponentDesignTimeProperty&gt;&lt;/dwd:DtsComponentDesignerPropertiesList&gt;&lt;/TaskHost&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{F023FBC2-670B-42B9-B5CE-3060EE20CD87}</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{6FF869BA-EE0F-45DF-8EAA-44C0C458F1D1}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;OLE DB Source Output&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;Derived Column Input&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{F023FBC2-670B-42B9-B5CE-3060EE20CD87}-1276</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{4A200EF1-26F2-4F72-B578-9EA28E15DB7B}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;PipelinePath xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:SourceName&gt;Derived Column Output&lt;/dwd:SourceName&gt;&lt;dwd:DestinationName&gt;OLE DB Destination Input&lt;/dwd:DestinationName&gt;&lt;/PipelinePath&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">{F023FBC2-670B-42B9-B5CE-3060EE20CD87}-1277</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{6C17CADF-568C-40E4-9962-8B8F1BF6A9CE}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable>
+<DTS:PackageVariable>
+<DTS:Property DTS:Name="PackageVariableValue" DTS:DataType="8">&lt;Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0"&gt;&lt;dwd:DtsControlFlowDiagram&gt;&lt;dwd:BoundingLeft&gt;1000&lt;/dwd:BoundingLeft&gt;&lt;dwd:BoundingTop&gt;694&lt;/dwd:BoundingTop&gt;&lt;dwd:Layout&gt;&lt;dds&gt;
+  &lt;diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="Microsoft.DataWarehouse.Layout.GraphLayout100" defaultlineroute="Microsoft.DataWarehouse.Layout.GraphLayout100" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="0" scrolltop="0" gridx="150" gridy="150" marginx="1000" marginy="1000" zoom="100" x="18997" y="19844" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="1" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}"&gt;
+    &lt;font&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" /&gt;
+    &lt;/font&gt;
+    &lt;mouseicon&gt;
+      &lt;ddsxmlobjectstreamwrapper binary="6c74000000000000" /&gt;
+    &lt;/mouseicon&gt;
+  &lt;/diagram&gt;
+  &lt;layoutmanager&gt;
+    &lt;ddsxmlobj /&gt;
+  &lt;/layoutmanager&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Data Flow Task" left="2477" top="5159" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="000800000e0e00008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{F023FBC2-670B-42B9-B5CE-3060EE20CD87}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Clean Data for Current ImportDateRange" left="1000" top="694" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="4313" height="1164" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobjectstreaminitwrapper binary="00080000d91000008c040000" /&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{4F134CB5-4525-48FA-AA5A-7ED18917257C}" vartype="8" /&gt;
+        &lt;property name="ShowConnectorSource" value="0" vartype="2" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;shape groupshapeid="0" groupnode="0" /&gt;
+  &lt;/ddscontrol&gt;
+  &lt;ddscontrol controlprogid="MSDDS.Polyline" left="2757" top="1459" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="1919" height="4200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0"&gt;
+    &lt;control&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;polyline endtypedst="3" endtypesrc="1" usercolor="32768" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/control&gt;
+    &lt;layoutobject&gt;
+      &lt;ddsxmlobj&gt;
+        &lt;property name="LogicalObject" value="{D6387A66-7CAA-45DC-9629-57338F7A0AEB}" vartype="8" /&gt;
+        &lt;property name="Virtual" value="0" vartype="11" /&gt;
+        &lt;property name="VisibleAP" value="0" vartype="3" /&gt;
+      &lt;/ddsxmlobj&gt;
+    &lt;/layoutobject&gt;
+    &lt;connector lineroutestyle="Microsoft.DataWarehouse.Layout.GraphLayout100" sourceid="2" destid="1" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="2" relatedid="0" virtual="0"&gt;
+      &lt;point x="3156" y="1858" /&gt;
+      &lt;point x="3156" y="3508" /&gt;
+      &lt;point x="4276" y="3508" /&gt;
+      &lt;point x="4276" y="5159" /&gt;
+    &lt;/connector&gt;
+  &lt;/ddscontrol&gt;
+&lt;/dds&gt;&lt;/dwd:Layout&gt;&lt;/dwd:DtsControlFlowDiagram&gt;&lt;/Package&gt;</DTS:Property>
+<DTS:Property DTS:Name="Namespace">dts-designer-1.0</DTS:Property>
+<DTS:Property DTS:Name="ObjectName">package-diagram</DTS:Property>
+<DTS:Property DTS:Name="DTSID">{50B9C071-8AA0-42BD-8464-F682B1B9EEC6}</DTS:Property>
+<DTS:Property DTS:Name="Description"></DTS:Property>
+<DTS:Property DTS:Name="CreationName"></DTS:Property></DTS:PackageVariable></DTS:Executable>

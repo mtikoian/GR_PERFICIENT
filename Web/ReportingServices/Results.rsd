@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <Description />
+  <DataSet Name="Results">
+    <Query>
+      <DataSourceReference>Apr2010Rpt_GrReporting</DataSourceReference>
+      <CommandText>SELECT NON EMPTY CrossJoin(CrossJoin(Hierarchize({DrilldownLevel({[Property Fund].[PropertyFundHierarchy].[All]})}), Hierarchize({DrilldownLevel({[Allocation Region].[AllocaitonRegionHierarchy].[All]})})), {[Measures].[MTD Gross Actual],[Measures].[MTD Gross Reforecast],[Measures].[MTD Gross Variance],[Measures].[YTD Gross Actual],[Measures].[YTD Gross Reforecast],[Measures].[YTD Gross Variance],[Measures].[Annual Gross Budget],[Measures].[Annual Gross Reforecast]}) DIMENSION PROPERTIES PARENT_UNIQUE_NAME ON COLUMNS , NON EMPTY CrossJoin(Hierarchize({DrilldownLevel({[Gl Account Category Global].[Expense Type].[All]})}), Hierarchize({DrilldownLevel({[Functional Department].[FunctionalDepartmentHierarchy].[All]})})) DIMENSION PROPERTIES PARENT_UNIQUE_NAME ON ROWS  FROM [ProfitabilityUnified] WHERE ([Calendar].[PeriodHierarchy].[Period].&amp;[2010]&amp;[3]) CELL PROPERTIES VALUE, FORMAT_STRING, LANGUAGE, BACK_COLOR, FORE_COLOR, FONT_FLAGS</CommandText>
+    </Query>
+  </DataSet>
+</SharedDataSet>

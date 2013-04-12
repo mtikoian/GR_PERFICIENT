@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="Master" GeneratedFromPackageID="{32DC2E11-7D6F-47AD-B604-ADE5A8B22A41}" GeneratedDate="23/07/2009 08:16:50 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[FunctionalDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Hr\FunctionalDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[Location.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Hr\Location.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Region.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.Hr\Region.dtsx</ConfiguredValue>
+	</Configuration>
+
+</DTSConfiguration>

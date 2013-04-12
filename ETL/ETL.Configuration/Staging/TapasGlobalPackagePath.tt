@@ -1,0 +1,42 @@
+<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#
+  string packagePath = Path.GetDirectoryName(this.Host.TemplateFile).Replace(@"\ETL\ETL.Configuration\Staging","");
+#>
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="Master" GeneratedFromPackageID="{166FAA6D-3ACB-4BA0-9F29-4772AAEB2774}" GeneratedDate="23/07/2009 01:14:40 PM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BillingUpload.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.TapasGlobal\BillingUpload.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[BillingUploadDetail.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.TapasGlobal\BillingUploadDetail.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Project.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.TapasGlobal\Project.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Overhead.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.TapasGlobal\Overhead.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[OverheadRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.TapasGlobal\OverheadRegion.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SystemSetting.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.TapasGlobal\SystemSetting.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SystemSettingRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.TapasGlobal\SystemSettingRegion.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[RegionExtended.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.TapasGlobal\RegionExtended.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[PayrollRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.TapasGlobal\PayrollRegion.dtsx</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

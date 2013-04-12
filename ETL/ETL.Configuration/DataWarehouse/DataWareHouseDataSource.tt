@@ -1,0 +1,229 @@
+<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\ngoossens"
+								  GeneratedFromPackageID="{57340246-5478-4A33-BA4C-6476CEC6C336}"
+								  GeneratedDate="31/07/2009 09:13:08 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[Gr Reporting].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>Data Source=TSSQL-REPORTING-DWDEV\DEV;Initial Catalog=GrReporting;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[Gr Reporting Staging].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>Data Source=TSSQL-REPORTING-DWDEV\DEV;Initial Catalog=GrReportingStaging;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[CertificateContext]"
+				   ValueType="Int64">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[CheckpointFileName]"
+				   ValueType="String">
+		<ConfiguredValue></ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[CheckpointUsage]"
+				   ValueType="Int32">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[CheckSignatureOnLoad]"
+				   ValueType="Boolean">
+		<ConfiguredValue>-1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[CreationDate]"
+				   ValueType="DateTime">
+		<ConfiguredValue>7/15/2009 4:29:51 PM</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[CreatorComputerName]"
+				   ValueType="String">
+		<ConfiguredValue>OB74</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[CreatorName]"
+				   ValueType="String">
+		<ConfiguredValue>OPENBOX\ngoossens</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[DelayValidation]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[Description]"
+				   ValueType="String">
+		<ConfiguredValue></ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[Disable]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[DisableEventHandlers]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[DumpDescriptor]"
+				   ValueType="String">
+		<ConfiguredValue></ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[DumpOnAnyError]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[EnableDump]"
+				   ValueType="Boolean">
+		<ConfiguredValue>-1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[EncryptCheckpoints]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[FailPackageOnFailure]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[FailParentOnFailure]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[ForcedExecutionValue]"
+				   ValueType="Int32">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[ForceExecutionResult]"
+				   ValueType="Int32">
+		<ConfiguredValue>-1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[ForceExecutionValue]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[InteractiveMode]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[IsolationLevel]"
+				   ValueType="Int32">
+		<ConfiguredValue>1048576</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[LocaleID]"
+				   ValueType="Int32">
+		<ConfiguredValue>7177</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[LoggingMode]"
+				   ValueType="Int32">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[MaxConcurrentExecutables]"
+				   ValueType="Int32">
+		<ConfiguredValue>-1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[MaximumErrorCount]"
+				   ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[OfflineMode]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[PackagePassword]"
+				   ValueType="String">
+		<ConfiguredValue></ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[PackagePriorityClass]"
+				   ValueType="Int32">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[PackageType]"
+				   ValueType="Int32">
+		<ConfiguredValue>5</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[ProtectionLevel]"
+				   ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[SaveCheckpoints]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[SQLFolder]"
+				   ValueType="String">
+		<ConfiguredValue>\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[SuppressConfigurationWarnings]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[TransactionOption]"
+				   ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[UpdateObjects]"
+				   ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[UpdatePackage]"
+				   ValueType="Boolean">
+		<ConfiguredValue>-1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[VersionBuild]"
+				   ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[VersionComments]"
+				   ValueType="String">
+		<ConfiguredValue></ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[VersionMajor]"
+				   ValueType="Int32">
+		<ConfiguredValue>1</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Properties[VersionMinor]"
+				   ValueType="Int32">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

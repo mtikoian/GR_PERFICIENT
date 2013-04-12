@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="GrReportingComments" Class="GrReportingCommentsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tssql-reporting-dwdev\dev;Initial Catalog=GrReportingComments;User ID=TestUser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="GrReportingCommentsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ReportComment" Member="ReportComments">
+    <Type Name="ReportComment">
+      <Column Name="ReportCommentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GlAccountCode" Type="System.String" DbType="Char(12) NOT NULL" CanBeNull="false" />
+      <Column Name="ReportPeriod" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+    </Type>
+  </Table>
+</Database>

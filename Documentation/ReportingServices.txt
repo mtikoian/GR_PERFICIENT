@@ -1,0 +1,18 @@
+Service acocunt must be admnstrator on the server
+
+
+Need to enable delegation on the server in Active Directory
+
+
+Setspn.exe -A MSOLAPSvc.3/obtssql09 OPENBOX\_SVC_MSSQL 
+Setspn.exe -A MSOLAPSvc.3/obtssql09.openbox.local OPENBOX\_SVC_MSSQL 
+Setspn.exe -A MSOLAPDisco.3/obtssql09 OPENBOX\_SVC_MSSQL 
+Setspn.exe -A MSOLAPDisco.3/obtssql09.openbox.local OPENBOX\_SVC_MSSQL 
+Setspn.exe -A HTTP/obtssql09 OPENBOX\_SVC_MSSQL
+Setspn.exe -A HTTP/obtssql09.openbox.local OPENBOX\_SVC_MSSQL
+
+
+The tool used to script reports from a RS database is found here:
+P:\Tools\Reporting Services Scripter\
+
+Reference:http://www.sqldbatips.com/showarticle.asp?ID=62

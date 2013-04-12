@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="Master" GeneratedFromPackageID="{32DC2E11-7D6F-47AD-B604-ADE5A8B22A41}" GeneratedDate="23/07/2009 08:16:50 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[JobCode.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.GACS\JobCode.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Department.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.GACS\Department.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[EntityMapping.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.GACS\EntityMapping.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Entity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.Staging.GACS\Entity.dtsx</ConfiguredValue>
+	</Configuration>
+	
+</DTSConfiguration>

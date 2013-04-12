@@ -1,0 +1,2401 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="26e03063-e14b-4cd4-9c0e-aa10cd68f66a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Gr Reporting</ID>
+  <Name>Gr Profitability</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="94" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="12105" scrolltop="42712" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="105" x="18018" y="19764" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="AllocationRegion" left="14948" top="46929" logicalid="47" controlid="1" masterid="0" hint1="0" hint2="0" width="3784" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000c80e000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_AllocationRegion" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="FunctionalDepartment" left="13180" top="28167" logicalid="48" controlid="2" masterid="0" hint1="0" hint2="0" width="5186" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004214000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FunctionalDepartment" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Source" left="15366" top="34986" logicalid="49" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Source" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Reimbursable" left="21124" top="6395" logicalid="50" controlid="4" masterid="0" hint1="0" hint2="0" width="3625" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000290e0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Reimbursable" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="ProfitabilityActual" left="20766" top="25313" logicalid="51" controlid="5" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004311000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ProfitabilityActual" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="OriginatingRegion" left="21132" top="53748" logicalid="52" controlid="6" masterid="0" hint1="0" hint2="0" width="3889" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000310f000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_OriginatingRegion" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="GlAccount" left="27149" top="0" logicalid="53" controlid="7" masterid="0" hint1="0" hint2="0" width="3545" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000d90d00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_GlAccount" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Currency" left="27421" top="67809" logicalid="54" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Currency" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="GlAccountCategory" left="6944" top="17069" logicalid="55" controlid="9" masterid="0" hint1="0" hint2="0" width="5080" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000d813000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_GlAccountCategory" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Calendar" left="32993" top="60567" logicalid="56" controlid="10" masterid="0" hint1="0" hint2="0" width="3836" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000fc0e000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Calendar" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="ProfitabilityBudgetGlAccountCategoryBridge" left="7433" top="23888" logicalid="57" controlid="11" masterid="0" hint1="0" hint2="0" width="4101" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800000510000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ProfitabilityBudgetGlAccountCategoryBridge" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="ProfitabilityActualGlAccountCategoryBridge" left="14424" top="18339" logicalid="58" controlid="12" masterid="0" hint1="0" hint2="0" width="3942" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000660f000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ProfitabilityActualGlAccountCategoryBridge" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="PropertyFund" left="8950" top="40957" logicalid="59" controlid="13" masterid="0" hint1="0" hint2="0" width="3598" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800000e0e0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_PropertyFund" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="ProfitabilityBudget" left="-1312" top="32010" logicalid="60" controlid="14" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004311000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ProfitabilityBudget" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="ActivityType" left="15258" top="11097" logicalid="61" controlid="15" masterid="0" hint1="0" hint2="0" width="3466" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800008a0d0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ActivityType" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="ExchangeRate" left="32821" top="67386" logicalid="62" controlid="16" masterid="0" hint1="0" hint2="0" width="4180" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000541000004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ExchangeRate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Reforecast" left="20" top="40167" logicalid="63" controlid="17" masterid="0" hint1="0" hint2="0" width="4524" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000ac1100009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Reforecast" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="YearToDatePeriod" left="0" top="0" logicalid="64" controlid="18" masterid="0" hint1="0" hint2="0" width="4234" height="4234" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800008a1000008a100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_YearToDatePeriod" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2148" top="25467" logicalid="65" controlid="19" masterid="0" hint1="0" hint2="0" width="5985" height="7043" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudgetGlAccountCategoryBridge_ProfitabilityBudget]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="11" sourceattachpoint="12" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="2547" y="32010" />
+              <point x="2547" y="28889" />
+              <point x="7833" y="28889" />
+              <point x="7833" y="25767" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7435" top="20989" logicalid="66" controlid="20" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudgetGlAccountCategoryBridge_GlAccountCategory]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="11" sourceattachpoint="3" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7834" y="21488" />
+              <point x="7834" y="22688" />
+              <point x="7833" y="22688" />
+              <point x="7833" y="23888" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1697" top="14170" logicalid="67" controlid="21" masterid="0" hint1="0" hint2="0" width="14594" height="18140" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_Activity]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="15" destid="14" sourceattachpoint="1" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15891" y="14669" />
+              <point x="15891" y="23339" />
+              <point x="1997" y="23339" />
+              <point x="1997" y="32010" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2247" top="36710" logicalid="68" controlid="22" masterid="0" hint1="0" hint2="0" width="25974" height="31599" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_Currency]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="14" sourceattachpoint="0" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="27821" y="67809" />
+              <point x="27821" y="52410" />
+              <point x="2547" y="52410" />
+              <point x="2547" y="37010" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="233" top="36710" logicalid="69" controlid="23" masterid="0" hint1="0" hint2="0" width="964" height="3957" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_Reforecast]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="17" destid="14" sourceattachpoint="0" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="632" y="40167" />
+              <point x="632" y="38589" />
+              <point x="897" y="38589" />
+              <point x="897" y="37010" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2807" top="35860" logicalid="70" controlid="24" masterid="0" hint1="0" hint2="0" width="12441" height="12028" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_AllocationRegion]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="14" sourceattachpoint="14" destattachpoint="29" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="14948" y="47488" />
+              <point x="9028" y="47488" />
+              <point x="9028" y="36160" />
+              <point x="3107" y="36160" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="597" top="3496" logicalid="71" controlid="25" masterid="0" hint1="0" hint2="0" width="27624" height="28814" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_GlAccount]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="14" sourceattachpoint="3" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="27821" y="3995" />
+              <point x="27821" y="18002" />
+              <point x="897" y="18002" />
+              <point x="897" y="32010" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2807" top="34760" logicalid="72" controlid="26" masterid="0" hint1="0" hint2="0" width="18625" height="19947" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_OriginatingRegion]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="14" sourceattachpoint="14" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21132" y="54307" />
+              <point x="12120" y="54307" />
+              <point x="12120" y="35060" />
+              <point x="3107" y="35060" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1147" top="8198" logicalid="73" controlid="27" masterid="0" hint1="0" hint2="0" width="20539" height="24112" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_Reimbursable]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="14" sourceattachpoint="1" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21286" y="8697" />
+              <point x="21286" y="20353" />
+              <point x="1447" y="20353" />
+              <point x="1447" y="32010" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2807" top="31627" logicalid="74" controlid="28" masterid="0" hint1="0" hint2="0" width="10673" height="983" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_FunctionalDepartment]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="14" sourceattachpoint="30" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13180" y="32026" />
+              <point x="8144" y="32026" />
+              <point x="8144" y="32310" />
+              <point x="3107" y="32310" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2807" top="34210" logicalid="75" controlid="29" masterid="0" hint1="0" hint2="0" width="30486" height="27316" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_Calendar]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="14" sourceattachpoint="14" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="32993" y="61126" />
+              <point x="18050" y="61126" />
+              <point x="18050" y="34510" />
+              <point x="3107" y="34510" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2807" top="34723" logicalid="76" controlid="30" masterid="0" hint1="0" hint2="0" width="12859" height="1187" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_Source]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="14" sourceattachpoint="10" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15366" y="35122" />
+              <point x="9237" y="35122" />
+              <point x="9237" y="35610" />
+              <point x="3107" y="35610" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2807" top="36410" logicalid="77" controlid="31" masterid="0" hint1="0" hint2="0" width="6443" height="5083" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityBudget_PropertyFund]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="14" sourceattachpoint="14" destattachpoint="31" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8950" y="41093" />
+              <point x="6029" y="41093" />
+              <point x="6029" y="36710" />
+              <point x="3107" y="36710" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="11724" top="18329" logicalid="78" controlid="32" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActualGlAccountCategoryBridge_GlAccountCategory]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="12" sourceattachpoint="23" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12024" y="18728" />
+              <point x="14424" y="18728" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17745" top="19918" logicalid="79" controlid="33" masterid="0" hint1="0" hint2="0" width="3980" height="5895" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActualGlAccountCategoryBridge_ProfitabilityActual]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="12" sourceattachpoint="0" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21325" y="25313" />
+              <point x="21325" y="22766" />
+              <point x="18045" y="22766" />
+              <point x="18045" y="20218" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17567" top="30013" logicalid="80" controlid="34" masterid="0" hint1="0" hint2="0" width="4058" height="5473" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_Source]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="5" sourceattachpoint="8" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="17966" y="34986" />
+              <point x="17966" y="32650" />
+              <point x="21325" y="32650" />
+              <point x="21325" y="30313" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="17692" top="14170" logicalid="81" controlid="35" masterid="0" hint1="0" hint2="0" width="4483" height="11443" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_ActivityType]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="15" destid="5" sourceattachpoint="9" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18091" y="14669" />
+              <point x="18091" y="19991" />
+              <point x="21875" y="19991" />
+              <point x="21875" y="25313" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="24325" top="3496" logicalid="82" controlid="36" masterid="0" hint1="0" hint2="0" width="3346" height="22117" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_GlAccount]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="5" sourceattachpoint="1" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="27271" y="3995" />
+              <point x="27271" y="14654" />
+              <point x="24625" y="14654" />
+              <point x="24625" y="25313" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="18066" top="28327" logicalid="83" controlid="37" masterid="0" hint1="0" hint2="0" width="3000" height="886" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_FunctionalDepartment]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="19" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18366" y="28726" />
+              <point x="19566" y="28726" />
+              <point x="19566" y="28913" />
+              <point x="20766" y="28913" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="18091" top="30013" logicalid="84" controlid="38" masterid="0" hint1="0" hint2="0" width="4634" height="17416" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_AllocationRegion]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="12" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18490" y="46929" />
+              <point x="18490" y="38621" />
+              <point x="22425" y="38621" />
+              <point x="22425" y="30313" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12000" top="30013" logicalid="85" controlid="39" masterid="0" hint1="0" hint2="0" width="10175" height="11444" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_PropertyFund]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="5" sourceattachpoint="12" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12399" y="40957" />
+              <point x="12399" y="35635" />
+              <point x="21875" y="35635" />
+              <point x="21875" y="30313" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="23775" top="30013" logicalid="86" controlid="40" masterid="0" hint1="0" hint2="0" width="6096" height="38296" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_Currency]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="5" sourceattachpoint="6" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="29471" y="67809" />
+              <point x="29471" y="49061" />
+              <point x="24075" y="49061" />
+              <point x="24075" y="30313" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="21027" top="30013" logicalid="87" controlid="41" masterid="0" hint1="0" hint2="0" width="2248" height="24235" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_OriginatingRegion]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="5" sourceattachpoint="0" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21426" y="53748" />
+              <point x="21426" y="42031" />
+              <point x="22975" y="42031" />
+              <point x="22975" y="30313" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="21437" top="8198" logicalid="88" controlid="42" masterid="0" hint1="0" hint2="0" width="1838" height="17415" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_Reimbursable]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="3" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21836" y="8697" />
+              <point x="21836" y="17005" />
+              <point x="22975" y="17005" />
+              <point x="22975" y="25313" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="24325" top="30013" logicalid="89" controlid="43" masterid="0" hint1="0" hint2="0" width="9336" height="31054" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ProfitabilityActual_Calendar]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="5" sourceattachpoint="0" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="33261" y="60567" />
+              <point x="33261" y="45440" />
+              <point x="24625" y="45440" />
+              <point x="24625" y="30313" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="30121" top="68011" logicalid="90" controlid="44" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ExchangeRate_SourceCurrency]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="16" sourceattachpoint="11" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="30421" y="68410" />
+              <point x="32821" y="68410" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="30121" top="68561" logicalid="91" controlid="45" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ExchangeRate_DestinationCurrency]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="16" sourceattachpoint="13" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="30421" y="68960" />
+              <point x="32821" y="68960" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="32862" top="64487" logicalid="92" controlid="46" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_ExchangeRate_Calendar]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="16" sourceattachpoint="1" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="33261" y="64986" />
+              <point x="33261" y="67386" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>12105</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>42712</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1312</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>105</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="df889e1c-e494-4b00-94db-34ecd67e467c">
+      <ID>Calendar</ID>
+      <Name>Calendar</Name>
+      <DimensionID>Calendar</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5f9ac896-3c02-4479-850e-0f6f4928aa40">
+          <AttributeID>Calendar Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3d7c6f8c-d963-48ae-a9d2-3b524271d044">
+          <AttributeID>Calendar Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47fdc2a8-8d2b-4ec7-bf7f-c358ba2bcc37">
+          <AttributeID>Calendar Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5ec9851c-3046-4e2f-97ee-000a5bc68432">
+          <AttributeID>Calendar Period</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6394a090-a603-4f15-8f03-aa65e5f28d9c">
+          <AttributeID>Calendar Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f229d8e8-22a2-49c0-ac8f-4f8a8aa079a6">
+          <AttributeID>Calendar Quarter</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2a49fca4-6a65-4595-bf8d-5e50332f14d7">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="bd44355d-905e-42dc-b517-02b1c487dc43">
+      <ID>Profitability Actual</ID>
+      <Name>Profitability Actual</Name>
+      <DimensionID>Profitability Actual</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4b017bd2-7f08-4975-91c3-8413f0aade87">
+          <AttributeID>Profitability Actual Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5aed6d46-ee67-4086-8740-02244342be9d">
+          <AttributeID>Source Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e03c833-5158-4643-b390-c0591abe2f04">
+          <AttributeID>Activity Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1e70c87-8bd8-4913-b078-1ce6905cd286">
+          <AttributeID>Gl Account Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5de34598-3eeb-47c7-a524-db7d71e0acb7">
+          <AttributeID>Functional Department Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6150eb01-a322-4f45-8d92-ab03410395ba">
+          <AttributeID>Allocation Region Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3d9f876a-fd93-42bb-822f-8769528236a7">
+          <AttributeID>Property Fund Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="084ee58f-ad44-4448-b735-008a154f9725">
+          <AttributeID>Local Currency Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f890ef0a-7043-487a-b9dd-a3623c938756">
+          <AttributeID>Originating Region Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="43f42f70-896d-424d-813c-ea0f91c8a86e">
+          <AttributeID>Reimbursable Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c6113b0e-4f71-45e8-8a3e-f7edf4a57292">
+          <AttributeID>Calendar Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="efb80338-5fc6-484f-9d85-bed7fbdb0ffa">
+      <ID>Source</ID>
+      <Name>Source</Name>
+      <DimensionID>Source</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3878dc7f-b2a9-4d26-9531-970724983d7a">
+          <AttributeID>Source Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77608f44-3d37-489a-af22-e386a6ae723b">
+          <AttributeID>Source Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8ce593d8-9198-44b4-b9a4-ddaf0ddab68e">
+          <AttributeID>Source System</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc004723-77d9-478c-b318-0f20c17c2f1a">
+          <AttributeID>Source Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bcd3a516-2da3-4126-9ec0-b5cca39545e0">
+          <AttributeID>Is Corporate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="85675dd6-466e-4965-9df4-db4a44069c4b">
+          <AttributeID>Is Property</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4d9eef1d-1aea-40a2-9d17-c0e5af13a8f0">
+      <ID>Activity Type</ID>
+      <Name>Activity Type</Name>
+      <DimensionID>Activity Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fda8bd36-83e4-4b92-8738-871692f079d4">
+          <AttributeID>Activity Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5bd69e10-b777-4d67-8312-7101b4ee95f2">
+          <AttributeID>Activity Type Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ddfd920a-e7d2-442e-8a7b-9ea7c258835c">
+          <AttributeID>Activity Type Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="827e8172-66f2-4dd6-ad70-02c05f632caf">
+      <ID>Gl Account</ID>
+      <Name>Gl Account</Name>
+      <DimensionID>Gl Account</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="675b284d-ff27-4a4d-af59-493d17d5042e">
+          <AttributeID>Gl Account Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a9cf4b32-b714-468c-ac26-082a4dac91a4">
+          <AttributeID>Gl Account Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2f264a9e-b3d6-49a1-82ef-049e97902744">
+          <AttributeID>Gl Account Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3cbf7888-345e-411f-9803-dd74a8be6783">
+          <AttributeID>Account Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d72c0c13-64fc-45fa-b569-62a28870c2c0">
+      <ID>Functional Department</ID>
+      <Name>Functional Department</Name>
+      <DimensionID>Functional Department</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6084bf3a-709b-4db4-a7c9-17c7c8d86a3c">
+          <AttributeID>Functional Department Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7c336d6e-1d35-4195-aa2a-d03efb3aa435">
+          <AttributeID>Functional Department Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="16fdadd5-4d40-477f-9ed7-09dfb46c66d9">
+          <AttributeID>Functional Department Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="23d02c91-b4e1-4261-9df3-d857cc321579">
+          <AttributeID>Sub Functional Department Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2d3a74d9-8be6-422f-af73-357b93b1bd2a">
+          <AttributeID>Sub Functional Department Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="928f2fa5-3fdb-4850-a70e-702fc8529fce">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="e5a8b204-13de-4661-b0f5-05c873555b6b">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="7909290a-327f-4079-a932-dfbaefcae375">
+      <ID>Allocation Region</ID>
+      <Name>Allocation Region</Name>
+      <DimensionID>Allocation Region</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="784c0aaf-fdbb-4c3b-83ea-29a3f3f9f08d">
+          <AttributeID>Allocation Region Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ba41d0bc-fd33-44c2-9bbe-bb695819340f">
+          <AttributeID>Region Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="35a1299f-4803-4518-afab-8a8334594d55">
+          <AttributeID>Region Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a31624c1-3946-4fd4-b44d-8c6ce22f978f">
+          <AttributeID>Sub Region Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a29a07e3-c295-44ce-82db-ad890960505e">
+          <AttributeID>Sub Region Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7b298573-adff-48dd-8b0c-2b4208b62c1f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="35c00c60-f572-42b2-bf10-969dd57390f2">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="39592241-32d0-4a36-85ba-1b67b477dbeb">
+      <ID>Property Fund</ID>
+      <Name>Entity</Name>
+      <DimensionID>Property Fund</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d5096179-05fc-4044-a113-e88e5754e32c">
+          <AttributeID>Property Fund Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="14a83583-eef5-43cb-9f81-e5a56464035b">
+          <AttributeID>Property Fund Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="23e3a12e-3734-4230-bfeb-f3b9e52e9445">
+          <AttributeID>Property Fund Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="d20ddb80-6a29-4faf-84bf-b79f89495c71">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="a35bfeaa-4c85-40bf-978d-3b5acbda409a">
+      <ID>Originating Region</ID>
+      <Name>Originating Region</Name>
+      <DimensionID>Originating Region</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5edd57a0-b165-406f-b250-0475b356c8eb">
+          <AttributeID>Originating Region Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24ca15e5-37f8-41d0-84f2-e5bbbc2eb9f3">
+          <AttributeID>Region Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bef2bf87-fdfe-4a56-81a1-06009174d5b9">
+          <AttributeID>Region Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="91e7118f-5bca-46ec-9786-7a6f0b5f2c40">
+          <AttributeID>Sub Region Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="22e7895c-a898-4390-8e52-4e70234e277e">
+          <AttributeID>Sub Region Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="e9a72fa1-6041-44b8-a6c9-9fd19073fc6f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="9b996b17-c75d-4311-b594-1dfefc60b76c">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="2fa66eb9-e4d0-4352-8d9d-f08c47857cbb">
+      <ID>Reimbursable</ID>
+      <Name>Reimbursable</Name>
+      <DimensionID>Reimbursable</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="41a1b62a-27f9-4f66-865c-572d0e955279">
+          <AttributeID>Reimbursable Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f6bd900-dfa7-4406-a8e6-425471fb78c2">
+          <AttributeID>Reimbursable Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f945140a-7088-42b4-bebf-8318060295e8">
+          <AttributeID>Reimbursable Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7febe6ca-2006-440b-80f4-cdb136c3b360">
+      <ID>Profitability Budget</ID>
+      <Name>Profitability Budget</Name>
+      <DimensionID>Profitability Budget</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="cb8bdeeb-e133-4143-bb21-183bbe2e006e">
+          <AttributeID>Profitability Budget Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f5e95eba-5104-4c1f-a573-2998b42037d6">
+          <AttributeID>Activity Type Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="86aee7c5-48d9-429d-a8ff-f85b6566ca12">
+          <AttributeID>Local Currency Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="26cf9933-0577-467f-865b-986badeb87d7">
+          <AttributeID>Reforecast Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac212a0a-5325-4b40-9800-a625ae9ebcdc">
+          <AttributeID>Allocation Region Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="38900e23-3ea6-4f36-9211-aa89d36682a3">
+          <AttributeID>Gl Account Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a3ca5e7-b82c-4aa3-8a11-e8fefd55c5de">
+          <AttributeID>Originating Region Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87861756-a7df-47f3-a366-5c98986b6547">
+          <AttributeID>Reimbursable Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7423fcd3-26ab-49a0-9807-658fdef4d89d">
+          <AttributeID>Functional Department Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="869e19d7-3784-4c33-86a6-abbf34372aa2">
+          <AttributeID>Calendar Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6bb0eccf-a5f7-448b-9ea5-6736cfb940ad">
+          <AttributeID>Source Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="30d02e24-ff4c-4a6e-a676-4fe758a177fb">
+          <AttributeID>Property Fund Key</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cdee393f-ffc2-477f-a920-a93f39b82829">
+      <ID>Reforecast</ID>
+      <Name>Reforecast</Name>
+      <DimensionID>Reforecast</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="59386b3c-bb82-4d2e-80ab-59b65f8f3890">
+          <AttributeID>Reforecast Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="86ed9c38-51a2-456b-b0c4-9572f8a61ff4">
+          <AttributeID>Reforecast Effective Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="52ddcc67-277f-4032-923e-c1a74def4ad0">
+          <AttributeID>Reforecast Effective Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="516e6a4d-6544-4bd4-84e7-bcec00ea1fee">
+          <AttributeID>Reforecast Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd33b970-145d-455b-ba00-e8d9503b7466">
+          <AttributeID>Reforecast Effective Period</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ad47593-460b-46a4-ba28-c23197a088e3">
+          <AttributeID>Reforecast Effective Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="63f5c8ea-e8f8-4dff-ad5f-80bcb310c39a">
+          <AttributeID>Reforecast Quarter Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b2a64b52-6b8d-46a2-92d2-0bbacd871e2d">
+      <ID>Gl Account Category</ID>
+      <Name>Gl Account Category</Name>
+      <DimensionID>Gl Account Category</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f7f2aaf9-e7f1-401c-aa73-6ea1e2567ffe">
+          <AttributeID>Gl Account Category Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="01b1e2b6-23db-4f94-b27b-cb8015883f1c">
+          <AttributeID>Global Gl Account Category Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="da8b25a0-c351-4b19-acf4-57d985fdf68c">
+          <AttributeID>Hierarchy Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="02fc9a99-bf69-4cd4-8ac6-06828c579d49">
+          <AttributeID>Fee Or Expense</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ff3244f7-0342-462e-b300-3d48d06bbbe4">
+          <AttributeID>Major Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f9e70868-3441-4a4d-a9cd-e56b7c1ca38f">
+          <AttributeID>Minor Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2e07ad2f-3c53-4733-bb5e-06b646dedf54">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="5c839417-adc0-48d0-9213-c804770885b6">
+      <ID>Year To Date Period</ID>
+      <Name>Year To Date Period</Name>
+      <DimensionID>Year To Date Period</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="45c5a401-c83b-484d-af65-b87903ebbb3c">
+          <AttributeID>Year To Date Period Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8bf367c2-4173-4ffc-a07c-256b6c8d6501">
+          <AttributeID>Year To Date Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eb82a7c6-7e91-4544-8352-8cd513a936cd">
+          <AttributeID>Year To Date Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="30280d73-9d2d-4a20-82fd-1f23be29e9a9">
+          <AttributeID>Year To Date Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="44bc2039-8809-4ba7-83e2-45e4725c8cff">
+          <AttributeID>Effective Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="513b34cc-955e-46e4-b70e-3788cbd6b85d">
+          <AttributeID>Year To Date Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c681d6b0-236f-4cfe-af20-e2dac066aba8">
+          <AttributeID>Year To Date Period</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c4187c42-517e-4910-925b-3152689631e1">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="64b8fe42-ad2a-47af-b952-a0a0d433a76f">
+      <ID>Destination Currency</ID>
+      <Name>Destination Currency</Name>
+      <DimensionID>Currency</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="47e475c2-4cf9-475f-b356-54f9342fe660">
+          <AttributeID>Currency Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0781cb1d-2c91-4603-a274-b2ac0c9c8fc0">
+          <AttributeID>Currency Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24d405b7-6fa3-4bcc-98d9-434578b9229c">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="10554b07-9f50-4344-b74f-60b1ab00d533">
+      <ID>Source Currency</ID>
+      <Name>Source Currency</Name>
+      <DimensionID>Currency</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4b73c657-ad76-41ac-83b5-b963c27015d5">
+          <AttributeID>Currency Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="92920e6e-2aa9-4238-a690-4b68f39eca76">
+          <AttributeID>Currency Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55c1504f-7f95-4c0b-901d-2686a32a1b30">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="81324262-8987-4f13-84a6-f43a72566e2f">
+      <ID>Currency</ID>
+      <Name>Currency</Name>
+      <DimensionID>Currency</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="defecaec-8ca4-48f9-8d32-3717a3ff5c8a">
+          <AttributeID>Currency Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bd22e7da-d57c-4b4d-9ef9-ffc8408a5ef7">
+          <AttributeID>Currency Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32e1cc44-0a44-4b15-baf3-c43ed8fafc51">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="89262668-5b6e-4a76-9bad-7d8674bd1ed6">
+      <ID>Exchange Rate</ID>
+      <Name>Exchange Rate</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="fca28646-eb50-450c-bd2e-960f2fc1e3b2">
+          <ID>Rate</ID>
+          <Name>Rate</Name>
+          <Source dwd:design-time-name="0b64f8e2-faf9-4225-b49f-b96104a0f98e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="07d3421b-f4b9-4c36-b89d-bdc20b944e2c">
+              <TableID>dbo_ExchangeRate</TableID>
+              <ColumnID>Rate</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f1113ffb-e6e8-4b5d-96cb-088c55eee381">
+          <ID>Exchange Rate Count</ID>
+          <Name>Exchange Rate Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d333b0f1-5a20-4142-b949-64b966aec7e1">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c95d5d7d-4b74-41d8-8a46-b7d570395dbd">
+              <TableID>dbo_ExchangeRate</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>82125</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ba93ac03-1651-46b8-969a-8a9673f6dcbf">
+          <CubeDimensionID>Calendar</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e6d60d95-27c8-4399-806b-3e2638ab376b">
+              <AttributeID>Calendar Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="14bdaff6-837b-46f0-b990-a391523ec7c5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="537dadaa-65cf-4e57-9234-b8bafd98b6b2">
+                    <TableID>dbo_ExchangeRate</TableID>
+                    <ColumnID>CalendarKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="577b40f1-c9b8-41bf-a2b0-c6a80f862db4">
+          <CubeDimensionID>Destination Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9237b30b-ea44-4979-8e05-2ff55c0fbdca">
+              <AttributeID>Currency Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e9f30545-eea3-404a-bbe5-65b0f6ed49fe">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="623cd945-0fc2-412d-9240-442ad1fb0895">
+                    <TableID>dbo_ExchangeRate</TableID>
+                    <ColumnID>DestinationCurrencyKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ada6e284-2fb4-49db-876a-8202d207db93">
+          <CubeDimensionID>Source Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="94a898aa-ca83-498b-af19-27c5d94f6b1a">
+              <AttributeID>Currency Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6db0ae60-52e8-449d-be6e-e27af3a20385">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3b95042e-0f76-47eb-8646-6d30108dc689">
+                    <TableID>dbo_ExchangeRate</TableID>
+                    <ColumnID>SourceCurrencyKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1ba97109-d4af-4b4d-8827-f4fe96d168e5">
+          <CubeDimensionID>Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a9311a13-3ab2-4ffd-968c-0e322295b904">
+              <AttributeID>Currency Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a002aafb-a3e8-4b0c-996b-b92465f562c4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8545b0a1-2f59-4f86-aaee-e0cb5c79e1da">
+                    <TableID>dbo_ExchangeRate</TableID>
+                    <ColumnID>SourceCurrencyKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="879190ba-ce64-416f-b9f7-e5a61a52b7fc">
+      <ID>Profitability Actual</ID>
+      <Name>Profitability Actual</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="37e3a4d0-b29c-489c-9d1c-4338a3d603d7">
+          <ID>Local Actual</ID>
+          <Name>Local Actual</Name>
+          <Source dwd:design-time-name="99db2e95-9b27-40e2-a5c1-8ab4cc865865">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7a45fc97-fb6b-490d-a9f1-bab32d4aed59">
+              <TableID>dbo_ProfitabilityActual</TableID>
+              <ColumnID>LocalActual</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7bdfe66c-1b5e-48f0-af6d-1d5791f2bddc">
+          <ID>Profitability Actual Count</ID>
+          <Name>Profitability Actual Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="03dc5ef4-9b3d-4511-b181-4995d19d1cfb">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="34a22dee-4282-41b7-962d-5644fbd76e50">
+              <TableID>dbo_ProfitabilityActual</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="dd025925-87b6-4116-a6a8-4d0539260d81">
+          <ID>Local Actual - Profitability Actual</ID>
+          <Name>Converted Actual</Name>
+          <Source dwd:design-time-name="1067037a-8ee6-45e5-a83c-cdc20776e261">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7e9565f8-ddb4-4799-a18c-ed3bbae44886">
+              <TableID>dbo_ProfitabilityActual</TableID>
+              <ColumnID>LocalActual</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>2593430</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7ca91c40-e7cd-44cf-b20f-1e43caf14953">
+          <CubeDimensionID>Profitability Actual</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2cbcc5d1-e7bd-4785-aa5a-e34b57ebfcb0">
+              <AttributeID>Profitability Actual Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0cadf011-52ee-49b3-9488-5d4a38265a4e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6515a00c-c66c-4569-b21d-30afa120fa39">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>ProfitabilityActualKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8423256c-1275-4df7-bac7-f18a3cbcb6f2">
+          <CubeDimensionID>Source</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2a1a37ae-4a23-4913-9786-21e49f12d828">
+              <AttributeID>Source Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="48252fc7-f041-47f8-bdea-159b9e53c954">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="703ae12f-8fa7-42e7-9952-b9c8d459de72">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>SourceKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1a165b1e-2234-4b79-9457-9fb0683223db">
+          <CubeDimensionID>Activity Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="47ff3cbe-b86c-44cf-87e5-0bbe1789906d">
+              <AttributeID>Activity Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5f460c99-1758-41c4-b90a-c8d5d290e1cd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8bf12897-ac6c-4e6d-ace7-bd449756c554">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>ActivityTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="106dd3e9-1805-4bac-a5d6-58ddbea68efc">
+          <CubeDimensionID>Gl Account</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="780f85d9-795b-4ecc-a5a3-8803444f70a3">
+              <AttributeID>Gl Account Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6e406f22-3465-42a1-9650-11c0c7f845d2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="09b3a0de-7c5b-460c-b802-5ab58ce6a523">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>GlAccountKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ea967269-23ac-489b-89d9-16002b44be0f">
+          <CubeDimensionID>Functional Department</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5fbd81a7-6757-4ab9-be95-48fa034506a1">
+              <AttributeID>Functional Department Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="74b10d72-1001-47cc-a308-ed6baa6ace33">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eedee2af-24db-4aa0-ba39-e58618e281bf">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>FunctionalDepartmentKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="42f84e77-4ba1-43da-851d-8c23729382ff">
+          <CubeDimensionID>Allocation Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c7f856d9-d631-456b-924b-d4b1d4c349da">
+              <AttributeID>Allocation Region Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ad66d6bd-1bd0-4fd5-a242-5b4352e4852e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8ab40d29-d79b-44db-843e-078dac8fe95e">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>AllocationRegionKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="193e7454-fae4-4c01-8b3e-c81c4e47fd56">
+          <CubeDimensionID>Property Fund</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bac525c2-0a34-4b5a-92e2-cd2d45ff9ccc">
+              <AttributeID>Property Fund Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5ce60560-f764-41ff-982b-a9f5d0beb06c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7a873f36-21c7-41fa-a957-c90755354c12">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>PropertyFundKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7f89cb6e-14e8-4bda-8901-7131a93d29c9">
+          <CubeDimensionID>Originating Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5c75fced-f177-4ce9-9dfc-50fed0f53d1b">
+              <AttributeID>Originating Region Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="79f48461-dd24-47d8-ae9b-6dd67ab82b92">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="751e4c9d-66a2-466b-ae14-d21479212ddb">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>OriginatingRegionKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="032a4ddf-bd9e-4e64-a81a-94999356d82a">
+          <CubeDimensionID>Reimbursable</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a3285976-67cd-40fa-a3c4-e4a481044646">
+              <AttributeID>Reimbursable Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3de064fa-6cc3-4caa-8411-733a00f27d78">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8206b710-9ec7-4862-89eb-a543c11eaffe">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>ReimbursableKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2149432d-5b1c-48ff-aad1-dd5e036256d3">
+          <CubeDimensionID>Calendar</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="eedbbdb5-ccb6-47cd-9984-e1547df66636">
+              <AttributeID>Calendar Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="12d44bc2-9491-4f23-9841-6d397f41a608">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a620836c-e4d9-4721-acd7-6400376e32ee">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>CalendarKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2d27a2ee-8373-4c70-a864-552e5a1dbbd1">
+          <CubeDimensionID>Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3acff033-0b07-4de3-80e0-005a091383a2">
+              <AttributeID>Currency Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bec492f6-838b-483a-9f6c-3a0e92ed88f7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="72ba0cf6-2eb0-44b3-a9f0-c058220d9b35">
+                    <TableID>dbo_ProfitabilityActual</TableID>
+                    <ColumnID>LocalCurrencyKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="dcd26ca0-f7aa-4726-935c-b79f4f54f66d">
+          <CubeDimensionID>Gl Account Category</CubeDimensionID>
+          <MeasureGroupID>Profitability Actual Gl Account Category Bridge</MeasureGroupID>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="2cba2eaf-e1a9-4c4f-9ef5-00bd4db2d972">
+      <ID>Profitability Actual Gl Account Category Bridge</ID>
+      <Name>Profitability Actual Gl Account Category Bridge</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="70343135-3b75-4188-a69c-1c1b2a2066d0">
+          <ID>Profitability Actual Gl Account Category Bridge Count</ID>
+          <Name>Profitability Actual Gl Account Category Bridge Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="411648b6-3f77-45e8-9b63-29b1e85a9afe">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="8d3386f8-f1e5-4aa7-8b0e-11050d936332">
+              <TableID>dbo_ProfitabilityActualGlAccountCategoryBridge</TableID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>6896005</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bd4ca82d-79b0-4066-a856-1c98f17b7667">
+          <CubeDimensionID>Gl Account Category</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c127e9a5-7019-40ad-ac79-d369d4d4b0c8">
+              <AttributeID>Gl Account Category Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="34720cc1-3ff3-48d8-afca-9c27e2a81647">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d5837ae1-98b2-4f99-b5b2-0195f3f576f3">
+                    <TableID>dbo_ProfitabilityActualGlAccountCategoryBridge</TableID>
+                    <ColumnID>GlAccountCategoryKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7c19511a-a7cf-4e97-95f8-eafa84f44cc7">
+          <CubeDimensionID>Profitability Actual</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="755d3059-5b92-4133-9fd4-a629071eaa61">
+              <AttributeID>Profitability Actual Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8e32022a-7a92-4a93-a400-dd9000282fd1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="166b1437-e3ec-484c-8cf9-eff4781aa8f4">
+                    <TableID>dbo_ProfitabilityActualGlAccountCategoryBridge</TableID>
+                    <ColumnID>ProfitabilityActualKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="2a8e5239-55f8-4a83-b578-b213740d9c71">
+          <CubeDimensionID>Source</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="27bc1912-0fed-4ead-918a-638d9015fdee">
+              <AttributeID>Source Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Source Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="b3b78e9e-df0c-46b7-9fda-4be848529617">
+          <CubeDimensionID>Activity Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="002ac088-ca58-475f-b9a5-dbaeabb52780">
+              <AttributeID>Activity Type Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Activity Type Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="2d1c0e79-51ae-4a07-9a26-f4fbd8c65130">
+          <CubeDimensionID>Gl Account</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="80ce0449-96c2-4ea0-b5e0-d187301c61f2">
+              <AttributeID>Gl Account Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Gl Account Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="839821c9-bf53-4c33-8cc5-855cb280880b">
+          <CubeDimensionID>Functional Department</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3604b0b9-f3a8-4b4a-833f-662c5198acbd">
+              <AttributeID>Functional Department Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Functional Department Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ff0850c5-6eaa-4683-9460-1d44718d1e21">
+          <CubeDimensionID>Allocation Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="536ae8bc-16cf-4511-934d-981cb9e7daf5">
+              <AttributeID>Allocation Region Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Allocation Region Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d044033b-fedd-4e26-9c34-13314a55c7d3">
+          <CubeDimensionID>Property Fund</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="24284643-aad2-4175-a3cc-1a28f55b7cd7">
+              <AttributeID>Property Fund Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Property Fund Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5a4d368d-c73a-4a4e-b414-7b5d9313cc23">
+          <CubeDimensionID>Originating Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c94de884-1a29-46b3-ac45-b19883ec8dcb">
+              <AttributeID>Originating Region Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Originating Region Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a5ecaeba-521f-46f6-9c6a-fc04c386ef1e">
+          <CubeDimensionID>Reimbursable</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="55252c0b-1e6e-4423-a936-f1350f868719">
+              <AttributeID>Reimbursable Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Reimbursable Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="40b498d6-9f34-4f46-a665-2a39be337306">
+          <CubeDimensionID>Calendar</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="02736cb1-23ee-4c23-a2d5-3bb70d1b141b">
+              <AttributeID>Calendar Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Calendar Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="c3fa1129-5df2-4fa9-a2c5-7570764b6ff9">
+          <CubeDimensionID>Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6908820e-e285-42a5-9ad9-c01e8255e3d3">
+              <AttributeID>Currency Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Actual</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Local Currency Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e3f3faa5-5798-4fa3-9523-72f721f5198d">
+      <ID>Profitability Budget</ID>
+      <Name>Profitability Budget</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="76e798d3-ccd9-4bfc-a0ad-8220f0ef00f5">
+          <ID>Local Budget</ID>
+          <Name>Local Budget</Name>
+          <Source dwd:design-time-name="94b2bff5-5d35-42b8-8e17-f9fd3f5d357e">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f7817a09-e811-4418-9a02-6c29deb3b187">
+              <TableID>dbo_ProfitabilityBudget</TableID>
+              <ColumnID>LocalBudget</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c4051147-4f3d-42be-80f8-ae648d77aeab">
+          <ID>Profitability Budget Count</ID>
+          <Name>Profitability Budget Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ddf31a85-09c4-453f-8476-1559ff2d6ed2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="cb2cf3c1-cf3c-4a3d-9002-6d206ac1f084">
+              <TableID>dbo_ProfitabilityBudget</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0511dbc8-74dd-4257-b657-73e02b67683d">
+          <ID>Local Budget - Profitability Budget</ID>
+          <Name>Converted Budget</Name>
+          <Source dwd:design-time-name="b8ffbdf9-77ca-4d4f-9896-98ca7f0b1587">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8040ce66-de14-4e69-9273-11d8b8f4fdeb">
+              <TableID>dbo_ProfitabilityBudget</TableID>
+              <ColumnID>LocalBudget</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>905943</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="9731ea14-d1ea-4904-a3f1-034085e0a885">
+          <CubeDimensionID>Profitability Budget</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b73c2662-e944-473c-b47b-20a81791a198">
+              <AttributeID>Profitability Budget Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="702e5e71-f2a3-4e38-94d1-095ea3bb45a5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1d298d4d-2f1f-45d5-abce-00bee066b1b4">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>ProfitabilityBudgetKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d8a35cc3-304d-46d6-bbaa-4032dcb3676b">
+          <CubeDimensionID>Activity Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ae544b4c-7f05-4848-9007-9b75bc0bc216">
+              <AttributeID>Activity Type Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="22347938-9d8c-46b6-b39f-73e089723c94">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7343dbcf-b470-46f7-81f4-b1674d569336">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>ActivityTypeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c8f2c5b7-4cc2-428b-a571-9dede9a15e40">
+          <CubeDimensionID>Reforecast</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9237aaa7-33b3-4e22-ab58-07bd434c690b">
+              <AttributeID>Reforecast Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b24a4ba6-5c72-420f-b353-2acd12eb7b19">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="59267bce-78c4-4d6d-979a-587750a880a5">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>ReforecastKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8af1cc94-7e2b-4b0d-b29d-7a96c508d0d7">
+          <CubeDimensionID>Allocation Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6b0e4d91-e07b-4252-be7b-6fcfc110d3b0">
+              <AttributeID>Allocation Region Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9667d2d4-4550-4e6c-87af-fe7cff58b951">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a081722c-67ad-4563-8347-5ea48ba64716">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>AllocationRegionKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1c1c9461-4f25-4b3d-aefc-1948fff3658c">
+          <CubeDimensionID>Gl Account</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="205d8762-af54-48da-9e16-14b143d5db66">
+              <AttributeID>Gl Account Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cba5d38c-9e35-4454-ae6b-e7f1ca7c8942">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d85a3fdd-0803-447c-8e87-e670e7948804">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>GlAccountKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a5852d3e-a1e8-41b8-8761-c17eed7cb8c4">
+          <CubeDimensionID>Originating Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e7c7b308-3e10-489c-9e28-9b347f9ae9ed">
+              <AttributeID>Originating Region Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9d5948f9-a532-410d-853b-5d02b557e6f3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f42e6406-f05f-4429-8579-a2ce8b3b26e2">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>OriginatingRegionKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b5487620-1030-4b05-bf58-497bd1d4a100">
+          <CubeDimensionID>Reimbursable</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="08515ada-35bd-4da2-b1fb-ba4b847c8503">
+              <AttributeID>Reimbursable Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="18b3c373-88cc-4146-b2e8-80c0914b2b16">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="84965a88-aca8-4dfe-bf44-10a4d2f818cb">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>ReimbursableKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d7172a6f-c586-4b02-b24a-1eaa0c655261">
+          <CubeDimensionID>Functional Department</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d5e1fdda-3e1c-4025-ab95-2eed4c48781b">
+              <AttributeID>Functional Department Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="29a64345-d255-47c5-b7bc-b0a6cb3f31c8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f67d03c0-c3b6-46cd-90bb-9be1211c7f4f">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>FunctionalDepartmentKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4c79f016-8d2a-4e19-92e0-6761b8884a1b">
+          <CubeDimensionID>Calendar</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0ca91fc0-ac18-47e0-a22e-a0b1bcc1c23e">
+              <AttributeID>Calendar Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5216d29f-19ac-45dd-b66e-5a484b023583">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="265ac37b-4975-4d9b-8ffe-75afa67b18d4">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>CalendarKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8efde83a-b3a1-46a1-ac0f-ec5a7fb5cf69">
+          <CubeDimensionID>Source</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c172d8ab-cb31-4bd9-8aba-7963f70bd71e">
+              <AttributeID>Source Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3220b211-303d-4d30-924d-743686074e66">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d6fca364-014b-49e2-898a-5f391f372a95">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>SourceKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="16884416-3e78-42fd-a5a8-eb6306087bc2">
+          <CubeDimensionID>Property Fund</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1d3eadc1-3e3d-43f7-a950-93cac3fc5cee">
+              <AttributeID>Property Fund Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="de97ef3e-3314-42c8-81dd-aff02b1a1202">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="40f2c9f7-e623-4005-9dd1-a6e902eb2dcc">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>PropertyFundKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9cd30307-bf53-440b-8843-30d2c9ed1d5d">
+          <CubeDimensionID>Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ad873c59-a641-434b-9024-d722f55ef85d">
+              <AttributeID>Currency Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9bb7b5b6-3030-49d1-9d6c-d3a67075ba8a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5104c1f9-03f6-4565-91a5-a10070790de1">
+                    <TableID>dbo_ProfitabilityBudget</TableID>
+                    <ColumnID>LocalCurrencyKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="8e808dae-9e6b-442b-ab8d-1f435df148b1">
+          <CubeDimensionID>Gl Account Category</CubeDimensionID>
+          <MeasureGroupID>Profitability Budget Gl Account Category Bridge</MeasureGroupID>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e699f8bd-fb20-4cb6-80b1-93c8a312d979">
+      <ID>Profitability Budget Gl Account Category Bridge</ID>
+      <Name>Profitability Budget Gl Account Category Bridge</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="e00c2822-2959-4b98-8578-dec891aac577">
+          <ID>Profitability Budget Gl Account Category Bridge Count</ID>
+          <Name>Profitability Budget Gl Account Category Bridge Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a4d96d30-e48b-4992-af4a-614d0bc9304d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="3b4cbdd0-2808-4f55-a1ad-f2008c41e6c5">
+              <TableID>dbo_ProfitabilityBudgetGlAccountCategoryBridge</TableID>
+            </Source>
+          </Source>
+          <Visible>false</Visible>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>4357437</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d2ec44bc-86c9-47d7-91f0-3ec30e20665b">
+          <CubeDimensionID>Profitability Budget</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="605bd780-2e51-42ef-bb5c-8a43f509bc8d">
+              <AttributeID>Profitability Budget Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1ad1105c-7f3b-4f87-94af-f8393d56e342">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5094374b-de61-4cf6-a4a9-84e9e8543935">
+                    <TableID>dbo_ProfitabilityBudgetGlAccountCategoryBridge</TableID>
+                    <ColumnID>ProfitabilityBudgetKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eeb0f4a1-e8c2-4b7d-bc33-988110633fb6">
+          <CubeDimensionID>Gl Account Category</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="63a1e44e-d195-4cfe-aa73-4b294fd8350f">
+              <AttributeID>Gl Account Category Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="227249c8-7a94-47a6-a0e1-eae92d760710">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ed6dbbd9-ccbb-457e-b127-06f2f515a47c">
+                    <TableID>dbo_ProfitabilityBudgetGlAccountCategoryBridge</TableID>
+                    <ColumnID>GlAccountCategoryKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="fb9b03f5-7966-4844-aa54-4014efb6b625">
+          <CubeDimensionID>Activity Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0bea103a-d3f0-4073-8852-4993948ca05f">
+              <AttributeID>Activity Type Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Activity Type Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="674da859-e126-4124-829a-d9dde5d1aa77">
+          <CubeDimensionID>Reforecast</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="00660901-b5e9-4b6e-bd26-3ac2d97b7312">
+              <AttributeID>Reforecast Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Reforecast Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0f1a890d-e956-42ab-91d4-4a1bd6b468e8">
+          <CubeDimensionID>Allocation Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="72cf2883-36a2-4293-82ee-49cae96ca70b">
+              <AttributeID>Allocation Region Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Allocation Region Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="159397dc-b06a-4cfb-96d2-af97cd313daa">
+          <CubeDimensionID>Gl Account</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bb0cbe46-68e0-4fac-8036-5f5958d86094">
+              <AttributeID>Gl Account Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Gl Account Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="c7d84786-182b-4f3c-afc3-5d6d425e158e">
+          <CubeDimensionID>Originating Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1c88f3a4-464b-49c9-aff2-dc75ed9fe0ec">
+              <AttributeID>Originating Region Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Originating Region Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="94f53bf3-f930-406d-a6de-b9950c5e388c">
+          <CubeDimensionID>Reimbursable</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7068b860-d043-43c1-8e73-4f8f99ba9cdd">
+              <AttributeID>Reimbursable Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Reimbursable Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="bb278ea8-a345-4fef-bc24-726d428aac9f">
+          <CubeDimensionID>Functional Department</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e37593e0-5070-443b-abca-ae28719722a6">
+              <AttributeID>Functional Department Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Functional Department Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="c15709f3-2d1c-4a38-89fe-54e45506867f">
+          <CubeDimensionID>Calendar</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="477530f8-4277-413b-8692-f077cfd40c4e">
+              <AttributeID>Calendar Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Calendar Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3e7805ec-4d2f-4319-8551-67c013fd4581">
+          <CubeDimensionID>Source</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="feb98c5b-aace-4275-8b02-129b763e063b">
+              <AttributeID>Source Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Source Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7e176702-8d4b-4ed3-a74a-4de0c5051435">
+          <CubeDimensionID>Property Fund</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6bfb61d2-e85b-4d29-a714-7eabf3c57905">
+              <AttributeID>Property Fund Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Property Fund Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9daa3c29-00f2-49e8-81f4-3aab2fae6d11">
+          <CubeDimensionID>Currency</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b70f1f12-b9fa-4069-80d1-3671cd4afadc">
+              <AttributeID>Currency Key</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Profitability Budget</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Local Currency Key</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="83b1c8cf-3e2f-43a4-8b08-1df1d5a56bb3">
+    <DataSourceViewID>Gr Reporting</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="b051bb8e-fe3a-4318-bb9d-64d6f52c1432">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text> /*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;   
+CREATE MEMBER CURRENTCUBE.[Measures].[YTD Origanal Budget]
+ AS SUM(
+	Filter(
+			[Year To Date Period].[Year To Date Period].Children*
+			[Calendar].[Calendar Period].Children,
+			[Year To Date Period].[Year To Date Period].CurrentMember.MemberValue&gt;=
+			[Calendar].[Calendar Period].CurrentMember.MemberValue
+	),
+	[Measures].[Converted Budget]
+), 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Profitability Budget';   
+CREATE MEMBER CURRENTCUBE.[Measures].[YTD Actual]
+ AS SUM(
+	Filter(
+			[Year To Date Period].[Year To Date Period].Children*
+			[Calendar].[Calendar Period].Children,
+			[Year To Date Period].[Year To Date Period].CurrentMember.MemberValue&gt;=
+			[Calendar].[Calendar Period].CurrentMember.MemberValue
+	),
+	[Measures].[Converted Actual]
+), 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Profitability Actual';        
+CREATE MEMBER CURRENTCUBE.[Measures].[YTD Variance]
+ AS [Measures].[GrossYTD] - [Measures].[NetYTD], 
+VISIBLE = 1;          
+CREATE MEMBER CURRENTCUBE.[Measures].[YTD Gross]
+ AS SUM(
+	Filter(
+			[Year To Date Period].[Year To Date Period].Children*
+			[Calendar].[Calendar Period].Children,
+			[Year To Date Period].[Year To Date Period].CurrentMember.MemberValue&gt;=
+			[Calendar].[Calendar Period].CurrentMember.MemberValue
+	),
+	[Measures].[Converted Actual]
+)
++
+SUM(
+	Filter(
+			[Year To Date Period].[Year To Date Period].Children*
+			[Calendar].[Calendar Period].Children,
+			[Year To Date Period].[Year To Date Period].CurrentMember.MemberValue&lt;
+			[Calendar].[Calendar Period].CurrentMember.MemberValue
+	),
+	[Measures].[Converted Budget]
+), 
+VISIBLE = 1;          
+CREATE MEMBER CURRENTCUBE.[Measures].[YTD Net]
+ AS SUM(
+	Filter(
+			[Year To Date Period].[Year To Date Period].Children*
+			[Calendar].[Calendar Period].Children,
+			[Year To Date Period].[Year To Date Period].CurrentMember.MemberValue&gt;=
+			[Calendar].[Calendar Period].CurrentMember.MemberValue
+	),
+	[Measures].[NetActualConverted]
+)
++
+SUM(
+	Filter(
+			[Year To Date Period].[Year To Date Period].Children*
+			[Calendar].[Calendar Period].Children,
+			[Year To Date Period].[Year To Date Period].CurrentMember.MemberValue&lt;
+			[Calendar].[Calendar Period].CurrentMember.MemberValue
+	),
+	[Measures].[NetBudgetConverted]
+), 
+VISIBLE = 1;            
+CREATE MEMBER CURRENTCUBE.[Measures].[Actuals Net]
+ AS SUM(
+	[Reimbursable].[Reimbursable Name].&amp;[Reimbursable],
+	[Measures].[Converted Actual]
+), 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Profitability Actual';            
+CREATE MEMBER CURRENTCUBE.[Measures].[Budget Net]
+ AS SUM(
+	[Reimbursable].[Reimbursable Name].&amp;[Reimbursable],
+	[Measures].[Converted Budget]
+), 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Profitability Budget';            
+CREATE MEMBER CURRENTCUBE.[Measures].[Net Variance]
+ AS [Measures].[NetActualConverted] - [Measures].[NetBudgetConverted], 
+VISIBLE = 1;            
+CREATE MEMBER CURRENTCUBE.[Measures].[Gross Variance]
+ AS [Measures].[Converted Actual]-[Measures].[Converted Budget], 
+VISIBLE = 1; (
+  {[Measures].[Converted Budget]}
+ ,Leaves
+  (
+    [Calendar]
+  )
+ ,Leaves
+  (
+    [Currency]
+  )
+) = 
+  [Measures].[Rate] * [Measures].[Local Budget];  (
+  {[Measures].[Converted Actual]}
+ ,Leaves
+  (
+    [Calendar]
+  )
+ ,Leaves
+  (
+    [Currency]
+  )
+) = 
+  [Measures].[Rate] * [Measures].[Local Actual]; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

@@ -1,0 +1,150 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="acb50168-4343-4107-ad10-92efbcecbc5b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Gl Account</ID>
+  <Name>Gl Account</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1819" scrolltop="-8202" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6324" y="20452" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="GlAccount" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3545" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000d90d00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_GlAccount" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1819</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8202</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4d6ef779-c6e0-4ec3-84f7-c7583ed81368">
+    <DataSourceViewID>Gr Reporting Ver2</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="ceae5efb-2807-4699-9577-f4fba4b23017">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7d936bab-3278-4ca7-a281-ead73d7df26a">
+      <ID>Gl Account Key</ID>
+      <Name>Gl Account Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>3188</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="822a71dc-8f76-445b-8acd-c366a4762bda">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1faf8551-cbd4-4f56-92b4-2f04180d454a">
+            <TableID>dbo_GlAccount</TableID>
+            <ColumnID>GlAccountKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f0611a80-81ba-4ca8-933b-a1a39c45ff65">
+          <AttributeID>Gl Account Code</AttributeID>
+          <Name>Gl Account Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9d6424c5-1bb4-447e-92ab-df61c5809fe1">
+          <AttributeID>Gl Account Name</AttributeID>
+          <Name>Gl Account Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ProcessingState xmlns="http://schemas.microsoft.com/analysisservices/2010/engine/200">Unprocessed</ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ccecc13e-a683-4778-aacb-f80fcbd40c74">
+      <ID>Gl Account Code</ID>
+      <Name>Gl Account Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae3ca48c-eb06-452b-a2d6-372c46bb38e5">
+          <DataType>WChar</DataType>
+          <DataSize>12</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="68e7fa46-07e3-4de4-b1b4-3338462d50da">
+            <TableID>dbo_GlAccount</TableID>
+            <ColumnID>GlAccountCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ProcessingState xmlns="http://schemas.microsoft.com/analysisservices/2010/engine/200">Unprocessed</ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="30df3d4b-069f-45b7-8c92-f109b7ecbf36">
+      <ID>Gl Account Name</ID>
+      <Name>Gl Account Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="693b1b75-e51d-4293-bdf8-6f2194db0c64">
+          <DataType>WChar</DataType>
+          <DataSize>12</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae9669d7-f34a-4620-a952-d2f74deb0a8c">
+            <TableID>dbo_GlAccount</TableID>
+            <ColumnID>GlAccountCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e32c2960-436b-43c6-9075-dc0b6fc717a2">
+        <DataType>WChar</DataType>
+        <DataSize>250</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="73ee9d2f-d0c6-4edf-b8bf-4cfa3ae1d637">
+          <TableID>dbo_GlAccount</TableID>
+          <ColumnID>GlAccountName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ProcessingState xmlns="http://schemas.microsoft.com/analysisservices/2010/engine/200">Unprocessed</ProcessingState>
+    </Attribute>
+  </Attributes>
+</Dimension>

@@ -1,0 +1,22 @@
+<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#
+  string packagePath = Path.GetDirectoryName(this.Host.TemplateFile).Replace(@"\ETL\ETL.Configuration\Staging","");
+#><?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete"
+								  GeneratedFromPackageName="Master"
+								  GeneratedFromPackageID="{5280B97C-084C-4A9F-891B-605E85D8F01D}"
+								  GeneratedDate="2009/08/11 04:42:10 PM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[GlobalReportingCorporateBudget.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.BudgetingCorp\GlobalReportingCorporateBudget.dtsx</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

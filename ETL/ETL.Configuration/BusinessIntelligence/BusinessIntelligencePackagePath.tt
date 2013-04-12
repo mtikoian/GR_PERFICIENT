@@ -1,0 +1,23 @@
+<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#
+  string packagePath = Path.GetDirectoryName(this.Host.TemplateFile).Replace(@"\ETL\ETL.Configuration\BusinessIntelligence","");
+#>
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\ngoossens"
+								  GeneratedFromPackageName="Master"
+								  GeneratedFromPackageID="{61803929-672E-4F1E-8068-0043C3B00612}"
+								  GeneratedDate="2009/10/22 02:40:08 PM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[ProfitabilityCube.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.BusinessIntelligence\ProfitabilityCube.dtsx</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

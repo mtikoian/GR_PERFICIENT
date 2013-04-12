@@ -1,0 +1,1631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>24.99995mm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>24.99995mm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>24.99995mm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>24.99995mm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>24.99995mm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>24.99995mm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>24.99995mm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>24.99995mm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>5.99999mm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox2">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>MTD Gross Actual</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#949ca4</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox3">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>MTD Gross Reforecast</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#949ca4</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox5">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>MTD Gross Variance</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#949ca4</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox7">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>YTD Gross Actual</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#949ca4</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>YTD Gross Reforecast</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#949ca4</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>YTD Gross Variance</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#949ca4</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox13">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Annual Gross Budget</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#949ca4</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox15">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Annual Gross Reforecast</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox15</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#949ca4</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>#7c8692</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>5.99999mm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="MTD_Gross_Actual">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!MTD_Gross_Actual.Value)</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>MTD_Gross_Actual</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="MTD_Gross_Reforecast">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!MTD_Gross_Reforecast.Value)</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>MTD_Gross_Reforecast</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="MTD_Gross_Variance">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!MTD_Gross_Variance.Value)</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>MTD_Gross_Variance</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="YTD_Gross_Actual">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!YTD_Gross_Actual.Value)</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>YTD_Gross_Actual</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="YTD_Gross_Reforecast">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!YTD_Gross_Reforecast.Value)</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>YTD_Gross_Reforecast</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="YTD_Gross_Variance">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!YTD_Gross_Variance.Value)</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>YTD_Gross_Variance</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Annual_Gross_Budget">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!Annual_Gross_Budget.Value)</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Annual_Gross_Budget</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Annual_Gross_Reforecast">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!Annual_Gross_Reforecast.Value)</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>#4d4d4d</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Annual_Gross_Reforecast</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <TablixHeader>
+                <Size>24.99995mm</Size>
+                <CellContents>
+                  <Textbox Name="Textbox23">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Property Fund Type</Value>
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>11pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                              <Color>White</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox23</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>#949ca4</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>#7c8692</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>24.99995mm</Size>
+                    <CellContents>
+                      <Textbox Name="Textbox21">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Region</Value>
+                                <Style>
+                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontSize>11pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>White</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Textbox21</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>#949ca4</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <BackgroundColor>#7c8692</BackgroundColor>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>24.99995mm</Size>
+                        <CellContents>
+                          <Textbox Name="Textbox19">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Sub Region</Value>
+                                    <Style>
+                                      <FontFamily>Tahoma</FontFamily>
+                                      <FontSize>11pt</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>White</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>Textbox19</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>#949ca4</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <BackgroundColor>#7c8692</BackgroundColor>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember>
+                          <TablixHeader>
+                            <Size>24.99995mm</Size>
+                            <CellContents>
+                              <Textbox Name="Textbox17">
+                                <CanGrow>true</CanGrow>
+                                <KeepTogether>true</KeepTogether>
+                                <Paragraphs>
+                                  <Paragraph>
+                                    <TextRuns>
+                                      <TextRun>
+                                        <Value>Property Fund Name</Value>
+                                        <Style>
+                                          <FontFamily>Tahoma</FontFamily>
+                                          <FontSize>11pt</FontSize>
+                                          <FontWeight>Bold</FontWeight>
+                                          <Color>White</Color>
+                                        </Style>
+                                      </TextRun>
+                                    </TextRuns>
+                                    <Style />
+                                  </Paragraph>
+                                </Paragraphs>
+                                <rd:DefaultName>Textbox17</rd:DefaultName>
+                                <Style>
+                                  <Border>
+                                    <Color>#949ca4</Color>
+                                    <Style>Solid</Style>
+                                  </Border>
+                                  <BackgroundColor>#7c8692</BackgroundColor>
+                                  <PaddingLeft>2pt</PaddingLeft>
+                                  <PaddingRight>2pt</PaddingRight>
+                                  <PaddingTop>2pt</PaddingTop>
+                                  <PaddingBottom>2pt</PaddingBottom>
+                                </Style>
+                              </Textbox>
+                            </CellContents>
+                          </TablixHeader>
+                          <TablixMembers>
+                            <TablixMember />
+                          </TablixMembers>
+                        </TablixMember>
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Property_Fund_Type">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Property_Fund_Type.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!Property_Fund_Type.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixHeader>
+                <Size>24.99995mm</Size>
+                <CellContents>
+                  <Textbox Name="Property_Fund_Type">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=Fields!Property_Fund_Type.Value</Value>
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontWeight>Normal</FontWeight>
+                              <Color>#333333</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Property_Fund_Type</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>#aab6c4</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>#96a4b2</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Region">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Region.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Region.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>24.99995mm</Size>
+                    <CellContents>
+                      <Textbox Name="Region">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!Region.Value</Value>
+                                <Style>
+                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontWeight>Normal</FontWeight>
+                                  <Color>#333333</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Region</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>#bec8ce</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <BackgroundColor>#aab6c4</BackgroundColor>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="SubRegion">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!SubRegion.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!SubRegion.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixHeader>
+                        <Size>24.99995mm</Size>
+                        <CellContents>
+                          <Textbox Name="SubRegion">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>=Fields!SubRegion.Value</Value>
+                                    <Style>
+                                      <FontFamily>Tahoma</FontFamily>
+                                      <FontWeight>Normal</FontWeight>
+                                      <Color>#333333</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <rd:DefaultName>SubRegion</rd:DefaultName>
+                            <Style>
+                              <Border>
+                                <Color>#c8d8e4</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <BackgroundColor>#bec8ce</BackgroundColor>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember>
+                          <Group Name="Property_Fund_Name">
+                            <GroupExpressions>
+                              <GroupExpression>=Fields!Property_Fund_Name.Value</GroupExpression>
+                            </GroupExpressions>
+                          </Group>
+                          <SortExpressions>
+                            <SortExpression>
+                              <Value>=Fields!Property_Fund_Name.Value</Value>
+                            </SortExpression>
+                          </SortExpressions>
+                          <TablixHeader>
+                            <Size>24.99995mm</Size>
+                            <CellContents>
+                              <Textbox Name="Property_Fund_Name">
+                                <CanGrow>true</CanGrow>
+                                <KeepTogether>true</KeepTogether>
+                                <Paragraphs>
+                                  <Paragraph>
+                                    <TextRuns>
+                                      <TextRun>
+                                        <Value>=Fields!Property_Fund_Name.Value</Value>
+                                        <Style>
+                                          <FontFamily>Tahoma</FontFamily>
+                                          <FontWeight>Normal</FontWeight>
+                                          <Color>#333333</Color>
+                                        </Style>
+                                      </TextRun>
+                                    </TextRuns>
+                                    <Style />
+                                  </Paragraph>
+                                </Paragraphs>
+                                <rd:DefaultName>Property_Fund_Name</rd:DefaultName>
+                                <Style>
+                                  <Border>
+                                    <Color>#c8d8e4</Color>
+                                    <Style>Solid</Style>
+                                  </Border>
+                                  <BackgroundColor>#bec8ce</BackgroundColor>
+                                  <PaddingLeft>2pt</PaddingLeft>
+                                  <PaddingRight>2pt</PaddingRight>
+                                  <PaddingTop>2pt</PaddingTop>
+                                  <PaddingBottom>2pt</PaddingBottom>
+                                </Style>
+                              </Textbox>
+                            </CellContents>
+                          </TablixHeader>
+                          <TablixMembers>
+                            <TablixMember />
+                          </TablixMembers>
+                          <Visibility>
+                            <Hidden>true</Hidden>
+                            <ToggleItem>SubRegion</ToggleItem>
+                          </Visibility>
+                        </TablixMember>
+                      </TablixMembers>
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                        <ToggleItem>Region</ToggleItem>
+                      </Visibility>
+                    </TablixMember>
+                  </TablixMembers>
+                  <Visibility>
+                    <Hidden>true</Hidden>
+                    <ToggleItem>Property_Fund_Type</ToggleItem>
+                  </Visibility>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>15.24mm</Top>
+        <Left>0mm</Left>
+        <Height>11.99998mm</Height>
+        <Width>299.9994mm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Textbox Name="ReportTitle">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>20pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:WatermarkTextbox>Title</rd:WatermarkTextbox>
+        <rd:DefaultName>ReportTitle</rd:DefaultName>
+        <Top>0mm</Top>
+        <Height>10.16mm</Height>
+        <Width>139.7mm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>57.15mm</Height>
+    <Style>
+      <Border>
+        <Style>None</Style>
+      </Border>
+    </Style>
+  </Body>
+  <Width>300.00001mm</Width>
+  <Page>
+    <PageFooter>
+      <Height>11.43mm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="ExecutionTime">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!ExecutionTime</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>ExecutionTime</rd:DefaultName>
+          <Top>5.08mm</Top>
+          <Left>101.6mm</Left>
+          <Height>6.35mm</Height>
+          <Width>50.8mm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <LeftMargin>25.4mm</LeftMargin>
+    <RightMargin>25.4mm</RightMargin>
+    <TopMargin>25.4mm</TopMargin>
+    <BottomMargin>25.4mm</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="GrReportingCube">
+      <ConnectionProperties>
+        <DataProvider>OLEDB-MD</DataProvider>
+        <ConnectString>Data Source=OBTSSQL10\dev;Initial Catalog=Apr2010Rpt_GrReporting</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
+      </ConnectionProperties>
+      <rd:SecurityType>Integrated</rd:SecurityType>
+      <rd:DataSourceID>9e403744-292c-4890-b881-9295e06bf2bd</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>GrReportingCube</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="ReportingCurrencyCurrencyKey">
+            <Value>=Parameters!ReportingCurrencyCurrencyKey.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="CalendarPeriodHierarchy">
+            <Value>=Parameters!CalendarPeriodHierarchy.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText> SELECT NON EMPTY { [Measures].[YTD Gross Actual], [Measures].[MTD Gross Variance], [Measures].[YTD Gross Reforecast], [Measures].[Annual Gross Budget], [Measures].[YTD Gross Variance], [Measures].[Annual Gross Reforecast], [Measures].[MTD Gross Reforecast], [Measures].[MTD Gross Actual] } ON COLUMNS, NON EMPTY { ([Property Fund].[Property Fund Type].[Property Fund Type].ALLMEMBERS * [Property Fund].[Property Fund Name].[Property Fund Name].ALLMEMBERS * [Allocation Region].[AllocaitonRegionHierarchy].[SubRegion].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@ReportingCurrencyCurrencyKey, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED) ) ON COLUMNS FROM [ProfitabilityUnified])) WHERE ( IIF( STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED).Count = 1, STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED), [Calendar].[PeriodHierarchy].currentmember ), IIF( STRTOSET(@ReportingCurrencyCurrencyKey, CONSTRAINED).Count = 1, STRTOSET(@ReportingCurrencyCurrencyKey, CONSTRAINED), [Reporting Currency].[Currency Key].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>MDX</CommandType>
+            <QuerySpecification xsi:type="MDXQuerySpecification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property Fund</DimensionName>
+                      <HierarchyName>Property Fund Type</HierarchyName>
+                      <HierarchyUniqueName>[Property Fund].[Property Fund Type]</HierarchyUniqueName>
+                      <LevelName>Property Fund Type</LevelName>
+                      <UniqueName>[Property Fund].[Property Fund Type].[Property Fund Type]</UniqueName>
+                    </ID>
+                    <ItemCaption>Property Fund Type</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property Fund</DimensionName>
+                      <HierarchyName>Property Fund Name</HierarchyName>
+                      <HierarchyUniqueName>[Property Fund].[Property Fund Name]</HierarchyUniqueName>
+                      <LevelName>Property Fund Name</LevelName>
+                      <UniqueName>[Property Fund].[Property Fund Name].[Property Fund Name]</UniqueName>
+                    </ID>
+                    <ItemCaption>Property Fund Name</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Allocation Region</DimensionName>
+                      <HierarchyName>AllocaitonRegionHierarchy</HierarchyName>
+                      <HierarchyUniqueName>[Allocation Region].[AllocaitonRegionHierarchy]</HierarchyUniqueName>
+                      <LevelName>Region</LevelName>
+                      <UniqueName>[Allocation Region].[AllocaitonRegionHierarchy].[Region]</UniqueName>
+                    </ID>
+                    <ItemCaption>Region</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Allocation Region</DimensionName>
+                      <HierarchyName>AllocaitonRegionHierarchy</HierarchyName>
+                      <HierarchyUniqueName>[Allocation Region].[AllocaitonRegionHierarchy]</HierarchyUniqueName>
+                      <LevelName>SubRegion</LevelName>
+                      <UniqueName>[Allocation Region].[AllocaitonRegionHierarchy].[SubRegion]</UniqueName>
+                    </ID>
+                    <ItemCaption>SubRegion</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>MTD Gross Actual</MeasureName>
+                      <UniqueName>[Measures].[MTD Gross Actual]</UniqueName>
+                    </ID>
+                    <ItemCaption>MTD Gross Actual</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>MTD Gross Reforecast</MeasureName>
+                      <UniqueName>[Measures].[MTD Gross Reforecast]</UniqueName>
+                    </ID>
+                    <ItemCaption>MTD Gross Reforecast</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>MTD Gross Variance</MeasureName>
+                      <UniqueName>[Measures].[MTD Gross Variance]</UniqueName>
+                    </ID>
+                    <ItemCaption>MTD Gross Variance</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>YTD Gross Actual</MeasureName>
+                      <UniqueName>[Measures].[YTD Gross Actual]</UniqueName>
+                    </ID>
+                    <ItemCaption>YTD Gross Actual</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>YTD Gross Reforecast</MeasureName>
+                      <UniqueName>[Measures].[YTD Gross Reforecast]</UniqueName>
+                    </ID>
+                    <ItemCaption>YTD Gross Reforecast</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>YTD Gross Variance</MeasureName>
+                      <UniqueName>[Measures].[YTD Gross Variance]</UniqueName>
+                    </ID>
+                    <ItemCaption>YTD Gross Variance</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Annual Gross Budget</MeasureName>
+                      <UniqueName>[Measures].[Annual Gross Budget]</UniqueName>
+                    </ID>
+                    <ItemCaption>Annual Gross Budget</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Annual Gross Reforecast</MeasureName>
+                      <UniqueName>[Measures].[Annual Gross Reforecast]</UniqueName>
+                    </ID>
+                    <ItemCaption>Annual Gross Reforecast</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                </Items>
+              </Select>
+              <From>ProfitabilityUnified</From>
+              <Filter>
+                <FilterItems>
+                  <FilterItem>
+                    <HierarchyUniqueName>[Calendar].[PeriodHierarchy]</HierarchyUniqueName>
+                    <Condition xsi:type="EqualTo">
+                      <Members>
+                        <Member>
+                          <MemberUniqueName>[Calendar].[PeriodHierarchy].[Period].&amp;[2010]&amp;[3]</MemberUniqueName>
+                        </Member>
+                      </Members>
+                      <Parametrized>true</Parametrized>
+                    </Condition>
+                  </FilterItem>
+                  <FilterItem>
+                    <HierarchyUniqueName>[Reporting Currency].[Currency Key]</HierarchyUniqueName>
+                    <Condition xsi:type="EqualTo">
+                      <Members>
+                        <Member>
+                          <MemberUniqueName>[Reporting Currency].[Currency Key].[U.S. Dollar]</MemberUniqueName>
+                        </Member>
+                      </Members>
+                      <Parametrized>true</Parametrized>
+                    </Condition>
+                  </FilterItem>
+                </FilterItems>
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties />
+            </QuerySpecification>
+            <Query>
+              <Statement> SELECT NON EMPTY { [Measures].[YTD Gross Actual], [Measures].[MTD Gross Variance], [Measures].[YTD Gross Reforecast], [Measures].[Annual Gross Budget], [Measures].[YTD Gross Variance], [Measures].[Annual Gross Reforecast], [Measures].[MTD Gross Reforecast], [Measures].[MTD Gross Actual] } ON COLUMNS, NON EMPTY { ([Property Fund].[Property Fund Type].[Property Fund Type].ALLMEMBERS * [Property Fund].[Property Fund Name].[Property Fund Name].ALLMEMBERS * [Allocation Region].[AllocaitonRegionHierarchy].[SubRegion].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@ReportingCurrencyCurrencyKey, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED) ) ON COLUMNS FROM [ProfitabilityUnified])) WHERE ( IIF( STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED).Count = 1, STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED), [Calendar].[PeriodHierarchy].currentmember ), IIF( STRTOSET(@ReportingCurrencyCurrencyKey, CONSTRAINED).Count = 1, STRTOSET(@ReportingCurrencyCurrencyKey, CONSTRAINED), [Reporting Currency].[Currency Key].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <ParameterDefinitions>
+                <ParameterDefinition>
+                  <Name>CalendarPeriodHierarchy</Name>
+                  <DefaultValues>
+                    <DefaultValue>[Calendar].[PeriodHierarchy].[Period].&amp;[2010]&amp;[3]</DefaultValue>
+                  </DefaultValues>
+                  <Caption>PeriodHierarchy</Caption>
+                  <HierarchyUniqueName>[Calendar].[PeriodHierarchy]</HierarchyUniqueName>
+                  <ParameterValuesQuery>
+                    <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Calendar].[PeriodHierarchy].ALLMEMBERS ON ROWS FROM [ProfitabilityUnified]</Statement>
+                    <ParameterizedStatement>
+                      <ReferencedParameters />
+                    </ParameterizedStatement>
+                  </ParameterValuesQuery>
+                  <MultipleValues>true</MultipleValues>
+                </ParameterDefinition>
+                <ParameterDefinition>
+                  <Name>ReportingCurrencyCurrencyKey</Name>
+                  <DefaultValues>
+                    <DefaultValue>[Reporting Currency].[Currency Key].[U.S. Dollar]</DefaultValue>
+                  </DefaultValues>
+                  <Caption>Currency Key</Caption>
+                  <HierarchyUniqueName>[Reporting Currency].[Currency Key]</HierarchyUniqueName>
+                  <ParameterValuesQuery>
+                    <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Reporting Currency].[Currency Key].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED) ) ON COLUMNS FROM [ProfitabilityUnified])</Statement>
+                    <ParameterizedStatement>
+                      <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Reporting Currency].[Currency Key].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED) ) ON COLUMNS FROM [ProfitabilityUnified])</Statement>
+                      <ReferencedParameters>
+                        <ReferencedParameter>
+                          <Name>CalendarPeriodHierarchy</Name>
+                        </ReferencedParameter>
+                      </ReferencedParameters>
+                    </ParameterizedStatement>
+                  </ParameterValuesQuery>
+                  <MultipleValues>true</MultipleValues>
+                </ParameterDefinition>
+              </ParameterDefinitions>
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+      </Query>
+      <Fields>
+        <Field Name="Property_Fund_Type">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property Fund].[Property Fund Type].[Property Fund Type]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Property_Fund_Name">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property Fund].[Property Fund Name].[Property Fund Name]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Region">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Allocation Region].[AllocaitonRegionHierarchy].[Region]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SubRegion">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Allocation Region].[AllocaitonRegionHierarchy].[SubRegion]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MTD_Gross_Actual">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[MTD Gross Actual]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MTD_Gross_Reforecast">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[MTD Gross Reforecast]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MTD_Gross_Variance">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[MTD Gross Variance]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="YTD_Gross_Actual">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[YTD Gross Actual]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="YTD_Gross_Variance">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[YTD Gross Variance]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="YTD_Gross_Reforecast">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[YTD Gross Reforecast]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Annual_Gross_Budget">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Annual Gross Budget]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Annual_Gross_Reforecast">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Annual Gross Reforecast]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ReportingCurrencyCurrencyKey">
+      <Query>
+        <DataSourceName>GrReportingCube</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="CalendarPeriodHierarchy">
+            <Value>=Parameters!CalendarPeriodHierarchy.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Reporting Currency].[Currency Key].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED) ) ON COLUMNS FROM [ProfitabilityUnified])</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>MDX</CommandType>
+            <Type>Query</Type>
+            <QuerySpecification xsi:type="MDXQuerySpecification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterCaption</MeasureName>
+                      <UniqueName>[Measures].[ParameterCaption]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterCaption</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterValue</MeasureName>
+                      <UniqueName>[Measures].[ParameterValue]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterValue</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterLevel</MeasureName>
+                      <UniqueName>[Measures].[ParameterLevel]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterLevel</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                </Items>
+              </Select>
+              <From>ProfitabilityUnified</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties />
+            </QuerySpecification>
+            <Query>
+              <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Reporting Currency].[Currency Key].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Reporting Currency].[Currency Key].ALLMEMBERS ON ROWS FROM ( SELECT ( STRTOSET(@CalendarPeriodHierarchy, CONSTRAINED) ) ON COLUMNS FROM [ProfitabilityUnified])</Statement>
+              <ParameterDefinitions>
+                <ParameterDefinition>
+                  <Name>CalendarPeriodHierarchy</Name>
+                  <DefaultValues>
+                    <DefaultValue>[Calendar].[PeriodHierarchy].[Period].&amp;[2010]&amp;[3]</DefaultValue>
+                  </DefaultValues>
+                  <Caption>PeriodHierarchy</Caption>
+                  <HierarchyUniqueName>[Calendar].[PeriodHierarchy]</HierarchyUniqueName>
+                  <ParameterValuesQuery>
+                    <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Calendar].[PeriodHierarchy].ALLMEMBERS ON ROWS FROM [ProfitabilityUnified]</Statement>
+                    <ParameterizedStatement>
+                      <ReferencedParameters />
+                    </ParameterizedStatement>
+                  </ParameterValuesQuery>
+                  <MultipleValues>true</MultipleValues>
+                </ParameterDefinition>
+              </ParameterDefinitions>
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <rd:AutoGenerated>true</rd:AutoGenerated>
+        <rd:Hidden>true</rd:Hidden>
+      </Query>
+      <Fields>
+        <Field Name="ParameterCaption">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterCaption]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterValue">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterValue]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterLevel">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterLevel]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterCaptionIndented">
+          <Value>=Space(3*Fields!ParameterLevel.Value) + Fields!ParameterCaption.Value</Value>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="CalendarPeriodHierarchy">
+      <Query>
+        <DataSourceName>GrReportingCube</DataSourceName>
+        <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Calendar].[PeriodHierarchy].ALLMEMBERS ON ROWS FROM [ProfitabilityUnified]</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>MDX</CommandType>
+            <Type>Query</Type>
+            <QuerySpecification xsi:type="MDXQuerySpecification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterCaption</MeasureName>
+                      <UniqueName>[Measures].[ParameterCaption]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterCaption</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterValue</MeasureName>
+                      <UniqueName>[Measures].[ParameterValue]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterValue</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterLevel</MeasureName>
+                      <UniqueName>[Measures].[ParameterLevel]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterLevel</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                </Items>
+              </Select>
+              <From>ProfitabilityUnified</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties />
+            </QuerySpecification>
+            <Query>
+              <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Calendar].[PeriodHierarchy].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Calendar].[PeriodHierarchy].ALLMEMBERS ON ROWS FROM [ProfitabilityUnified]</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <rd:AutoGenerated>true</rd:AutoGenerated>
+        <rd:Hidden>true</rd:Hidden>
+      </Query>
+      <Fields>
+        <Field Name="ParameterCaption">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterCaption]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterValue">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterValue]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterLevel">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterLevel]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterCaptionIndented">
+          <Value>=Space(3*Fields!ParameterLevel.Value) + Fields!ParameterCaption.Value</Value>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="CalendarPeriodHierarchy">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>[Calendar].[PeriodHierarchy].[Period].&amp;[2010]&amp;[3]</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PeriodHierarchy</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>CalendarPeriodHierarchy</DataSetName>
+          <ValueField>ParameterValue</ValueField>
+          <LabelField>ParameterCaptionIndented</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="ReportingCurrencyCurrencyKey">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>[Reporting Currency].[Currency Key].[U.S. Dollar]</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Currency Key</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>ReportingCurrencyCurrencyKey</DataSetName>
+          <ValueField>ParameterValue</ValueField>
+          <LabelField>ParameterCaptionIndented</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Mm</rd:ReportUnitType>
+  <rd:ReportServerUrl>http://obtssql10/ReportServerDev</rd:ReportServerUrl>
+  <rd:ReportID>bb81b40a-7e07-4e6f-8d64-2bd4d8b808ba</rd:ReportID>
+</Report>

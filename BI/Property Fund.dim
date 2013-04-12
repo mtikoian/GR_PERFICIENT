@@ -1,0 +1,205 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9e62b81b-e5da-4104-a09e-63b0381c4f75" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Property Fund</ID>
+  <Name>Property Fund</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1792" scrolltop="-8413" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="0" y="20558" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="PropertyFund" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3598" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800000e0e0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_PropertyFund" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1792</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8413</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="146">
+            <Shape Id="Property Fund Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Property Fund Key" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Property Fund Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Property Fund Name" />
+              </Attributes>
+              <Position x="207" y="20" />
+            </Shape>
+            <Shape Id="Property Fund Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Property Fund Type" />
+              </Attributes>
+              <Position x="395" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6a78482f-64de-493b-bd3d-d03baf900d6f">
+    <DataSourceViewID>Gr Reporting Ver2</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="22e7b0df-001f-4f8d-991f-868d73ee992b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0dbe5249-7221-418c-b001-5039bc53768f">
+      <ID>Property Fund Key</ID>
+      <Name>Property Fund Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>790</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9597cd02-1b40-4c1f-8acc-011f9fa19162">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1b1d92c-ac53-4b97-b798-82e76e47603c">
+            <TableID>dbo_PropertyFund</TableID>
+            <ColumnID>PropertyFundKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="39c757e1-f20d-491f-9a0c-2f41481e707d">
+          <AttributeID>Property Fund Name</AttributeID>
+          <Name>Property Fund Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0716e58e-cbfb-4070-81d2-078650213549">
+      <ID>Property Fund Name</ID>
+      <Name>Property Fund Name</Name>
+      <EstimatedCount>468</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="24b7028b-a1be-42bd-a841-002fc8622e03">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dde8eddc-e067-4471-b1e4-162c2262375b">
+            <TableID>dbo_PropertyFund</TableID>
+            <ColumnID>PropertyFundType</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="34bc919c-686a-483f-90a7-8520a66932b5">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7639359f-d40d-4919-8c72-4bbb15bd00aa">
+            <TableID>dbo_PropertyFund</TableID>
+            <ColumnID>PropertyFundName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f670c982-427a-4057-993d-13916c562dd6">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f842c5c1-bd23-4c30-bde6-7d671eab2607">
+          <TableID>dbo_PropertyFund</TableID>
+          <ColumnID>PropertyFundName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2602d797-f2fb-4b39-a442-0dd4f588302c">
+          <AttributeID>Property Fund Type</AttributeID>
+          <Name>Property Fund Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0ea9cf33-8930-4751-abd4-6b20f8526fdd">
+      <ID>Property Fund Type</ID>
+      <Name>Property Fund Type</Name>
+      <EstimatedCount>9</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6104c05f-0cc6-4946-be1f-ec4a8a225c5d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="846fbfc4-942c-4b71-8217-60e3308dad9b">
+            <TableID>dbo_PropertyFund</TableID>
+            <ColumnID>PropertyFundType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="76750969-d5ac-470d-82f0-771b2001d750">
+      <ID>Hierarchy</ID>
+      <Name>PropertyFundHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="e919f852-1a37-452d-abfa-131e457ae4d6">
+          <ID>Property Fund Type</ID>
+          <Name>Type</Name>
+          <SourceAttributeID>Property Fund Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2d4d3522-6968-423c-86b5-f9c4f318cede">
+          <ID>Property Fund Name</ID>
+          <Name>Name</Name>
+          <SourceAttributeID>Property Fund Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

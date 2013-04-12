@@ -1,0 +1,57 @@
+<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#
+  string packagePath = Path.GetDirectoryName(this.Host.TemplateFile).Replace(@"\ETL\ETL.Configuration\Staging","");
+#>
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="Master" GeneratedFromPackageID="{32DC2E11-7D6F-47AD-B604-ADE5A8B22A41}" GeneratedDate="23/07/2009 08:16:50 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[GlAccountMapping.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\GlAccountMapping.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[GlobalGlAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\GlobalGlAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[GlobalActivityType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\GlobalActivityType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[ActivityTypeMapping.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\ActivityTypeMapping.dtsx</ConfiguredValue>
+	</Configuration>
+
+	
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[FunctionalDepartmentMapping.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\FunctionalDepartmentMapping.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[GlobalFunctionalDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\GlobalFunctionalDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[RegionMapping.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\RegionMapping.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[GlobalRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\GlobalRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[PropertyFundMapping.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\PropertyFundMapping.dtsx</ConfiguredValue>
+	</Configuration>
+
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[GlobalPropertyFund.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.Grm\GlobalPropertyFund.dtsx</ConfiguredValue>
+	</Configuration>
+
+	
+</DTSConfiguration>

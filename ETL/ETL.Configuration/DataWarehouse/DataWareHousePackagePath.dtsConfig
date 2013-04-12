@@ -1,0 +1,117 @@
+﻿<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\ngoossens"
+								  GeneratedFromPackageName="Master"
+								  GeneratedFromPackageID="{5FAB6275-D5B2-4C8A-BEF9-A867CC06BEDE}"
+								  GeneratedDate="31/07/2009 08:15:51 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimActivityType.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimActivityType.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimAllocationRegion.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimAllocationRegion.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimFunctionalDepartment.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimFunctionalDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimGlAccount.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimGlAccount.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimOriginatingRegion.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimOriginatingRegion.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimPropertyFund.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimPropertyFund.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimReportingEntity.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimReportingEntity.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimGlAccountCategory.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimGlAccountCategory.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[FactProfitabilityActual.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\FactProfitabilityActual.dtsx</ConfiguredValue>
+	</Configuration>
+		<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimCurrency.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimCurrency.dtsx</ConfiguredValue>
+	</Configuration>
+		<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[FactExchangeRate.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\FactExchangeRate.dtsx</ConfiguredValue>
+	</Configuration>
+		<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[FactProfitabilityBudget.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\FactProfitabilityBudget.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[FactProfitabilityReforecast.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\FactProfitabilityReforecast.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimSnapshotActivityType.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimSnapshotActivityType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimSnapshotOriginatingRegion.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimSnapshotOriginatingRegion.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimSnapshotGlAccount.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimSnapshotGlAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimSnapshotGlAccountCategory.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimSnapshotGlAccountCategory.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimSnapshotPropertyFund.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimSnapshotPropertyFund.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimSnapshotReportingEntity.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimSnapshotReportingEntity.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[DimSnapshotAllocationRegion.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>D:\Development\TishmanSpeyer\GR\ETL\ETL.DataWarehouse\DimSnapshotAllocationRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+</DTSConfiguration>

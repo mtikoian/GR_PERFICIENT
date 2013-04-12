@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[ETL.Configuration.csproj]
+SCC_Aux_Path = "\\bisqldev\VSSRepo"
+SCC_Project_Name = "$/GR PERFICIENT/ETL/ETL.Configuration", CBBAAAAA

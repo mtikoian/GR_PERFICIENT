@@ -1,0 +1,276 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "GrReporting.Database"
+   MSDTVersion = "80"
+   DefDBRef = "h3000-0283.GrReporting.dbo"
+   Begin Folder = "Change Scripts"
+      Begin Folder = "V1.0.0.0"
+         Script = "-2.GrReporting.Delete.Structure.sql"
+         Script = "02.GrReporting.Structure.sql"
+         Script = "04.GrReporting.Data.sql"
+         Script = "05.GrReporting.Indexes.sql"
+         Script = "06.Job Scripts.sql"
+         Script = "09.GrReporting.Functions.sql"
+      End
+      Begin Folder = "V1.1.0.0"
+         Script = "1.Stp - GrReporting.sql"
+      End
+      Begin Folder = "v1.10.0.0"
+         Script = "1 - Structural Changes.sql"
+         Script = "2 - Types.sql"
+         Script = "3 - Functions.sql"
+         Script = "4 - Stored Procedures.sql"
+         Script = "5 - Data Inserts and Updates.sql"
+         Script = "6 - Views.sql"
+         Begin Folder = "Post-Deployment"
+            Script = "1 - Data Migration.sql"
+         End
+      End
+      Begin Folder = "v1.10.0.1"
+         Script = "GrReporting.dbo.stp_R_ValidFunctionalDepartmentGLGlobalAccountCombinations.sql"
+      End
+      Begin Folder = "v1.2.0.1"
+         Script = "1.GrReporting.Structural.sql"
+         Script = "2.Stp - GrReporting.sql"
+      End
+      Begin Folder = "v1.2.0.2"
+         Script = "1-Gdm.DataUpdate.sql"
+         Script = "1-GrReporting.DataUpdate.sql"
+         Script = "Procedures.sql"
+      End
+      Begin Folder = "v1.2.0.4"
+         Script = "Structures.sql"
+      End
+      Begin Folder = "V1.3.0.0"
+         Script = "1.Drop Bridge Tables.sql"
+         Script = "2.Update ProfitabilityActual Table.sql"
+         Script = "3.Update ProfitabilityBudget Table.sql"
+         Script = "4.Add ProfitabilityReforecast Table.sql"
+         Script = "5.YearToDate Table.sql"
+         Script = "6.Views.sql"
+         Script = "7.Procedures.sql"
+         Script = "8.Functions.sql"
+      End
+      Begin Folder = "V1.3.4.0"
+         Script = "1.Structural Changes.sql"
+         Script = "2.Stored Procedures.sql"
+      End
+      Begin Folder = "V1.4.0.0"
+         Script = "0.BR integration updates.sql"
+         Script = "1.GrReporting.Structural.sql"
+         Script = "2.Create New Tables.sql"
+         Script = "2.ProgramableScripts.sql"
+      End
+      Begin Folder = "v1.4.1.0"
+         Script = "1.Structural.sql"
+         Script = "2.Stored Procedures.sql"
+      End
+      Begin Folder = "v1.4.2.0"
+         Script = "1. Structures.sql"
+         Script = "2. Procedures.sql"
+      End
+      Begin Folder = "v1.4.2.1"
+         Script = "2.ProgrammableScripts.sql"
+      End
+      Begin Folder = "v1.4.2.2"
+         Script = "1. Structures.sql"
+         Script = "2.Views.sql"
+         Script = "3. Procedures.sql"
+      End
+      Begin Folder = "v1.4.3.0"
+         Script = "1. Structural Changes.sql"
+         Script = "2. Procedures.sql"
+      End
+      Begin Folder = "v1.5.0.0"
+         Script = "1. Structural Changes.sql"
+         Script = "2. Procedures.sql"
+         Script = "3.Indexes.sql"
+         Script = "4.Data Changes.sql"
+      End
+      Begin Folder = "v1.5.1.0"
+         Script = "1. Stored Procedures.sql"
+      End
+      Begin Folder = "v1.6.0.0"
+         Script = "1. Structural Changes.sql"
+         Script = "2. Stored Procedures.sql"
+         Script = "3. Indexes.sql"
+         Script = "4. Data Updates and Inserts.sql"
+         Script = "5. Job.sql"
+      End
+      Begin Folder = "v1.6.1.0"
+         Script = "Data Updates and Inserts.sql"
+         Script = "Stored Procedures.sql"
+      End
+      Begin Folder = "V1.6.1.1"
+         Script = "Stored Procedures.sql"
+      End
+      Begin Folder = "v1.7.0.0"
+         Script = "1. Pre-deployment.sql"
+         Script = "2. Post-deployment.sql"
+         Begin Folder = "CC12 (Business Line)"
+            Script = "1. Structural Changes.sql"
+            Begin Folder = "GDM (Do Not Run)"
+               Script = "1 Structural Changes.sql"
+               Script = "2 Stored Procedures.sql"
+               Script = "3 Indexes.sql"
+               Script = "4 Data Updates and Inserts.sql"
+               Script = "5 Job.sql"
+            End
+         End
+         Begin Folder = "CC15 (Q1 Reforecast - run after CC12 and Snapshot Fix scripts)"
+            Script = "1. Structural Changes.sql"
+            Script = "2. Data Updates and Inserts.sql"
+            Script = "3. Functions.sql"
+            Script = "4. Stored Procedures.sql"
+         End
+         Begin Folder = "Snapshot Fix"
+            Script = "1. Structural Changes.sql"
+         End
+      End
+      Begin Folder = "v1.7.0.1"
+         Script = "Data Updates and Inserts.sql"
+      End
+      Begin Folder = "V1.7.1.0"
+         Script = "1. Structural Changes.sql"
+         Script = "2. Data Updates and Inserts.sql"
+         Script = "3. Stored Procedures.sql"
+      End
+      Begin Folder = "v1.7.1.1"
+         Script = "1 - Data Updates.sql"
+      End
+      Begin Folder = "v1.7.2.0"
+         Begin Folder = "CC19 - Report Templates"
+            Script = "1. Structural Changes.sql"
+         End
+      End
+      Begin Folder = "v1.8.0.0"
+         Script = "0 - Structural Changes.sql"
+         Script = "1 - Functions.sql"
+         Script = "2 - Stored Procedures.sql"
+         Script = "3 - Data Inserts and Updates.sql"
+         Script = "4 - Indexes.sql"
+      End
+      Begin Folder = "v1.8.0.1"
+         Script = "1 - Structural Changes.sql"
+         Script = "2 - Stored Procedures.sql"
+      End
+      Begin Folder = "v1.8.0.2"
+         Script = "1 - Data Updates.sql"
+      End
+      Begin Folder = "v1.8.1.0"
+         Script = "1 - Stored Procedures.sql"
+      End
+      Begin Folder = "v1.8.1.2"
+         Script = "1 - Stored Procedures.sql"
+      End
+      Begin Folder = "v1.8.2.0"
+         Script = "1 - Stored Procedures.sql"
+         Script = "2 - Data Inserts and Updates.sql"
+      End
+   End
+   Begin Folder = "Create Scripts"
+      Begin Folder = "Functions"
+         Script = "dbo.GetCurrentReforecastRecord.sql"
+         Script = "dbo.GetReforecastRecord.sql"
+         Script = "ProfitabilityActualGlAccountCategoryBridgeVirtual.sql"
+         Script = "ProfitabilityBudgetGlAccountCategoryBridgeVirtual.sql"
+         Script = "Split.sql"
+      End
+      Begin Folder = "Stored Procedures"
+         Begin Folder = "Slowly Changing Dimensions"
+            Script = "csp_D_SCDFKConstraints.sql"
+            Script = "csp_I_SCDFKConstraints.sql"
+            Script = "csp_IU_SCDActivityType.sql"
+            Script = "csp_IU_SCDAllocationRegion.sql"
+            Script = "csp_IU_SCDFunctionalDepartment.sql"
+            Script = "csp_IU_SCDGLCategorizationHierarchy.sql"
+            Script = "csp_IU_SCDOriginatingRegion.sql"
+            Script = "csp_IU_SCDPropertyFund.sql"
+            Script = "csp_IU_SCDSnapshotActivityType.sql"
+            Script = "csp_IU_SCDSnapshotAllocationRegion.sql"
+            Script = "csp_IU_SCDSnapshotGLCategorizationHierarchy.sql"
+            Script = "csp_IU_SCDSnapshotOriginatingRegion.sql"
+            Script = "csp_IU_SCDSnapshotPropertyFund.sql"
+         End
+         Script = "stp_D_ProfitabilityActualIndex.sql"
+         Script = "stp_D_ProfitabilityBudgetIndex.sql"
+         Script = "stp_D_ProfitabilityReforecastIndex.sql"
+         Script = "stp_I_ProfitabilityActualIndex.sql"
+         Script = "stp_I_ProfitabilityBudgetIndex.sql"
+         Script = "stp_I_ProfitabilityReforecastIndex.sql"
+         Script = "stp_R_BudgetJobCodeDetail.sql"
+         Script = "stp_R_BudgetOriginator.sql"
+         Script = "stp_R_BudgetOwner.sql"
+         Script = "stp_R_ExpenseCzarTotalComparisonDetail.sql"
+         Script = "stp_R_MissingExchangeRate.sql"
+         Script = "stp_R_Profitability.sql"
+         Script = "stp_R_ProfitabilityDetailV2.sql"
+         Script = "stp_R_ProfitabilityV2.sql"
+         Script = "stp_R_UnknownActivityType.sql"
+         Script = "stp_R_UnknownFunctionalDepartment.sql"
+         Script = "stp_R_UnknownGlAccount.sql"
+         Script = "stp_R_UnknownMRIActualsCurrentWindowGlobal.sql"
+         Script = "stp_R_UnknownOriginatingRegion.sql"
+         Script = "stp_R_ValidFunctionalDepartmentGLGlobalAccountCombinations.sql"
+         Script = "stp_R_ValidFunctionalDepartmentOriginatingRegionCombinations.sql"
+         Script = "stp_R_ValidReportingEntityActivityTypeCombinations.sql"
+         Script = "stp_S_UnknownMRIActualsCurrentWindowLocal.sql"
+         Script = "stp_S_UnknownSummaryAllocatedOverhead.sql"
+         Script = "stp_S_UnknownSummaryMRIActualsGlobal.sql"
+         Script = "stp_S_UnknownSummaryMRIActualsLocal.sql"
+         Script = "stp_S_ValidNonPayrollRegionAndFunctionalDepartment.sql"
+         Script = "stp_S_ValidPayrollRegionAndFunctionalDepartment.sql"
+      End
+      Begin Folder = "Views"
+         Script = "ActivityTypeLatestState.sql"
+         Script = "AllocationRegionLatestState.sql"
+         Script = "Fact Currency Rate.sql"
+         Script = "FunctionalDepartmentLatestState.sql"
+         Script = "GLCategorizationHierarchyLatestState.sql"
+         Script = "OriginatingRegionLatestState.sql"
+         Script = "ProfitabilityFact.sql"
+         Script = "ProfitabilityFactActual.sql"
+         Script = "ProfitabilityFactBudget.sql"
+         Script = "ProfitabilityFactReforecast.sql"
+         Script = "ProfitabilityType.sql"
+         Script = "PropertyFundLatestState.sql"
+      End
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "h3000-0283.GrReporting.dbo"
+         ConnectStr = "Data Source=H3000-0283;Initial Catalog=GrReporting;Integrated Security=True"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+      Begin DBRefNode = "obtssql10\test.GrReporting.dbo"
+         ConnectStr = "Data Source=TSSQL-REPORTING-DWTEST\TEST;Initial Catalog=GrReporting;Integrated Security=True"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+      Begin DBRefNode = "TSSQL-REPORTING-DWDEV\DEV.GrReporting.dbo"
+         ConnectStr = "Data Source=TSSQL-REPORTING-DWDEV\DEV;Initial Catalog=GrReporting;Integrated Security=True"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 65536
+      End
+   End
+   Begin Folder = "Queries"
+      Begin Folder = "Tests"
+         Begin Folder = "Slowly Changing Dimensions"
+            Script = "csp_IU_SCDActivityType (tests).sql"
+            Script = "csp_IU_SCDAllocationRegion (tests).sql"
+            Script = "csp_IU_SCDFunctionalDepartment (tests).sql"
+            Script = "csp_IU_SCDGlAccount (tests).sql"
+            Script = "csp_IU_SCDGlAccountCategory (tests).sql"
+            Script = "csp_IU_SCDOriginatingRegion (tests).sql"
+            Script = "csp_IU_SCDPropertyFund (tests).sql"
+            Script = "csp_IU_SCDSnapshotActivityType (tests).sql"
+            Script = "csp_IU_SCDSnapshotAllocationRegion (tests).sql"
+            Script = "csp_IU_SCDSnapshotGlAccount (tests).sql"
+            Script = "csp_IU_SCDSnapshotGlAccountCategory (tests).sql"
+            Script = "csp_IU_SCDSnapshotOriginatingRegion (tests).sql"
+            Script = "csp_IU_SCDSnapshotPropertyFund (tests).sql"
+            Node = "Test Scenarios.txt"
+            Script = "Test Template.sql"
+         End
+      End
+   End
+End

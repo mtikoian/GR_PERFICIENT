@@ -1,0 +1,44 @@
+﻿<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#
+  string packagePath = Path.GetDirectoryName(this.Host.TemplateFile).Replace(@"\ETL\ETL.Configuration\Staging","");
+#>
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="Master" GeneratedFromPackageID="{32DC2E11-7D6F-47AD-B604-ADE5A8B22A41}" GeneratedDate="23/07/2009 08:16:50 AM"/>
+	</DTSConfigurationHeading>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Budget.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GBS\Budget.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Fee.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GBS\Fee.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[FeeDetail.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GBS\FeeDetail.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NonPayrollExpense.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GBS\NonPayrollExpense.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NonPayrollExpenseBreakDown.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GBS\NonPayrollExpenseBreakDown.dtsx</ConfiguredValue>
+	</Configuration>			
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[NonPayrollExpenseDispute.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GBS\NonPayrollExpenseDispute.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[DisputeStatus.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GBS\DisputeStatus.dtsx</ConfiguredValue>
+	</Configuration>
+
+</DTSConfiguration>

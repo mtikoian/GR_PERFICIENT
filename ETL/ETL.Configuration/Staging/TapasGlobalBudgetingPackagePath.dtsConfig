@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete"
+								  GeneratedFromPackageName="Master"
+								  GeneratedFromPackageID="{32DC2E11-7D6F-47AD-B604-ADE5A8B22A41}"
+								  GeneratedDate="23/07/2009 01:14:40 PM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[Budget.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\Budget.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetEmployee.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetEmployee.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetProject.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetProject.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[ReforecastActualBilledPayroll.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\ReforecastActualBilledPayroll.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetEmployeePayrollAllocation.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetEmployeePayrollAllocation.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetEmployeePayrollAllocationDetail.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetEmployeePayrollAllocationDetail.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetEmployeeFunctionalDepartment.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetEmployeeFunctionalDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetOverheadAllocation.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetOverheadAllocation.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetOverheadAllocationDetail.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetOverheadAllocationDetail.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetTaxType.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetTaxType.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetReportGroup.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetReportGroup.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetReportGroupDetail.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetReportGroupDetail.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[TaxType.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\TaxType.dtsx</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BenefitOption.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BenefitOption.dtsx</ConfiguredValue>
+	</Configuration>
+			<Configuration ConfiguredType="Property"
+				   Path="\Package.Connections[BudgetStatus.dtsx].Properties[ConnectionString]"
+				   ValueType="String">
+		<ConfiguredValue>C:\dev\GR\ETL\ETL.Staging.TapasGlobalBudgeting\BudgetStatus.dtsx</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="GrReportingComments">
+      <DataSourceReference>GrReportingComments</DataSourceReference>
+      <rd:DataSourceID>c4525e2b-8727-45c4-bf07-e9b20ffdd02a</rd:DataSourceID>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Comments">
+      <Fields>
+        <Field Name="GlAccountCode">
+          <DataField>GlAccountCode</DataField>
+          <rd:TypeName>System.Object</rd:TypeName>
+        </Field>
+        <Field Name="ReportPeriod">
+          <DataField>ReportPeriod</DataField>
+          <rd:TypeName>System.Object</rd:TypeName>
+        </Field>
+        <Field Name="Comment">
+          <DataField>Comment</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>GrReportingComments</DataSourceName>
+        <CommandText>SELECT     NRC.GlAccountCode, NRC.ReportPeriod, ISNULL(RC.Comment, NRC.Comment) AS Comment
+FROM         (SELECT     @GlAccountCode AS GlAccountCode, @ReportPeriod AS ReportPeriod, '' AS Comment) AS NRC LEFT OUTER JOIN
+                      ReportComment AS RC ON RC.GlAccountCode = NRC.GlAccountCode AND RC.ReportPeriod = NRC.ReportPeriod</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@GlAccountCode">
+            <Value>=Parameters!GlAccountCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ReportPeriod">
+            <Value>=Parameters!ReportPeriod.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Tablix Name="table1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>2.28125in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.63375in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Comment">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Comment.Value</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Comment</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>White</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>=Parameters!RowColour.Value</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="table1_Details_Group">
+                <DataElementName>Detail</DataElementName>
+              </Group>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+              <DataElementName>Detail_Collection</DataElementName>
+              <DataElementOutput>Output</DataElementOutput>
+              <KeepTogether>true</KeepTogether>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>Comments</DataSetName>
+        <Height>0.63375in</Height>
+        <Width>2.28125in</Width>
+        <Style />
+      </Tablix>
+    </ReportItems>
+    <Height>0.63375in</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="GlAccountCode">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>1023400000  </Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Gl Account Code</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="ReportPeriod">
+      <DataType>String</DataType>
+      <Prompt>Report Period</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="RowColour">
+      <DataType>String</DataType>
+      <Prompt>RowColour</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>2.28125in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>078f4060-f735-4735-86d3-efd2bdd7ab78</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>

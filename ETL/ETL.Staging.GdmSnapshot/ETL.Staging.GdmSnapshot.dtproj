@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProductVersion>10.50.1600.1</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>ETL Staging GdmSnapshot.database</Name>
+    <FullPath>ETL Staging GdmSnapshot.database</FullPath>
+  </Database>
+  <Cubes />
+  <Dimensions />
+  <DataSources>
+    <ProjectItem>
+      <Name>Gdm.ds</Name>
+      <FullPath>Gdm.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Gr Reporting Staging.ds</Name>
+      <FullPath>Gr Reporting Staging.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews />
+  <MiningModels />
+  <Roles />
+  <Miscellaneous />
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Gdm</Id>
+            <Name>Gdm</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=H3000-0283;Integrated Security=SSPI;Initial Catalog=GrReporting</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Gr Reporting Staging</Id>
+            <Name>Gr Reporting Staging</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=BISQLDEV\DEV;Integrated Security=SSPI;Initial Catalog=GrReportingStaging</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Gdm</Id>
+            <Name>Gdm</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Gr Reporting Staging</Id>
+            <Name>Gr Reporting Staging</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <DatabaseStorageLocations />
+      </Options>
+    </Configuration>
+  </Configurations>
+  <DTSPackages>
+    <DtsPackage FormatVersion="3">
+      <Name>Master.dtsx</Name>
+      <FullPath>Master.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Snapshot.dtsx</Name>
+      <FullPath>Snapshot.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotActivityType.dtsx</Name>
+      <FullPath>SnapshotActivityType.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotActivityTypeBusinessLine.dtsx</Name>
+      <FullPath>SnapshotActivityTypeBusinessLine.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotAllocationSubRegion.dtsx</Name>
+      <FullPath>SnapshotAllocationSubRegion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotBusinessLine.dtsx</Name>
+      <FullPath>SnapshotBusinessLine.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotConsolidationRegionCorporateDepartment.dtsx</Name>
+      <FullPath>SnapshotConsolidationRegionCorporateDepartment.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotConsolidationRegionPropertyEntity.dtsx</Name>
+      <FullPath>SnapshotConsolidationRegionPropertyEntity.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotCorporateDepartment.dtsx</Name>
+      <FullPath>SnapshotCorporateDepartment.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotCorporateEntity.dtsx</Name>
+      <FullPath>SnapshotCorporateEntity.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotCorporateJobCode.dtsx</Name>
+      <FullPath>SnapshotCorporateJobCode.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotCurrency.dtsx</Name>
+      <FullPath>SnapshotCurrency.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotEntityType.dtsx</Name>
+      <FullPath>SnapshotEntityType.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotFeePropertyGLAccountGLGlobalAccount.dtsx</Name>
+      <FullPath>SnapshotFeePropertyGLAccountGLGlobalAccount.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotFunctionalDepartment.dtsx</Name>
+      <FullPath>SnapshotFunctionalDepartment.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGLAccount.dtsx</Name>
+      <FullPath>SnapshotGLAccount.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGlCategorization.dtsx</Name>
+      <FullPath>SnapshotGlCategorization.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGlCategorizationType.dtsx</Name>
+      <FullPath>SnapshotGlCategorizationType.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGlFinancialCategory.dtsx</Name>
+      <FullPath>SnapshotGlFinancialCategory.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGLGlobalAccount.dtsx</Name>
+      <FullPath>SnapshotGLGlobalAccount.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGlGlobalAccountCategorization.dtsx</Name>
+      <FullPath>SnapshotGlGlobalAccountCategorization.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGLMajorCategory.dtsx</Name>
+      <FullPath>SnapshotGLMajorCategory.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGLMinorCategory.dtsx</Name>
+      <FullPath>SnapshotGLMinorCategory.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGLMinorCategoryPayrollType.dtsx</Name>
+      <FullPath>SnapshotGLMinorCategoryPayrollType.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotGlobalRegion.dtsx</Name>
+      <FullPath>SnapshotGlobalRegion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotManageCorporateDepartment.dtsx</Name>
+      <FullPath>SnapshotManageCorporateDepartment.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotManageCorporateEntity.dtsx</Name>
+      <FullPath>SnapshotManageCorporateEntity.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotManagePropertyDepartment.dtsx</Name>
+      <FullPath>SnapshotManagePropertyDepartment.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotManagePropertyEntity.dtsx</Name>
+      <FullPath>SnapshotManagePropertyEntity.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotManageType.dtsx</Name>
+      <FullPath>SnapshotManageType.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotOriginatingRegionCorporateEntity.dtsx</Name>
+      <FullPath>SnapshotOriginatingRegionCorporateEntity.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotOriginatingRegionPropertyDepartment.dtsx</Name>
+      <FullPath>SnapshotOriginatingRegionPropertyDepartment.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotOverheadRegion.dtsx</Name>
+      <FullPath>SnapshotOverheadRegion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotPayrollRegion.dtsx</Name>
+      <FullPath>SnapshotPayrollRegion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotPropertyEntityException.dtsx</Name>
+      <FullPath>SnapshotPropertyEntityException.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotPropertyEntityGLAccountInclusion.dtsx</Name>
+      <FullPath>SnapshotPropertyEntityGLAccountInclusion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotPropertyFund.dtsx</Name>
+      <FullPath>SnapshotPropertyFund.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotPropertyFundBudgetCoordinator.dtsx</Name>
+      <FullPath>SnapshotPropertyFundBudgetCoordinator.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotPropertyFundDisplayName.dtsx</Name>
+      <FullPath>SnapshotPropertyFundDisplayName.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotPropertyFundMapping.dtsx</Name>
+      <FullPath>SnapshotPropertyFundMapping.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotPropertyOverheadPropertyGLAccount.dtsx</Name>
+      <FullPath>SnapshotPropertyOverheadPropertyGLAccount.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotPropertyPayrollPropertyGLAccount.dtsx</Name>
+      <FullPath>SnapshotPropertyPayrollPropertyGLAccount.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotRegionalAdministratorGlobalSubRegion.dtsx</Name>
+      <FullPath>SnapshotRegionalAdministratorGlobalSubRegion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotRelatedFund.dtsx</Name>
+      <FullPath>SnapshotRelatedFund.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotReportingCategorization.dtsx</Name>
+      <FullPath>SnapshotReportingCategorization.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotReportingEntityCorporateDepartment.dtsx</Name>
+      <FullPath>SnapshotReportingEntityCorporateDepartment.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotReportingEntityPropertyEntity.dtsx</Name>
+      <FullPath>SnapshotReportingEntityPropertyEntity.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotConsolidationSubRegion.dtsx</Name>
+      <FullPath>SnapshotConsolidationSubRegion.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>SnapshotRestrictedFunctionalDepartmentCorporateEntity.dtsx</Name>
+      <FullPath>SnapshotRestrictedFunctionalDepartmentCorporateEntity.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+  </DTSPackages>
+</Project>

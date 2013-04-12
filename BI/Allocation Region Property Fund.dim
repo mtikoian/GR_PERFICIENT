@@ -1,0 +1,431 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a4d249be-80b3-469b-96e5-81497e85fb52" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Allocation Region Property Fund</ID>
+  <Name>Allocation Region Property Fund</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2057" scrolltop="-7382" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7223" y="19420" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="AllocationRegionPropertyFund" left="20" top="-926" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5450" height="5926" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004a15000026170000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="AllocationRegionPropertyFund" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2057</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7382</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-926</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="119" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="260">
+            <Shape Id="Allocation Region Property Fund Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Allocation Region Property Fund Key" />
+                <Attribute Id="Allocation Region Key" />
+                <Attribute Id="Property Fund Key" />
+                <Attribute Id="Region Code" />
+                <Attribute Id="Sub Region Code" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Property Fund Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Property Fund Name" />
+              </Attributes>
+              <Position x="350" y="20" />
+            </Shape>
+            <Shape Id="Sub Region Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sub Region Name" />
+              </Attributes>
+              <Position x="680" y="20" />
+            </Shape>
+            <Shape Id="Region Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Region Name" />
+              </Attributes>
+              <Position x="1010" y="20" />
+            </Shape>
+            <Shape Id="Property Fund Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Property Fund Type" />
+              </Attributes>
+              <Position x="1340" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dc5fb4f5-19bd-4d81-a495-d8c0d81bc37d">
+    <DataSourceViewID>Gr Reporting Ver2</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="5563a593-307c-48b0-a80d-4e9d77ade36e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="2b43a24f-13ae-4eba-8ad6-d592294b25bd">
+      <ID>Allocation Region Property Fund Key</ID>
+      <Name>Allocation Region Property Fund Key</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>357</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3db155e8-88df-4a7e-99a3-0ebc6d8796f8">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>WChar</DataType>
+          <DataSize>21</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11c6f0e3-1f65-49b2-a113-8251f92a5cfb">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>AllocationRegionPropertyFundKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1f8cdb94-a3d7-4c1e-a477-77b0ecc8a1e9">
+        <DataType>WChar</DataType>
+        <DataSize>21</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="26bdf96c-1d94-46cd-ab2d-246819351d1f">
+          <TableID>AllocationRegionPropertyFund</TableID>
+          <ColumnID>Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2c3576e7-361b-46d7-8d9f-3f1702b32ed5">
+          <AttributeID>Region Code</AttributeID>
+          <Name>Region Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="32be2272-15d7-4ae6-9e12-e8c31c3a1cf7">
+          <AttributeID>Allocation Region Key</AttributeID>
+          <Name>Allocation Region Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="455a4012-2472-4ff7-abce-615865eb27b6">
+          <AttributeID>Sub Region Code</AttributeID>
+          <Name>Sub Region Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="17471380-fb37-4522-b2c2-467cea092c25">
+          <AttributeID>Property Fund Key</AttributeID>
+          <Name>Property Fund Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1dc21eb0-93c6-4da0-897a-84ebc289ad1b">
+          <AttributeID>Property Fund Name</AttributeID>
+          <Name>Property Fund Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ca365f80-e586-4978-a283-241f54c12784">
+      <ID>Region Code</ID>
+      <Name>Region Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1048c91-f99f-44c9-8e95-7ed7dc06d376">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b0ee598-4376-4eba-bf97-b8ee487cb743">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>RegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8c5ea528-0829-466f-8c2d-7a31b46058df">
+      <ID>Region Name</ID>
+      <Name>Region Name</Name>
+      <EstimatedCount>24</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d4e35e73-6824-4e2e-98f3-6f74f22e5ff7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2e6f710-3ef4-499c-bcdb-8bf0bef3a9f6">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>PropertyFundType</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="981efec2-a0f4-46c6-93c1-8abb62a404fa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="deee520e-4430-479b-b178-8cfe7d3a3c25">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>RegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="258bc19e-43b4-4dcc-8dc8-754cefb96797">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9be8b73c-5f06-464e-b389-3cd85d2a6f1a">
+          <TableID>AllocationRegionPropertyFund</TableID>
+          <ColumnID>RegionName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="72d99daa-1a2a-41d2-aad7-424010c4f94f">
+          <AttributeID>Property Fund Type</AttributeID>
+          <Name>Property Fund Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c6b24fa1-1402-4bf7-a507-d00e2306387a">
+      <ID>Allocation Region Key</ID>
+      <Name>Allocation Region Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bdbab012-7c03-49b6-97b9-94299a6b8d5b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a10f9436-33d1-4254-a56e-a7876f64007c">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>AllocationRegionKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bc8fdfd4-6d80-4382-9bf2-2482d93afd25">
+      <ID>Sub Region Code</ID>
+      <Name>Sub Region Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b1e47ff4-71b1-40e7-835b-d61facd13c9c">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="002ae18e-33bd-434a-a9d1-11fc37b6427a">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>SubRegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eeabcdc3-a33d-4ffb-a66b-8078baa56dcc">
+      <ID>Sub Region Name</ID>
+      <Name>Sub Region Name</Name>
+      <EstimatedCount>49</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5e41727e-3ad6-4f21-a0a8-15554d2da1ef">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bad8f00a-718f-45b4-bdf4-9056c5a005ef">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>PropertyFundType</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f11d8cdc-6ec8-4763-9300-f25ff8413451">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc064654-1aa5-4a30-b429-bd6fe4d0ad1c">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>RegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d97605f8-8dff-4095-accc-aa7d6da0cf3d">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16c7058d-b131-4e60-9273-a8a89d3e60e6">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>SubRegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cc4ab259-3478-4574-b925-d5629117774e">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e0d4b69a-9fdc-413c-889c-5e4b368093ec">
+          <TableID>AllocationRegionPropertyFund</TableID>
+          <ColumnID>SubRegionName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d119e01d-9cd8-4464-9fca-18c81e30a64b">
+          <AttributeID>Region Name</AttributeID>
+          <Name>Region Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6a589119-95b4-436b-be8a-a45774d4a5c5">
+      <ID>Property Fund Key</ID>
+      <Name>Property Fund Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="321c1dd6-790a-460e-9b6a-f9cb13e7e21b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="854a1a5b-ef42-4d5a-9447-ebfe3c7e40c5">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>PropertyFundKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9f034f3b-5185-4ef6-b1d1-0bdc5a10d2c5">
+      <ID>Property Fund Name</ID>
+      <Name>Property Fund Name</Name>
+      <EstimatedCount>357</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7713c982-6796-483b-8124-78fd3de76828">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7bc62dab-60ce-4ca1-bdce-8983a04874dc">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>PropertyFundType</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="465a3d51-892e-4725-9e74-c4758c706fd0">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d859ff66-4e9e-4fa3-80f0-119f3367856b">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>RegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="af4292d9-9a39-493d-9022-1a524cc82547">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa53bbbb-f1ca-44e1-bcfa-6b30ff86bd24">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>SubRegionCode</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8df179a1-b155-4adf-86fb-6d60e49a5334">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7468bffc-2df9-4969-908f-0029d493446a">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>PropertyFundName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3d4cef4b-665a-4fad-ab34-f346939af207">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c03d2b5c-98fe-4324-a281-1297f02a53cd">
+          <TableID>AllocationRegionPropertyFund</TableID>
+          <ColumnID>PropertyFundName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d32256be-8ea6-41c1-b083-99febecc5b8a">
+          <AttributeID>Sub Region Name</AttributeID>
+          <Name>Sub Region Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="57a9e3e3-0933-492f-ae4e-c5358498b041">
+      <ID>Property Fund Type</ID>
+      <Name>Property Fund Type</Name>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fffddee1-c80b-4907-832b-0339d0f84b45">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="734465b6-d96f-4999-ad3f-454f38012ab2">
+            <TableID>AllocationRegionPropertyFund</TableID>
+            <ColumnID>PropertyFundType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="0b47e864-3a93-4661-b748-97354892252e">
+      <ID>Hierarchy</ID>
+      <Name>ReportingEntityHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="da9d8311-5497-45f7-8358-2e1a30c5b426">
+          <ID>Property Fund Type</ID>
+          <Name>Property Fund Type</Name>
+          <SourceAttributeID>Property Fund Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="9481045a-4bb1-459b-9406-6f0aeb716c51">
+          <ID>Region Name</ID>
+          <Name>Region Name</Name>
+          <SourceAttributeID>Region Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="80073206-1ad0-4826-b67a-de2a352305ae">
+          <ID>Sub Region Name</ID>
+          <Name>Sub Region Name</Name>
+          <SourceAttributeID>Sub Region Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b792857e-2b5c-4b7a-82ee-07c251172701">
+          <ID>Property Fund Name</ID>
+          <Name>Property Fund Name</Name>
+          <SourceAttributeID>Property Fund Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

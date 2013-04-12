@@ -1,0 +1,28 @@
+﻿How should a Slowly Changing Dimension (Type 2) behave?
+
+	A slowly changing dimension is a database table that is updated to reflect changes in an underlying data source. Its records are never deleted.
+
+	1.	When a new record is added to the source that doesn't exist in the dimension, the following should occur:
+			- the new record should be inserted into the dimension, setting:
+					a.) StartDate = source record's updated date
+					b.) EndDate = 9999-12-31 00:00:00.000
+
+
+	2. When a recored that exists in both the source and dimension is updated in the source, the following should occur:
+		2.1	- if a field in the source was updated that is not a field in the dimension:
+					a.) No change - the dimension is not affected as a field was updated that it doesn't store
+					
+		2.2	- if a field in the source was updated that is also a field in the dimension:
+					a.) The existing dimension record should be 'ended' by setting EndDate = Source record's UpdatedDate
+					b.) A new record with the same business key as the ended record in (a) should be inserted into the dimension, with
+						StartDate = Source record's UpdatedDate, and EndDate = 9999-12-31 00:00:00.000, and the remaining dimension fields being
+						set to equal the value of the source system record's fields.
+
+
+	3. When a record that exists in both the source and dimension is hard deleted or deactivated in the source, the following should occur:
+		3.1 - if the record is deactivated in the source
+					a.) the record in the dimension should be updated, setting EndDate = deactivated source record's UpdatedDate
+					
+		3.2 - if the record is hard-deleted in the source
+					a.) the record in the dimension should be updated, setting EndDate = the current date using GETDATE()
+					

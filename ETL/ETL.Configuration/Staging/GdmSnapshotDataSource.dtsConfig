@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="FunctionalDepartment" GeneratedFromPackageID="{C0C85E25-4398-48C2-9DA1-A4A10427BE58}" GeneratedDate="24/07/2009 09:30:09 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Gdm].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=TSSQL-CDTDEV3\CDT$DEV3;Initial Catalog=GDM;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Gr Reporting Staging].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=TSSQL-REPORTING-DWDEV\DEV;Initial Catalog=GrReportingStaging;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

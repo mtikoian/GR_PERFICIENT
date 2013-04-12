@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="Gacc" GeneratedFromPackageID="{2332FEA0-09BC-4CC5-B7A2-1A4F597F9760}" GeneratedDate="23/07/2009 09:40:46 AM"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Gr Reporting Staging].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=TSSQL-REPORTING-DWDEV\DEV;Initial Catalog=GrReportingStaging;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[GR CN PROP].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>Data Source=TSSQL-MRIDEV\MRI$DEV;Initial Catalog=CN_PROP;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

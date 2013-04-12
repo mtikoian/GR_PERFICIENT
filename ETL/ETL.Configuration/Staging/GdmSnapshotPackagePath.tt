@@ -1,0 +1,221 @@
+﻿<#@ template language="C#" hostspecific="true"#>
+<#@ output extension=".dtsConfig" #>
+<#@ Assembly Name="System.dll" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#
+  string packagePath = Path.GetDirectoryName(this.Host.TemplateFile).Replace(@"\ETL\ETL.Configuration\Staging","");
+#>
+<?xml version="1.0"?>
+<DTSConfiguration>
+
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="OPENBOX\gcloete" GeneratedFromPackageName="Master" GeneratedFromPackageID="{32DC2E11-7D6F-47AD-B604-ADE5A8B22A41}" GeneratedDate="23/07/2009 08:16:50 AM"/>
+	</DTSConfigurationHeading>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Snapshot.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\Snapshot.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotActivityType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotActivityType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotAllocationSubRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotAllocationSubRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotCorporateDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotCorporateDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotCorporateEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotCorporateEntity.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotCorporateJobCode.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotCorporateJobCode.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotCurrency.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotCurrency.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotEntityType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotEntityType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotFeePropertyGLAccountGLGlobalAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotFeePropertyGLAccountGLGlobalAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotFunctionalDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotFunctionalDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLAccountSubType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLAccountSubType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLAccountType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLAccountType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLGlobalAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLGlobalAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLGlobalAccountGLAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLGlobalAccountGLAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLGlobalAccountTranslationSubType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLGlobalAccountTranslationSubType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLGlobalAccountTranslationType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLGlobalAccountTranslationType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLMajorCategory.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLMajorCategory.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLMinorCategory.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLMinorCategory.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLMinorCategoryPayrollType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLMinorCategoryPayrollType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGlobalRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGlobalRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLStatutoryType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLStatutoryType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLTranslationSubType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLTranslationSubType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotGLTranslationType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotGLTranslationType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotManageCorporateDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotManageCorporateDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotManageCorporateEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotManageCorporateEntity.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotManagePropertyDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotManagePropertyDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotManagePropertyEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotManagePropertyEntity.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotManageType.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotManageType.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotOriginatingRegionCorporateEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotOriginatingRegionCorporateEntity.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotOriginatingRegionPropertyDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotOriginatingRegionPropertyDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotOverheadRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotOverheadRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPayrollRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPayrollRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPropertyEntityException.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPropertyEntityException.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPropertyEntityGLAccountInclusion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPropertyEntityGLAccountInclusion.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPropertyFund.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPropertyFund.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPropertyFundBudgetCoordinator.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPropertyFundBudgetCoordinator.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPropertyFundDisplayName.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPropertyFundDisplayName.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPropertyFundMapping.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPropertyFundMapping.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPropertyGLAccountGLGlobalAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPropertyGLAccountGLGlobalAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPropertyOverheadPropertyGLAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPropertyOverheadPropertyGLAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotPropertyPayrollPropertyGLAccount.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotPropertyPayrollPropertyGLAccount.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotRechargeCorporateDepartmentPropertyEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotRechargeCorporateDepartmentPropertyEntity.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotRegionalAdministratorGlobalSubRegion.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotRegionalAdministratorGlobalSubRegion.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotRelatedFund.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotRelatedFund.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotReportingEntityCorporateDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotReportingEntityCorporateDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotReportingEntityPropertyEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotReportingEntityPropertyEntity.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotBusinessLine.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotBusinessLine.dtsx</ConfiguredValue>
+	</Configuration>
+
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotActivityTypeBusinessLine.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotActivityTypeBusinessLine.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotConsolidationRegionCorporateDepartment.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotConsolidationRegionCorporateDepartment.dtsx</ConfiguredValue>
+	</Configuration>
+	
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SnapshotConsolidationRegionPropertyEntity.dtsx].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue><# this.Write(packagePath); #>\ETL\ETL.Staging.GdmSnapshot\SnapshotConsolidationRegionPropertyEntity.dtsx</ConfiguredValue>
+	</Configuration>
+	
+</DTSConfiguration>
